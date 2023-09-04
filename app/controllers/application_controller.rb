@@ -1,2 +1,17 @@
 class ApplicationController < ActionController::Base
+  protect_from_forgery with: :exception
+  before_action :configure_permitted_parameters, if: :devise_controller?
+
+  def after_sign_in_path_for(resources)
+    # account_saved_items_user_path(current_user)
+  end
+
+  def after_sign_out_path_for(resource_or_scope)
+    request.referrer
+  end
+
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_in) { |u| u.permit(:email) }
+    devise_parameter_sanitizer.permit(:sign_up) { |u| u.permit(:email, :password) }
+  end
 end

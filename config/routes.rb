@@ -1,7 +1,18 @@
 Rails.application.routes.draw do
-  devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # ----- user -----
+  devise_scope :user do
+    get 'sign-in', to: 'devise/sessions#new'
+    get 'sign-up', to: 'devise/registrations#new', as: 'new_user_registration'
+  end
+  devise_for :users
+  resources :users do
+    resources :products
+  end
+  # ----- user -----
+
+  root    'static_pages#homepage'
+
+  # redirects all unknown routes to homepage
+  get '*path' => redirect('/')
 end
