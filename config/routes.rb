@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products
 
   # ----- user -----
   devise_scope :user do
