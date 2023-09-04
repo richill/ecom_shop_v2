@@ -1,5 +1,5 @@
 
-<%= simple_form_for(@product) do |f| %>
+<%= simple_form_for [@user, @product] do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
@@ -7,6 +7,7 @@
     <%= f.input :name %>
     <%= f.input :image %>
     <%= f.input :image_url %>
+    <%= f.input :price %>
   </div>
 
   <div class="form-actions">
