@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-
   # ----- user -----
   devise_scope :user do
     get 'sign-in', to: 'devise/sessions#new'
@@ -13,6 +12,8 @@ Rails.application.routes.draw do
   # ----- user -----
 
   resources :products
+
+  resources :favorite_products, only: [:create, :destroy]
 
   root    'static_pages#homepage'
 
