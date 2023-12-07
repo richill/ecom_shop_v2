@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :favorite_products, only: [:create, :destroy]
 
   # ----- user -----
   devise_scope :user do
@@ -12,8 +13,6 @@ Rails.application.routes.draw do
   # ----- user -----
 
   resources :products
-
-  resources :favorite_products, only: [:create, :destroy]
 
   root    'static_pages#homepage'
 
