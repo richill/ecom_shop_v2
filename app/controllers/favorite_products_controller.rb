@@ -2,7 +2,9 @@ class FavoriteProductsController < ApplicationController
   before_action :set_product
   def create
     if Favorite.create(favorited: @product, user: current_user)
-      redirect_to products_url, notice: 'Product has been favorited'
+      # redirect_back(fallback_location: edit_admin_job_path(@job.admin, @job),)
+      redirect_back(fallback_location: products_url, notice: 'Product has been favorited')
+      # redirect_to products_url, notice: 'Product has been favorited'
     else
       redirect_to products_url, alert: 'Something went wrong...*sad panda*'
     end
