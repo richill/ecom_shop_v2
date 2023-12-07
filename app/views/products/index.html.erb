@@ -12,9 +12,9 @@
             <% if current_user %>
               <!--favourite code-->
               <% if current_user.favorite_products.exists?(id: product) %>
-                <%= link_to 'Remove from favorites', favorite_product_path(product), method: :delete, data: { "turbo-method": :delete } %>
+                <%= link_to 'Remove from favorites', favorite_product_path(product), method: :delete, data: { "turbo-method": :delete }, id: 'fav_remove_link' %>
               <% else %>
-                <%= link_to 'Add to favorites', favorite_products_path(product_id: product), method: :post, data: { "turbo-method": :post } %>
+                <%= link_to 'Add to favorites', favorite_products_path(product_id: product), method: :post, data: { "turbo-method": :post }, id: 'fav_add_link' %>
               <% end %>
               <!--favourite code-->
             <% end %>
