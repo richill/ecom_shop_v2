@@ -1,12 +1,12 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: %i[ show edit update destroy ]
-  impressionist :actions=>[:show, :index]
+  impressionist :actions=>[:show]
   before_action :authenticate_user!
 
   def index
+    @products = Product.all
     # @products = Product.order(impressions_count: :desc)
-    @products = Product.order('impressions_count DESC')
-    # @products = Product.order(impressionist_count(filter: :ip_address): :desc)
+    # @products = Product.order('impressions_count DESC')
   end
 
   def show

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_12_09_161211) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_09_170402) do
   create_table "favorites", force: :cascade do |t|
     t.integer "user_id", null: false
     t.string "favorited_type", null: false
@@ -55,6 +55,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_09_161211) do
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.decimal "price"
+    t.integer "impressions_count"
+    t.index ["impressions_count"], name: "index_products_on_impressions_count"
   end
 
   create_table "users", force: :cascade do |t|
