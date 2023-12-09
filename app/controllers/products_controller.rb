@@ -6,7 +6,8 @@ class ProductsController < ApplicationController
   def index
     # @products = Product.all
     # @products = Product.order(impressions_count: :desc)
-    @products = Product.order(impressions_count: :asc)
+    # impressionist_count(filter: :ip_address)
+    @products = Product.order(impressions_count: :desc)
   end
 
   def show
