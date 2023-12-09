@@ -54,6 +54,7 @@
     <orderEntry type="library" scope="PROVIDED" name="globalid (v1.2.0, rbenv: 3.0.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.14.1, rbenv: 3.0.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="importmap-rails (v1.2.1, rbenv: 3.0.4) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="impressionist (v2.0.0, rbenv: 3.0.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="io-console (v0.6.0, rbenv: 3.0.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="irb (v1.8.0, rbenv: 3.0.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.11.5, rbenv: 3.0.4) [gem]" level="application" />
@@ -110,6 +111,7 @@
       <list>
         <option value="active_record:application_record" />
         <option value="active_record:devise" />
+        <option value="active_record:impressionist" />
         <option value="active_record:multi_db" />
         <option value="application_record" />
         <option value="benchmark" />
@@ -121,6 +123,7 @@
         <option value="devise:views" />
         <option value="generator" />
         <option value="helper" />
+        <option value="impressionist:impressionist" />
         <option value="integration_test" />
         <option value="jbuilder" />
         <option value="job" />
@@ -128,7 +131,9 @@
         <option value="mailer" />
         <option value="migration" />
         <option value="model" />
+        <option value="mongo_mapper:impressionist" />
         <option value="mongoid:devise" />
+        <option value="mongoid:impressionist" />
         <option value="resource" />
         <option value="responders:install" />
         <option value="responders_controller" />
@@ -157,6 +162,7 @@
       <list>
         <option value="active_record:application_record" />
         <option value="active_record:devise" />
+        <option value="active_record:impressionist" />
         <option value="active_record:multi_db" />
         <option value="application_record" />
         <option value="benchmark" />
@@ -168,6 +174,7 @@
         <option value="devise:views" />
         <option value="generator" />
         <option value="helper" />
+        <option value="impressionist:impressionist" />
         <option value="integration_test" />
         <option value="jbuilder" />
         <option value="job" />
@@ -175,7 +182,9 @@
         <option value="mailer" />
         <option value="migration" />
         <option value="model" />
+        <option value="mongo_mapper:impressionist" />
         <option value="mongoid:devise" />
+        <option value="mongoid:impressionist" />
         <option value="resource" />
         <option value="responders:install" />
         <option value="responders_controller" />
