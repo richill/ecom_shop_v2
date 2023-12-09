@@ -19,7 +19,7 @@ class FavoriteProductsController < ApplicationController
     respond_to do |format|
       # redirect_to products_url, notice: 'Product is no longer in favorites'
       format.html { redirect_to products_url, alert: "Product is no longer in favorites" }
-      format.js
+      format.js {render template: 'favorite_products/create'}
     end
   end
 
