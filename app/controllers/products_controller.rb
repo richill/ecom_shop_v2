@@ -9,7 +9,7 @@ class ProductsController < ApplicationController
 
   def show
     @user = current_user
-    impressionist(@product, "message...")
+    impressionist(@product)
   end
 
   def new
