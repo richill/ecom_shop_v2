@@ -4,9 +4,9 @@ class ProductsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @products = Product.all
+    # @products = Product.all
     # @products = Product.order(impressions_count: :desc)
-    # @products = Product.order('impressions_count DESC')
+    @products = Product.order(impressions_count: :asc)
   end
 
   def show
@@ -70,6 +70,6 @@ class ProductsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def product_params
-      params.require(:product).permit(:name, :image, :image_url, :user_id, :price)
+      params.require(:product).permit(:name, :image, :image_url, :user_id, :price, :impressions_count)
     end
 end
