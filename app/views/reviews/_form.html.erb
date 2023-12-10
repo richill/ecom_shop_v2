@@ -4,7 +4,14 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-    <%= f.input :rating %>
+    <div class="radio_cover hide">
+      <%= f.input :rating, as: :radio_buttons, collection: [['1', '1 | poor '], ['2', '2 | fair'], ['3', '3 | average'], ['4', '4 | good'], ['5', '5 | excellent']], label_method: :second, value_method: :first, class: 'star_radio_btn', label: false %>
+    </div>
+
+    <div class="radio_cover">
+      <%= f.input :rating, as: :radio_buttons, collection: [['1', '1 '], ['2', '2 '], ['3', '3 '], ['4', '4 '], ['5', '5 ']], label_method: :second, value_method: :first, class: 'star_radio_btn', label: false %>
+    </div>
+
     <%= f.input :comment %>
     <%= f.input :user_id %>
     <%= f.input :product_id, input_html: { value: "#{@product.id}" } %>
@@ -14,3 +21,14 @@
     <%= f.button :submit %>
   </div>
 <% end %>
+
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+        $('input:radio').change(function(){
+            var $this = $(this);
+            // Only remove the class in the specific `box` that contains the radio
+            $this.closest('.box').find('radio_cover.highlight').removeClass('highlight');
+            $this.closest('.q').addClass('highlight');
+        });
+    });
+</script>

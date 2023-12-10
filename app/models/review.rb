@@ -6,6 +6,7 @@ class Review < ApplicationRecord
   belongs_to :user
   belongs_to :product
 
+  LOVE = %i[ one two three four five ]
 
   def self.reviewer_exist?(user, product)
     exists?(user_id: user, product_id: product)
