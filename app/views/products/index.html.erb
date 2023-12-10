@@ -11,8 +11,12 @@
           <% if user_signed_in? %>
             <% if current_user %>
               <!--impression code-->
-              <div><%= product.impressions_count %> views</div>
+              <div><%= "#{product.impressions_count} views" %></div>
               <!--impression code-->
+
+              <!--views code-->
+              <div><%= "(#{product.reviews.count}) reviews" %></div>
+              <!--views code-->
 
               <!--favourite code-->
               <div id="product-<%= product.id %>">

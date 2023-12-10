@@ -1,4 +1,18 @@
 <p style="color: green"><%= notice %></p>
 <div class="product_item">
   <%= render @product %>
+
+  <p><%= link_to 'review product', new_user_review_path(@user, product_id: @product) %></p>
+
+  <p>
+  <div><u>product reviews:</u></div>
+  <ul>
+    <% @product.reviews.each do |review| %>
+      <li>
+        <div>review: <%= review.rating %></div>
+        <div><%= review.comment %></div>
+      </li><br/>
+    <% end %>
+  </ul>
+  </p>
 </div>

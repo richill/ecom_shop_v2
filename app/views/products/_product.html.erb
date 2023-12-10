@@ -7,18 +7,4 @@
     <strong>price:</strong>
     <%= product.price %>
   </p>
-  <p><%= link_to 'review product', new_user_review_path(@user, product_id: product) %></p>
-
-
-  <p>
-    <ul>
-      <% product.reviews.each do |review| %>
-      <li>
-        <div>review: <%= review.rating %></div>
-        <div><%= review.comment %></div>
-      </li><br/>
-      <% end %>
-    </ul>
-
-  </p>
 </div>
