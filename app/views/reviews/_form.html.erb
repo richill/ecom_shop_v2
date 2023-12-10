@@ -7,8 +7,7 @@
     <%= f.input :rating %>
     <%= f.input :comment %>
     <%= f.input :user_id %>
-    <%= f.input :product_id, input_html: { value: "#{@review.product}" } %>
-    <%# f.input :product_id %>
+    <%= f.input :product_id, input_html: { value: "#{@product.id}" } %>
   </div>
 
   <div class="form-actions">
