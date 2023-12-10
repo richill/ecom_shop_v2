@@ -4,10 +4,6 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-    <div class="radio_cover hide">
-      <%= f.input :rating, as: :radio_buttons, collection: [['1', '1 | poor '], ['2', '2 | fair'], ['3', '3 | average'], ['4', '4 | good'], ['5', '5 | excellent']], label_method: :second, value_method: :first, class: 'star_radio_btn', label: false %>
-    </div>
-
     <div class="radio_cover">
       <%= f.input :rating, as: :radio_buttons, collection: [['1', '1 '], ['2', '2 '], ['3', '3 '], ['4', '4 '], ['5', '5 ']], label_method: :second, value_method: :first, class: 'star_radio_btn', label: false %>
     </div>
