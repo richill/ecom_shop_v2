@@ -8,5 +8,5 @@ class User < ApplicationRecord
   has_many :favorites
   has_many :favorite_products, through: :favorites, source: :favorited, source_type: 'Product'
 
-  has_many :reviews
+  has_many :reviews, dependent: :destroy
 end

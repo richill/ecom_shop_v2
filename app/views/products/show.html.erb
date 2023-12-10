@@ -2,7 +2,13 @@
 <div class="product_item">
   <%= render @product %>
 
-  <p><%= link_to 'review product', new_user_review_path(@user, product_id: @product) %></p>
+  <div>
+    <% if @product.reviews.reviewer_exist?(@user, @product) %>
+      <p>you have already reviewed this product</p>
+    <% else  %>
+      <%= link_to 'review product', new_user_review_path(@user, product_id: @product) %>
+    <% end %>
+  </div>
 
   <p>
   <div><u>product reviews:</u></div>
@@ -11,8 +17,13 @@
       <li>
         <div>review: <%= review.rating %></div>
         <div><%= review.comment %></div>
+        <div><%= review.user.email %></div>
       </li><br/>
     <% end %>
   </ul>
   </p>
+</div>
+
+<div>
+
 </div>
