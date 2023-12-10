@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :reviews
   resources :favorite_products, only: [:create, :destroy]
 
   # ----- user -----
@@ -10,6 +9,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users do
     resources :products
+    resources :reviews
   end
   # ----- user -----
 
