@@ -7,17 +7,21 @@ class ReviewsController < ApplicationController
   end
 
   def show
+    @user = current_user
   end
 
   def new
-    @review = Review.new
+    # @review = Review.new
+    @review = @user.reviews.build
   end
 
   def edit
   end
 
   def create
-    @review = Review.new(review_params)
+    # @review = Review.new(review_params)
+    @user = current_user
+    @review = @user.reviews.create(review_params)
 
     respond_to do |format|
       if @review.save
