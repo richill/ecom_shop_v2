@@ -4,4 +4,13 @@ class Product < ApplicationRecord
 
   belongs_to :user
   has_many :reviews
+
+  def average_rating
+    if self.reviews.present?
+      review_score = reviews.map(&:rating).sum.to_i   #17 [5, 5, 3, 4]
+      review_count = reviews.count                    #4 reviews
+      (review_score/review_count)                     #4.25 (17/4)
+    end
+  end
+
 end

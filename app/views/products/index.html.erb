@@ -15,7 +15,11 @@
               <!--impression code-->
 
               <!--views code-->
-              <div><%= "(#{product.reviews.count}) reviews" %></div>
+              <% if product.reviews.present? %>
+                <div><%= "#{product.average_rating}star (#{product.reviews.count}) reviews" %></div>
+              <% else %>
+                <div>no reviews</div>
+              <% end %>
               <!--views code-->
 
               <!--favourite code-->
