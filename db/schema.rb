@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_12_09_170402) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_10_150115) do
   create_table "favorites", force: :cascade do |t|
     t.integer "user_id", null: false
     t.string "favorited_type", null: false
@@ -57,6 +57,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_09_170402) do
     t.decimal "price"
     t.integer "impressions_count"
     t.index ["impressions_count"], name: "index_products_on_impressions_count"
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.integer "rating"
+    t.text "comment"
+    t.integer "user_id"
+    t.integer "product_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["comment"], name: "index_reviews_on_comment"
+    t.index ["product_id"], name: "index_reviews_on_product_id"
+    t.index ["rating"], name: "index_reviews_on_rating"
+    t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
