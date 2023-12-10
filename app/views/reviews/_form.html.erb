@@ -18,13 +18,3 @@
   </div>
 <% end %>
 
-<script type="text/javascript" charset="utf-8">
-    $(document).ready(function(){
-        $('input:radio').change(function(){
-            var $this = $(this);
-            // Only remove the class in the specific `box` that contains the radio
-            $this.closest('.box').find('radio_cover.highlight').removeClass('highlight');
-            $this.closest('.q').addClass('highlight');
-        });
-    });
-</script>
