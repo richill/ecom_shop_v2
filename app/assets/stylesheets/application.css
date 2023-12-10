@@ -22,42 +22,12 @@
     background-color: #CCCCCC;
 }
 
-
-
-/*input[type='radio']:after {*/
-/*    width: 15px;*/
-/*    height: 15px;*/
-/*    border-radius: 15px;*/
-/*    top: -2px;*/
-/*    left: -1px;*/
-/*    position: relative;*/
-/*    background-color: #d1d3d1;*/
-/*    content: '';*/
-/*    display: inline-block;*/
-/*    visibility: visible;*/
-/*    border: 2px solid white;*/
-/*}*/
-
-/*input[type='radio']:checked:after {*/
-/*    width: 15px;*/
-/*    height: 15px;*/
-/*    border-radius: 15px;*/
-/*    top: -2px;*/
-/*    left: -1px;*/
-/*    position: relative;*/
-/*    background-color: #ffa500;*/
-/*    content: '';*/
-/*    display: inline-block;*/
-/*    visibility: visible;*/
-/*    border: 2px solid white;*/
-/*}*/
-
 input[type='radio']:checked:after {
     width: 61px;
     height: 36px;
     border-radius: 200px;
-    top: -5px;
-    left: -26px;
+    top: -3px;
+    left: -3px;
     position: absolute;
     background-color: orange;
     content: '';
@@ -65,8 +35,6 @@ input[type='radio']:checked:after {
     border: 2px solid white;
     z-index: -1000;
 }
-
-
 
 .radio_cover {
     margin-bottom: 20px;
@@ -88,12 +56,6 @@ input[type='radio']:checked:after {
     cursor: pointer;
 }
 
-/*.radio:focus-visible {*/
-/*    background-color: greenyellow;*/
-/*    outline: none;*/
-/*    border: 2px solid black;*/
-/*}*/
-
 .radio_cover label {
     font-size: 12px;
     font-family: sans-serif;
@@ -106,7 +68,7 @@ input[type='radio']:checked:after {
     margin-right: 4px !important;
 }
 
-.radio_cover .radio_buttons::after {
+.radio_cover label::after {
     font-family: 'Material Icons';
     content: "star" !important;
     color: black;
@@ -117,34 +79,3 @@ input[type='radio']:checked:after {
     top: 7px;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.radio_cover #review_rating_5::after {*/
-/*    font-family: 'Material Icons';*/
-/*    content: "star" !important;*/
-/*    color: black;*/
-/*    margin-top: -2px;*/
-/*    margin-left: 24px;*/
-/*    font-size: 15px;*/
-/*    position: absolute;*/
-/*    top: 6px;*/
-/*}*/
-
-/*.radio_cover label::after {*/
-/*    font-family: 'Material Icons';*/
-/*    content: "star" !important;*/
-/*    margin-top: -1px;*/
-/*    position: absolute;*/
-/*    font-size: 21px;*/
-/*}*/
