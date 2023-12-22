@@ -14,6 +14,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem 'simple_form'
 gem 'impressionist'
+gem 'social-share-button'
 
 group :development, :test do
   gem "awesome_print"
