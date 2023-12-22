@@ -121,6 +121,7 @@
         <option value="application_record" />
         <option value="benchmark" />
         <option value="channel" />
+        <option value="coffee:assets" />
         <option value="controller" />
         <option value="devise" />
         <option value="devise:controllers" />
@@ -145,6 +146,7 @@
         <option value="scaffold" />
         <option value="scaffold_controller" />
         <option value="simple_form:install" />
+        <option value="social_share_button:install" />
         <option value="stimulus" />
         <option value="system_test" />
         <option value="task" />
@@ -172,6 +174,7 @@
         <option value="application_record" />
         <option value="benchmark" />
         <option value="channel" />
+        <option value="coffee:assets" />
         <option value="controller" />
         <option value="devise" />
         <option value="devise:controllers" />
@@ -196,6 +199,7 @@
         <option value="scaffold" />
         <option value="scaffold_controller" />
         <option value="simple_form:install" />
+        <option value="social_share_button:install" />
         <option value="stimulus" />
         <option value="system_test" />
         <option value="task" />
