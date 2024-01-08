@@ -7,4 +7,15 @@
     <strong>price:</strong>
     <%= product.price %>
   </p>
+
+  <p>
+    <%= social_share_button_tag(product.name) %>
+    <%= social_share_button_tag(product.name, 'data-twitter-title' => 'TheTitleForTwitter') %>
+    <%= social_share_button_tag(product.name, :url => product_path, :image => "http://foo.bar/images/a.jpg", desc: "The summary of page", via: "MyTwitterName") %>
+    <%= social_share_button_tag('Share to Facebook', :url => product_path(product), desc: product.name) %>
+
+
+    <a href="https://twitter.com/intent/tweet?url=<your_link>&text=<your_text>"  onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=240,width=600');return false;" class= "your_css_class">share me tt</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=<your_link>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=240,width=600');return false;" class="<your_css_class>">share me fb</a>
+  </p>
 </div>
