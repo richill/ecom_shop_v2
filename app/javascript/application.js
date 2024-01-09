@@ -2,6 +2,3 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 import "./jquery"
-//= require social-share-button
-// import "social-share-button"
-import Rails from '@rails/ujs'
