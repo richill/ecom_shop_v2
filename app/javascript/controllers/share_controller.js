@@ -17,18 +17,13 @@ export default class extends Controller {
       url: this.data.get("urlValue"),
     };
     // console.log(shareData);
-
-
-
-
-
-
     try {
       await navigator.share(shareData);
       this.resultTarget.textContent = "MDN shared successfully"
     } catch (err) {
       console.log(err);
       this.resultTarget.textContent = `Error: ${err}`;
+      alert('share not supported');
     }
 
 
