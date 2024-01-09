@@ -2,6 +2,12 @@
 <div class="product_item">
   <%= render @product %>
 
+  <%= social_share_button_tag("text to share", url: 'https://www.yourdomain.com', desc: 'description for facebook') %>
+
+  <div>hello-share<%= social_share_button_tag(@product.name, :url => "http://myapp.com/foo/bar",
+                                   # :image => "#{@product.variants.first.image_url}",
+                                   desc: "The summary of page", via: "MyTwitterName") %></div>
+
   <div>
     <% if @product.reviews.reviewer_exist?(@user, @product) %>
       <p>you have already reviewed this product</p>

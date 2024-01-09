@@ -72,6 +72,13 @@ GEM
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
+    coffee-rails (5.0.0)
+      coffee-script (>= 2.2.0)
+      railties (>= 5.2.0)
+    coffee-script (2.4.1)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.12.2)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     date (3.3.3)
@@ -85,6 +92,7 @@ GEM
       responders
       warden (~> 1.2.3)
     erubi (1.12.0)
+    execjs (2.9.1)
     globalid (1.2.0)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -172,12 +180,11 @@ GEM
     responders (3.1.0)
       actionpack (>= 5.2)
       railties (>= 5.2)
-    shareable (1.1.4)
-      actionpack (>= 3.0.0)
-      activesupport (>= 3.0.0)
     simple_form (5.2.0)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
+    social-share-button (1.2.4)
+      coffee-rails
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -223,8 +230,8 @@ DEPENDENCIES
   pg
   puma (~> 5.0)
   rails (~> 7.0.6)
-  shareable
   simple_form
+  social-share-button
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
