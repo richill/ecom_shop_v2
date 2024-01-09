@@ -13,6 +13,7 @@
       share_target: "price"
     }) %>
   </p>
+  <%= button_to "Share", "", data: { action: "click->share#share"} %>
   <%= content_tag(:p, "", class: "result", data: {
     share_target: "result"
   }) %>

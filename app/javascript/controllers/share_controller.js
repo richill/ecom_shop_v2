@@ -12,8 +12,8 @@ export default class extends Controller {
     e.preventDefault();
 
     const shareData = {
-      name: this.nameTarget.value,
-      price: this.priceTarget.value,
+      name: this.nameTarget.textContent,
+      price: this.priceTarget.textContent,
       url: this.data.get("urlValue"),
     };
     console.log(shareData)
