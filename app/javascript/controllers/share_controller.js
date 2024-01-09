@@ -25,7 +25,5 @@ export default class extends Controller {
       this.resultTarget.textContent = `Error: ${err}`;
       alert('share not supported as it is not https');
     }
-
-
   }
 }
