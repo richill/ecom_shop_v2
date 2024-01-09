@@ -23,7 +23,7 @@ export default class extends Controller {
     } catch (err) {
       console.log(err);
       this.resultTarget.textContent = `Error: ${err}`;
-      alert('share not supported');
+      alert('share not supported as it is not https');
     }
 
 
