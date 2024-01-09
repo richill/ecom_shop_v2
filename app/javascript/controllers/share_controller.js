@@ -16,7 +16,13 @@ export default class extends Controller {
       price: this.priceTarget.textContent,
       url: this.data.get("urlValue"),
     };
-    console.log(shareData);
+    // console.log(shareData);
+
+
+
+
+
+
     try {
       await navigator.share(shareData);
       this.resultTarget.textContent = "MDN shared successfully"
