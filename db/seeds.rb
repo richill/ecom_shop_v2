@@ -23,13 +23,6 @@ cpt05 = CategoryProducttype.create!(name: 'product', code_name: 'p_cat_product',
 # level_02
 CategoryProductitemtype.delete_all
 cpit01 = CategoryProductitemtype.create!(name: 'accessories', code_name: 'p_type_accessories', user_id: us01.id)
-cpit02 = CategoryProductitemtype.create!(name: 'coats & jackets', code_name: 'p_type_coats', user_id: us01.id)
-cpit03 = CategoryProductitemtype.create!(name: 'clothing', code_name: 'p_type_clothing', user_id: us01.id)
-cpit04 = CategoryProductitemtype.create!(name: 'footwear', code_name: 'p_type_footwear', user_id: us01.id)
-
-
-CategoryProductitemtype.delete_all
-cpit01 = CategoryProductitemtype.create!(name: 'accessories', code_name: 'p_type_accessories', user_id: us01.id)
 cpit02 = CategoryProductitemtype.create!(name: 'coats & jackets', code_name: 'p_type_coats',user_id: us01.id)
 cpit03 = CategoryProductitemtype.create!(name: 'clothing', code_name: 'p_type_clothing',user_id: us01.id)
 cpit04 = CategoryProductitemtype.create!(name: 'footwear', code_name: 'p_type_footwear',user_id: us01.id)
