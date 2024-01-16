@@ -8,18 +8,16 @@
 
 
 User.delete_all
-us00 = User.create!(email: "aku@gmail.com", password: "password")
+us01 = User.create!(email: "aku@gmail.com", password: "password")
+us02 = User.create!(email: "richill@gmail.com", password: "password")
 
 Product.delete_all
-us00 = Product.create!(email: "aku@gmail.com", password: "password")
-
-Product.delete_all
-pp00 = Product.create!(
+pp01 = Product.create!(
   name:'cute bear baby knit hat',
   image: nil,
   image_url: "https://ae01.alicdn.com/kf/Se8fb6ef862ac432aa5b23fbb2bd5aab6L/Cute-Bear-Baby-Knit-Hat-Solid-Color-Soft-Comfortable-Toddler-Beanies-for-Boy-Girl-Cartoon-Autumn.jpg_.webp",
   description: "cute bear baby knit hat solid color soft comfortable toddler beanies for boy girl cartoon autumn winter warm kids knitted hat",
-  user_id: 1,
+  user_id: us01,
   price: 0.2099e2,
   category_productitemtype_id: nil,
   category_productstyle_id: nil,
@@ -29,10 +27,10 @@ pp00 = Product.create!(
 
 # level_01
 CategoryProducttype.delete_all
-cpt00 = CategoryProducttype.create!(name: 'men', code_name: 'p_cat_men', user_id: 1)
-cpt00 = CategoryProducttype.create!(name: 'women', code_name: 'p_cat_women', user_id: 1)
-cpt00 = CategoryProducttype.create!(name: 'kids', code_name: 'p_cat_kids_boys', user_id: 1)
-cpt00 = CategoryProducttype.create!(name: 'product', code_name: 'p_cat_product', user_id: 1)
+cpt00 = CategoryProducttype.create!(name: 'men', code_name: 'p_cat_men', user_id: us01)
+cpt00 = CategoryProducttype.create!(name: 'women', code_name: 'p_cat_women', user_id: us01)
+cpt00 = CategoryProducttype.create!(name: 'kids', code_name: 'p_cat_kids_boys', user_id: us01)
+cpt00 = CategoryProducttype.create!(name: 'product', code_name: 'p_cat_product', user_id: us01)
 
 
 # level_02
