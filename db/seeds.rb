@@ -128,6 +128,24 @@ cps00 = CategoryProductsubtype.create!(name: 'nursery', code_name: 'p_subtype_nu
 cps00 = CategoryProductsubtype.create!(name: 'garden furniture', code_name: 'p_subtype_garden_furniture', category_productitemtype_id: cpit08.id, user_id: us01.id)
 cps00 = CategoryProductsubtype.create!(name: 'office furniture', code_name: 'p_subtype_office_furniture', category_productitemtype_id: cpit08.id, user_id: us01.id)
 # home & gardening
+cps00 = CategoryProductsubtype.create!(name: 'fertiliser', code_name: 'p_subtype_fertiliser', category_productitemtype_id: cpit09.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'beekeeping supplies', code_name: 'p_subtype_beekeeping', category_productitemtype_id: cpit09.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'plant support & care', code_name: 'p_subtype_plant_care', category_productitemtype_id: cpit09.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'seed disseminators', code_name: 'p_subtype_seed_disseminator', category_productitemtype_id: cpit09.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'indoor gardening & hydroponics', code_name: 'p_subtype_indoor_gardening', category_productitemtype_id: cpit09.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'outdoor hot tubs & accessories', code_name: 'p_subtype_outdoor_hot_accessories', category_productitemtype_id: cpit09.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'pest control', code_name: 'p_subtype_pest_control', category_productitemtype_id: cpit09.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'yard & garden decor', code_name: 'p_subtype_garden_decor', category_productitemtype_id: cpit09.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'garden carts', code_name: 'p_subtype_garden_cart', category_productitemtype_id: cpit09.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'pond liners', code_name: 'p_subtype_pond_liner', category_productitemtype_id: cpit09.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'watering & irrigation', code_name: 'p_subtype_watering', category_productitemtype_id: cpit09.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'shade', code_name: 'p_subtype_shade', category_productitemtype_id: cpit09.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'garden pots & planters', code_name: 'p_subtype_garden_pots', category_productitemtype_id: cpit09.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'BBQ', code_name: 'p_subtype_bbq', category_productitemtype_id: cpit09.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'garden buildings', code_name: 'p_subtype_garden_buildings', category_productitemtype_id: cpit09.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'garden tools', code_name: 'p_subtype_garden_tools', category_productitemtype_id: cpit09.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'mailboxes', code_name: 'p_subtype_mailboxes', category_productitemtype_id: cpit09.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'outdoor heaters', code_name: 'p_subtype_outdoor_heaters', category_productitemtype_id: cpit09.id, user_id: us01.id)
 # mother care
 # phones, cellphones & telecommunications
 # computer & office
