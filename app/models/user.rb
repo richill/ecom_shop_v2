@@ -5,6 +5,11 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :products
+  has_many :category_producttypes, dependent: :destroy
+  has_many :category_productitemtypes, dependent: :destroy
+  has_many :category_productsubtypes, dependent: :destroy
+  has_many :category_productstyles
+
   has_many :favorites
   has_many :favorite_products, through: :favorites, source: :favorited, source_type: 'Product'
 
