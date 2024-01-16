@@ -239,6 +239,25 @@ cps00 = CategoryProductsubtype.create!(name: 'pet food', code_name: 'p_subtype_p
 cps00 = CategoryProductsubtype.create!(name: 'clothing, shoes & carriers', code_name: 'p_subtype_clothing', category_productitemtype_id: cpit16.id, user_id: us01.id)
 cps00 = CategoryProductsubtype.create!(name: 'pet medical supplies', code_name: 'p_subtype_pet_medical_supplies', category_productitemtype_id: cpit16.id, user_id: us01.id)
 # toys & hobbies
+cps00 = CategoryProductsubtype.create!(name: 'stress relief toy', code_name: 'p_subtype_stress_relief_toy', category_productitemtype_id: cpit17.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'pools & water fun', code_name: 'p_subtype_pools_water', category_productitemtype_id: cpit17.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'stuffed animals & plush', code_name: 'p_subtype_stuffed_animals', category_productitemtype_id: cpit17.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'arts & crafts, DIY toys', code_name: 'p_subtype_arts_crafts', category_productitemtype_id: cpit17.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'high tech toys', code_name: 'p_subtype_high_tech_toys', category_productitemtype_id: cpit17.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'building construction toys', code_name: 'p_subtype_construction_toys', category_productitemtype_id: cpit17.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'action & toy figures', code_name: 'p_subtype_action_toy', category_productitemtype_id: cpit17.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'puzzles & games', code_name: 'p_subtype_puzzles_games', category_productitemtype_id: cpit17.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'dolls & accessories', code_name: 'p_subtype_dolls_accessories', category_productitemtype_id: cpit17.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'novelty & gag toys', code_name: 'p_subtype_novelty', category_productitemtype_id: cpit17.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'model building', code_name: 'p_subtype_model_building', category_productitemtype_id: cpit17.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'remote control toy', code_name: 'p_subtype_remote_control_toy', category_productitemtype_id: cpit17.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'baby & toddler toys', code_name: 'p_subtype_toddler_toys', category_productitemtype_id: cpit17.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'pretend play', code_name: 'p_subtype_pretend_play', category_productitemtype_id: cpit17.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'outdoor fun & sports', code_name: 'p_subtype_outdoor_fun_sports', category_productitemtype_id: cpit17.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'electronic toys', code_name: 'p_subtype_electronic_toys', category_productitemtype_id: cpit17.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'classic toys', code_name: 'p_subtype_classic_toys', category_productitemtype_id: cpit17.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'learning & education', code_name: 'p_subtype_learning_education', category_productitemtype_id: cpit17.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'board games', code_name: 'p_subtype_board_games', category_productitemtype_id: cpit17.id, user_id: us01.id)
 # musical instruments
 # hair extensions & wigs
 # salon equipments
