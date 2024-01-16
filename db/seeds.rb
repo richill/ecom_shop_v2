@@ -86,6 +86,42 @@ cps30 = CategoryProductsubtype.create!(name: 'flats', code_name: 'p_subtype_flat
 cps31 = CategoryProductsubtype.create!(name: 'shoes', code_name: 'p_subtype_shoes', category_productitemtype_id: cpit04.id, user_id: us01.id)
 cps32 = CategoryProductsubtype.create!(name: 'shoes accessories', code_name: 'p_subtype_shoes_accessories', category_productitemtype_id: cpit04.id, user_id: us01.id)
 
+# gifts
+# skincare
+# home furnishing
+# furniture
+# home & gardening
+# mother care
+# phones, cellphones & telecommunications
+# computer & office
+# education & office supplies
+# security & protection
+# consumer electronics
+# pet supplies
+# toys & hobbies
+# musical instruments
+# hair extensions & wigs
+# salon equipments
+# automobiles & motorcycles
+# sport equipments
+# construction & real estate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
