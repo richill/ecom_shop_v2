@@ -7,6 +7,14 @@
     </div>
   </div>
 
+  <div class="margin_bottom_15px price_cover">
+    <div class="product_title">description</div>
+    <div>
+      <%# product.description %>
+      <%= content_tag(:div, product.description, data:{ share_target: "description" }) %>
+    </div>
+  </div>
+
 
   <div class="margin_bottom_15px price_cover">
     <div class="product_title">price</div>
