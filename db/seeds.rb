@@ -16,9 +16,9 @@ us02 = User.create!(email: "richill@gmail.com", password: "password")
 CategoryProducttype.delete_all
 cpt01 = CategoryProducttype.create!(name: 'men', code_name: 'p_cat_men', user_id: us01.id)
 cpt02 = CategoryProducttype.create!(name: 'women', code_name: 'p_cat_women', user_id: us01.id)
-cpt03 = CategoryProducttype.create!(name: 'kids', code_name: 'p_cat_kids_boys', user_id: us01.id)
-cpt04 = CategoryProducttype.create!(name: 'product', code_name: 'p_cat_product', user_id: us01.id)
-
+cpt03 = CategoryProducttype.create!(name: 'kids (boys)', code_name: 'p_cat_kids_boys', user_id: us01.id)
+cpt04 = CategoryProducttype.create!(name: 'kids (girls)', code_name: 'p_cat_kids_girls', user_id: us01.id)
+cpt05 = CategoryProducttype.create!(name: 'product', code_name: 'p_cat_product', user_id: us01.id)
 
 # level_02
 CategoryProductitemtype.delete_all
