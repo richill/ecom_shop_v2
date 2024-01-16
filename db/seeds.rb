@@ -11,7 +11,7 @@
 # us01 = User.create!(email: "aku@gmail.com", password: "password")
 # us02 = User.create!(email: "richill@gmail.com", password: "password")
 
-User.delete_all
+# User.delete_all
 users = User.create(
   [
     { email: "aku@gmail.com", password: "password" },
