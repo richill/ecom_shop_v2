@@ -28,6 +28,32 @@ cpit03 = CategoryProductitemtype.create!(name: 'clothing', code_name: 'p_type_cl
 cpit04 = CategoryProductitemtype.create!(name: 'footwear', code_name: 'p_type_footwear', user_id: us01.id)
 
 
+CategoryProductitemtype.delete_all
+cpit01 = CategoryProductitemtype.create!(name: 'accessories', code_name: 'p_type_accessories', user_id: us01.id)
+cpit02 = CategoryProductitemtype.create!(name: 'coats & jackets', code_name: 'p_type_coats',user_id: us01.id)
+cpit03 = CategoryProductitemtype.create!(name: 'clothing', code_name: 'p_type_clothing',user_id: us01.id)
+cpit04 = CategoryProductitemtype.create!(name: 'footwear', code_name: 'p_type_footwear',user_id: us01.id)
+cpit00 = CategoryProductitemtype.create!(name: 'gifts', code_name: 'p_type_gifts',user_id: us01.id)
+cc00 = CategoryProductitemtype.create!(name: 'skincare', code_name: 'p_type_skincare',user_id: us01.id)
+cc00 = CategoryProductitemtype.create!(name: 'home furnishing', code_name: 'p_type_home_furnishing',user_id: us01.id)
+cc00 = CategoryProductitemtype.create!(name: 'furniture', code_name: 'p_type_furniture',user_id: us01.id)
+cc00 = CategoryProductitemtype.create!(name: 'home & gardening', code_name: 'p_type_home_gardening',user_id: us01.id)
+cc00 = CategoryProductitemtype.create!(name: 'mother care', code_name: 'p_type_mother_care',user_id: us01.id)
+cc00 = CategoryProductitemtype.create!(name: 'phones, cellphones & telecommunications', code_name: 'p_type_phones_telecom',user_id: us01.id)
+cc00 = CategoryProductitemtype.create!(name: 'computer & office', code_name: 'p_type_comp_office',user_id: us01.id)
+cc00 = CategoryProductitemtype.create!(name: 'education & office supplies', code_name: 'p_type_education',user_id: us01.id)
+cc00 = CategoryProductitemtype.create!(name: 'security & protection', code_name: 'p_type_security',user_id: us01.id)
+cc00 = CategoryProductitemtype.create!(name: 'consumer electronics', code_name: 'p_type_consumer_electronics',user_id: us01.id)
+cc00 = CategoryProductitemtype.create!(name: 'pet supplies', code_name: 'p_type_pet',user_id: us01.id)
+cc00 = CategoryProductitemtype.create!(name: 'toys & hobbies', code_name: 'p_type_toys',user_id: us01.id)
+cc00 = CategoryProductitemtype.create!(name: 'musical instruments', code_name: 'p_type_musical',user_id: us01.id)
+cc00 = CategoryProductitemtype.create!(name: 'hair extensions & wigs', code_name: 'p_type_hair',user_id: us01.id)
+cc00 = CategoryProductitemtype.create!(name: 'salon equipments', code_name: 'p_type_salon',user_id: us01.id)
+cc00 = CategoryProductitemtype.create!(name: 'automobiles & motorcycles', code_name: 'p_type_auto',user_id: us01.id)
+cc00 = CategoryProductitemtype.create!(name: 'sport equipments', code_name: 'p_type_sport_equip',user_id: us01.id)
+cc00 = CategoryProductitemtype.create!(name: 'construction & real estate', code_name: 'p_type_construction_estate',user_id: us01.id)
+
+
 # level_03
 CategoryProductsubtype.delete_all
 # accessories
