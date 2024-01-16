@@ -6,6 +6,7 @@ class Product < ApplicationRecord
   belongs_to :category_productitemtype
   belongs_to :category_productstyle
   belongs_to :category_productsubtype
+  belongs_to :category_producttype
   has_many :reviews
 
   def average_rating
