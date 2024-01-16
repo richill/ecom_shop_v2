@@ -147,6 +147,16 @@ cps00 = CategoryProductsubtype.create!(name: 'garden tools', code_name: 'p_subty
 cps00 = CategoryProductsubtype.create!(name: 'mailboxes', code_name: 'p_subtype_mailboxes', category_productitemtype_id: cpit09.id, user_id: us01.id)
 cps00 = CategoryProductsubtype.create!(name: 'outdoor heaters', code_name: 'p_subtype_outdoor_heaters', category_productitemtype_id: cpit09.id, user_id: us01.id)
 # mother care
+cps00 = CategoryProductsubtype.create!(name: 'baby stroller & accessories', code_name: 'p_subtype_baby_stroller', category_productitemtype_id: cpit10.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'potty training', code_name: 'p_subtype_potty_training', category_productitemtype_id: cpit10.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'car seats & accessories', code_name: 'p_subtype_car_seats_accessories', category_productitemtype_id: cpit10.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'pregnancy & maternity', code_name: 'p_subtype_pregnancy', category_productitemtype_id: cpit10.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'nappy bedding & changing', code_name: 'p_subtype_nappy_bedding_changing', category_productitemtype_id: cpit10.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'activity & gear', code_name: 'p_subtype_activity_gear', category_productitemtype_id: cpit10.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'feeding', code_name: 'p_subtype_feeding', category_productitemtype_id: cpit10.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'safety equipment', code_name: 'p_subtype_safety_equip', category_productitemtype_id: cpit10.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'baby care', code_name: 'p_subtype_baby_care', category_productitemtype_id: cpit10.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'kids toys', code_name: 'p_subtype_kids_toys', category_productitemtype_id: cpit10.id, user_id: us01.id)
 # phones, cellphones & telecommunications
 # computer & office
 # education & office supplies
