@@ -79,3 +79,12 @@ input[type='radio']:checked:after {
     top: 7px;
     cursor: pointer;
 }
+
+.margin_bottom_15px {
+    margin-bottom: 15px;
+}
+
+.product_title {
+    font-weight: bold;
+    text-transform: capitalize;
+}

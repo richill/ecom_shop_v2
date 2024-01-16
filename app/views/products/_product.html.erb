@@ -1,20 +1,25 @@
 <div id="<%= dom_id product %>" data-controller="share" data-share-url-value="<%= product_url(product) %>">
-  <p>
-    <strong>Name:</strong>
-    <%# product.name %>
-    <%= content_tag(:p, product.name, data:{
-      share_target: "name"
+  <div class="margin_bottom_15px product_name_cover">
+    <div class="product_title">name</div>
+    <div>
+      <%# product.name %>
+      <%= content_tag(:div, product.name, data:{ share_target: "name" }) %>
+    </div>
+  </div>
+
+
+  <div class="margin_bottom_15px price_cover">
+    <div class="product_title">price</div>
+    <div>
+      <%# product.price %>
+      <%= content_tag(:div, product.price, data:{ share_target: "price" }) %>
+    </div>
+  </div>
+
+  <div class="share_button_cover">
+    <%= button_to "Share", "", data: { action: "click->share#share"} %>
+    <%= content_tag(:p, "", class: "result", data: {
+      share_target: "result"
     }) %>
-  </p>
-  <p>
-    <strong>price:</strong>
-    <%# product.price %>
-    <%= content_tag(:div, product.price, data:{
-      share_target: "price"
-    }) %>
-  </p>
-  <%= button_to "Share", "", data: { action: "click->share#share"} %>
-  <%= content_tag(:p, "", class: "result", data: {
-    share_target: "result"
-  }) %>
+  </div>
 </div>

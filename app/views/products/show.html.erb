@@ -1,6 +1,11 @@
 <p style="color: green"><%= notice %></p>
 <div class="product_item">
+
+  <!--section-->
   <div><%= render @product %></div>
+  <!--section-->
+
+  <!--section-->
   <div>
     <% if @product.reviews.reviewer_exist?(@user, @product) %>
       <p>you have already reviewed this product</p>
@@ -8,6 +13,9 @@
       <%= link_to 'review product', new_user_review_path(@user, product_id: @product) %>
     <% end %>
   </div>
+  <!--section-->
+
+  <!--section-->
   <div>
     <div><u>product reviews:</u></div>
     <ul>
@@ -20,5 +28,6 @@
       <% end %>
     </ul>
   </div>
-</div>
+  <!--section-->
 
+</div>
