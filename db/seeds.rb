@@ -163,6 +163,20 @@ cps00 = CategoryProductsubtype.create!(name: 'mobile phone parts', code_name: 'p
 cps00 = CategoryProductsubtype.create!(name: 'communication equipments', code_name: 'p_subtype_com_equipment', category_productitemtype_id: cpit11.id, user_id: us01.id)
 cps00 = CategoryProductsubtype.create!(name: 'walkie talkie', code_name: 'p_subtype_walkie', category_productitemtype_id: cpit11.id, user_id: us01.id)
 # computer & office
+cps00 = CategoryProductsubtype.create!(name: 'storage devices', code_name: 'p_subtype_storage_devices', category_productitemtype_id: cpit12.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'laptops', code_name: 'p_subtype_laptops', category_productitemtype_id: cpit12.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'servers', code_name: 'p_subtype_servers', category_productitemtype_id: cpit12.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'demo board & accessories', code_name: 'p_subtype_demo_board_accessories', category_productitemtype_id: cpit12.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'desktops', code_name: 'p_subtype_desktops', category_productitemtype_id: cpit12.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'tablets', code_name: 'p_subtype_tablets', category_productitemtype_id: cpit12.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'computer cables & connectors', code_name: 'p_subtype_computer_cables', category_productitemtype_id: cpit12.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'office software', code_name: 'p_subtype_office_software', category_productitemtype_id: cpit12.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'mini PC', code_name: 'p_subtype_mini_pc', category_productitemtype_id: cpit12.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'computer networking', code_name: 'p_subtype_computer_networking', category_productitemtype_id: cpit12.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'computer peripherals & components', code_name: 'p_subtype_computer_peripherals', category_productitemtype_id: cpit12.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'device cleaners', code_name: 'p_subtype_device_cleaners', category_productitemtype_id: 12, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'office electronics', code_name: 'p_subtype_office_electronic', category_productitemtype_id: 12, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'industrial computers & accessories', code_name: 'p_subtype_industrial_computers_accessories', category_productitemtype_id: cpit12.id, user_id: us01.id)
 # education & office supplies
 # security & protection
 # consumer electronics
