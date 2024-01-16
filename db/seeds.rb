@@ -62,20 +62,34 @@ cps09 = CategoryProductsubtype.create!(name: 'umbrellas', code_name: 'p_subtype_
 cps10 = CategoryProductsubtype.create!(name: 'watches', code_name: 'p_subtype_watches', category_productitemtype_id: cpit01.id, user_id: us01.id)
 cps11 = CategoryProductsubtype.create!(name: 'handkerchiefs', code_name: 'p_subtype_handkerchiefs', category_productitemtype_id: cpit01.id, user_id: us01.id)
 cps12 = CategoryProductsubtype.create!(name: 'ties & bow ties', code_name: 'p_subtype_ties_bows', category_productitemtype_id: cpit01.id, user_id: us01.id)
-
-
-
-
 # coats & jackets
-cps05 = CategoryProductsubtype.create!(name: 'jackets', code_name: 'p_subtype_jackets', category_productitemtype_id: cpit02.id, user_id: us01.id)
-cps06 = CategoryProductsubtype.create!(name: 'coats', code_name: 'p_subtype_coats', category_productitemtype_id: cpit02.id, user_id: us01.id)
-cps07 = CategoryProductsubtype.create!(name: 'capes', code_name: 'p_subtype_capes', category_productitemtype_id: cpit02.id, user_id: us01.id)
-cps08 = CategoryProductsubtype.create!(name: 'gilet', code_name: 'p_subtype_gilet', category_productitemtype_id: cpit02.id, user_id: us01.id)
+cps13 = CategoryProductsubtype.create!(name: 'jackets', code_name: 'p_subtype_jackets', category_productitemtype_id: cpit02.id, user_id: us01.id)
+cps14 = CategoryProductsubtype.create!(name: 'coats', code_name: 'p_subtype_coats', category_productitemtype_id: cpit02.id, user_id: us01.id)
+cps15 = CategoryProductsubtype.create!(name: 'capes', code_name: 'p_subtype_capes', category_productitemtype_id: cpit02.id, user_id: us01.id)
+cps16 = CategoryProductsubtype.create!(name: 'gilet', code_name: 'p_subtype_gilet', category_productitemtype_id: cpit02.id, user_id: us01.id)
 # clothing
-cps09 = CategoryProductsubtype.create!(name: 'dresses', code_name: 'p_subtype_dresses', category_productitemtype_id: cpit03.id, user_id: us01.id)
-cps10 = CategoryProductsubtype.create!(name: 'tops & tees', code_name: 'p_subtype_tops_tees', category_productitemtype_id: cpit03.id, user_id: us01.id)
-cps11 = CategoryProductsubtype.create!(name: 'bottoms & trousers', code_name: 'p_subtype_bottoms_trousers', category_productitemtype_id: cpit03.id, user_id: us01.id)
-cps12 = CategoryProductsubtype.create!(name: 'jeans', code_name: 'p_subtype_jeans', category_productitemtype_id: cpit03.id, user_id: us01.id)
+cps17 = CategoryProductsubtype.create!(name: 'dresses', code_name: 'p_subtype_dresses', category_productitemtype_id: cpit03.id, user_id: us01.id)
+cps18 = CategoryProductsubtype.create!(name: 'tops & tees', code_name: 'p_subtype_tops_tees', category_productitemtype_id: cpit03.id, user_id: us01.id)
+cps19 = CategoryProductsubtype.create!(name: 'bottoms & trousers', code_name: 'p_subtype_bottoms_trousers', category_productitemtype_id: cpit03.id, user_id: us01.id)
+cps20 = CategoryProductsubtype.create!(name: 'jeans', code_name: 'p_subtype_jeans', category_productitemtype_id: cpit03.id, user_id: us01.id)
+cps21 = CategoryProductsubtype.create!(name: 'skirts', code_name: 'p_subtype_skirts', category_productitemtype_id: cpit03.id, user_id: us01.id)
+cps22 = CategoryProductsubtype.create!(name: 'jumpsuits & bodysuits', code_name: 'p_subtype_jumpsuits', category_productitemtype_id: cpit03.id, user_id: us01.id)
+cps23 = CategoryProductsubtype.create!(name: 'sweaters & jumpers', code_name: 'p_subtype_sweaters_jumpers', category_productitemtype_id: cpit03.id, user_id: us01.id)
+cps24 = CategoryProductsubtype.create!(name: 'suits & tailoring', code_name: 'p_subtype_suits_tailoring', category_productitemtype_id: cpit03.id, user_id: us01.id)
+cps25 = CategoryProductsubtype.create!(name: 'nightwear & underwear', code_name: 'p_subtype_nightwear', category_productitemtype_id: cpit03.id, user_id: us01.id)
+cps26 = CategoryProductsubtype.create!(name: 'clothing uniforms', code_name: 'p_subtype_clothing_uniforms', category_productitemtype_id: cpit03.id, user_id: us01.id)
+cps27 = CategoryProductsubtype.create!(name: 'sportswear', code_name: 'p_subtype_sportswear', category_productitemtype_id: cpit03.id, user_id: us01.id)
+cps28 = CategoryProductsubtype.create!(name: 'clothing accessories', code_name: 'p_subtype_clothing_accessories', category_productitemtype_id: cpit03.id, user_id: us01.id)
+
+
+
+
+
+
+
+
+
+
 # footwear
 cps13 = CategoryProductsubtype.create!(name: 'boots', code_name: 'p_subtype_boots', category_productitemtype_id: cpit04.id, user_id: us01.id)
 cps14 = CategoryProductsubtype.create!(name: 'flats', code_name: 'p_subtype_flats', category_productitemtype_id: cpit04.id, user_id: us01.id)
