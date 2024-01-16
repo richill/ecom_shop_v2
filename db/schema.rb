@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_01_16_141844) do
+ActiveRecord::Schema[7.0].define(version: 2024_01_16_142409) do
   create_table "category_productitemtypes", force: :cascade do |t|
     t.string "name"
     t.string "code_name"
@@ -90,6 +90,10 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_16_141844) do
     t.integer "user_id"
     t.decimal "price"
     t.integer "impressions_count"
+    t.integer "category_productitemtype_id"
+    t.integer "category_productstyle_id"
+    t.integer "category_productsubtype_id"
+    t.integer "category_producttype_id"
     t.index ["impressions_count"], name: "index_products_on_impressions_count"
   end
 
