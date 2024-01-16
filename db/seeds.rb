@@ -196,6 +196,20 @@ cps00 = CategoryProductsubtype.create!(name: 'mail & shipping supplies', code_na
 cps00 = CategoryProductsubtype.create!(name: 'paper', code_name: 'p_subtype_paper', category_productitemtype_id: cpit13.id, user_id: us01.id)
 cps00 = CategoryProductsubtype.create!(name: 'presentation supplies', code_name: 'p_subtype_presentation_supplies', category_productitemtype_id: cpit13.id, user_id: us01.id)
 # security & protection
+cps00 = CategoryProductsubtype.create!(name: 'security alarm & sensors', code_name: 'p_subtype_security', category_productitemtype_id: 14, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'smart card system', code_name: 'p_subtype_smart_card', category_productitemtype_id: 14, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'door intercom system', code_name: 'p_subtype_door_intercom', category_productitemtype_id: 14, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'workplace safety supplies', code_name: 'p_subtype_workplace_safety', category_productitemtype_id: 14, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'fire protection', code_name: 'p_subtype_fire_protection', category_productitemtype_id: 14, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'video surveillance', code_name: 'p_subtype_video_surveillance', category_productitemtype_id: 14, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'self defense supplies', code_name: 'p_subtype_defense_supplies', category_productitemtype_id: 14, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'access control systems', code_name: 'p_subtype_access_control_system', category_productitemtype_id: 14, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'roadway safety', code_name: 'p_subtype_roadway_safety', category_productitemtype_id: 14, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'transmission & cables', code_name: 'p_subtype_transmission_cables', category_productitemtype_id: 14, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'IoT devices', code_name: 'p_subtype_IoT_devices', category_productitemtype_id: 14, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'security inspection device', code_name: 'p_subtype_security_inspection_device', category_productitemtype_id: 14, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'lightning protection', code_name: 'p_subtype_lightning_protection', category_productitemtype_id: 14, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'emergency kits', code_name: 'p_subtype_emergency_kits', category_productitemtype_id: 14, admin_id: 1)
 # consumer electronics
 # pet supplies
 # toys & hobbies
