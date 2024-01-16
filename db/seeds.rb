@@ -106,10 +106,6 @@ cpst32 = CategoryProductstyle.create!(name: 'insoles', code_name: 'p_style_insol
 
 
 
-
-
-
-
 # products
 Product.delete_all
 pp01 = Product.create!(
@@ -119,6 +115,7 @@ pp01 = Product.create!(
   description: "cute bear baby knit hat solid color soft comfortable toddler beanies for boy girl cartoon autumn winter warm kids knitted hat",
   user_id: us01,
   price: 0.2099e2,
+  impressions_count: 0,
   category_producttype_id: cpt02,       #women
   category_productitemtype_id: cpit01,  #accessories
   category_productstyle_id: cps03,      #hats & caps
