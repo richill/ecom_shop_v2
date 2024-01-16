@@ -305,10 +305,21 @@ cps00 = CategoryProductsubtype.create!(name: 'human hair', code_name: 'p_subtype
 cps00 = CategoryProductsubtype.create!(name: 'synthetic hair', code_name: 'p_subtype_synthetic_hair', category_productitemtype_id: cpit19.id, user_id: us01.id)
 cps00 = CategoryProductsubtype.create!(name: 'hair supplies', code_name: 'p_subtype_hair_supplies', category_productitemtype_id: cpit19.id, user_id: us01.id)
 # salon equipments
-cps00 = CategoryProductsubtype.create!(name: 'salon furniture', code_name: 'p_subtype_salon_furniture', category_productitemtype_id: 20, admin_id: 1)
-cps00 = CategoryProductsubtype.create!(name: 'salon electrical equipments', code_name: 'p_subtype_salon_electrical_equipments', category_productitemtype_id: 20, admin_id: 1)
-cps00 = CategoryProductsubtype.create!(name: 'salon tools & supplies', code_name: 'p_subtype_salon_tools_supplies', category_productitemtype_id: 20, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'salon furniture', code_name: 'p_subtype_salon_furniture', category_productitemtype_id: cpit20.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'salon electrical equipments', code_name: 'p_subtype_salon_electrical_equipments', category_productitemtype_id: cpit20.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'salon tools & supplies', code_name: 'p_subtype_salon_tools_supplies', category_productitemtype_id: cpit20.id, user_id: us01.id)
 # automobiles & motorcycles
+cc00 = CategoryProductsubtype.create!(name: 'car light', code_name: 'p_subtype_car_light', category_productitemtype_id: 21, admin_id: 1)
+cc00 = CategoryProductsubtype.create!(name: 'car repair tools', code_name: 'p_subtype_car_repair_tools', category_productitemtype_id: 21, admin_id: 1)
+cc00 = CategoryProductsubtype.create!(name: 'ATV, RV, Boat & other vehicles parts', code_name: 'p_subtype_vehicles_parts', category_productitemtype_id: 21, admin_id: 1)
+cc00 = CategoryProductsubtype.create!(name: 'travel & roadway product', code_name: 'p_subtype_travel_roadway_product', category_productitemtype_id: 21, admin_id: 1)
+cc00 = CategoryProductsubtype.create!(name: 'car wash & maintenance', code_name: 'p_subtype_car_wash_maintenance', category_productitemtype_id: 21, admin_id: 1)
+cc00 = CategoryProductsubtype.create!(name: 'motorcycle accessories & parts', code_name: 'p_subtype_motorcycle_part', category_productitemtype_id: 21, admin_id: 1)
+cc00 = CategoryProductsubtype.create!(name: 'car electronics', code_name: 'p_subtype_car_electronics', category_productitemtype_id: 21, admin_id: 1)
+cc00 = CategoryProductsubtype.create!(name: 'auto replacement parts', code_name: 'p_subtype_auto_replacement_parts', category_productitemtype_id: 21, admin_id: 1)
+cc00 = CategoryProductsubtype.create!(name: 'exterior accessories', code_name: 'p_subtype_exterior_accessories', category_productitemtype_id: 21, admin_id: 1)
+cc00 = CategoryProductsubtype.create!(name: 'interior accessories', code_name: 'p_subtype_interior_accessories', category_productitemtype_id: 21, admin_id: 1)
+cc00 = CategoryProductsubtype.create!(name: 'vehicles & transportation', code_name: 'p_subtype_vehicles_transportation', category_productitemtype_id: 21, admin_id: 1)
 # sport equipments
 # construction & real estate
 
