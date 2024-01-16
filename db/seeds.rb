@@ -117,8 +117,8 @@ pp01 = Product.create!(
   user_id: us01.id,
   price: 0.2099e2,
   impressions_count: 0,
-  category_producttype_id: cpt02.id,       #women
-  category_productitemtype_id: cpit01.id,  #accessories
-  category_productstyle_id: cps03.id,      #hats & caps
-  category_productsubtype_id: cpst05.id,   #hats
+  category_producttype_id: cpt02.id,        #women
+  category_productitemtype_id: cpit01.id,   #accessories
+  category_productstyle_id: cpst05.id,      #hats & caps
+  category_productsubtype_id: cps03.id,     #hats
   )
