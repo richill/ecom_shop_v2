@@ -6,6 +6,27 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+
+User.delete_all
+us00 = User.create!(email: "aku@gmail.com", password: "password")
+
+Product.delete_all
+us00 = Product.create!(email: "aku@gmail.com", password: "password")
+
+Product.delete_all
+pp00 = Product.create!(
+  name:'cute bear baby knit hat',
+  image: nil,
+  image_url: "https://ae01.alicdn.com/kf/Se8fb6ef862ac432aa5b23fbb2bd5aab6L/Cute-Bear-Baby-Knit-Hat-Solid-Color-Soft-Comfortable-Toddler-Beanies-for-Boy-Girl-Cartoon-Autumn.jpg_.webp",
+  description: "cute bear baby knit hat solid color soft comfortable toddler beanies for boy girl cartoon autumn winter warm kids knitted hat",
+  user_id: 1,
+  price: 0.2099e2,
+  category_productitemtype_id: nil,
+  category_productstyle_id: nil,
+  category_productsubtype_id: nil,
+  category_producttype_id: nil
+)
+
 # level_01
 CategoryProducttype.delete_all
 cpt00 = CategoryProducttype.create!(name: 'men', code_name: 'p_cat_men', user_id: 1)
@@ -53,8 +74,6 @@ cc00 = CategoryProductstyle.create!(name: 'non buckle', code_name: 'p_style_non_
 # accessories/gloves
 cc00 = CategoryProductstyle.create!(name: 'knitted', code_name: 'p_style_knitted', category_productsubtype_id: 0, admin_id: 1)
 cc00 = CategoryProductstyle.create!(name: 'fingerless', code_name: 'p_style_fingerless', category_productsubtype_id: 0, admin_id: 1)
-cc00 = CategoryProductstyle.create!(name: 'mitten', code_name: 'p_style_mitten', category_productsubtype_id: 0, admin_id: 1)
 # accessories/hats & caps
 cc00 = CategoryProductstyle.create!(name: 'hats', code_name: 'p_style_mitten', category_productsubtype_id: 0, admin_id: 1)
 cc00 = CategoryProductstyle.create!(name: 'caps', code_name: 'p_style_caps', category_productsubtype_id: 0, admin_id: 1)
-cc00 = CategoryProductstyle.create!(name: 'beanies', code_name: 'p_style_beanies', category_productsubtype_id: 0, admin_id: 1)
