@@ -158,6 +158,10 @@ cps00 = CategoryProductsubtype.create!(name: 'safety equipment', code_name: 'p_s
 cps00 = CategoryProductsubtype.create!(name: 'baby care', code_name: 'p_subtype_baby_care', category_productitemtype_id: cpit10.id, user_id: us01.id)
 cps00 = CategoryProductsubtype.create!(name: 'kids toys', code_name: 'p_subtype_kids_toys', category_productitemtype_id: cpit10.id, user_id: us01.id)
 # phones, cellphones & telecommunications
+cps00 = CategoryProductsubtype.create!(name: 'mobile phones', code_name: 'p_subtype_mobile', category_productitemtype_id: cpit11.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'mobile phone parts', code_name: 'p_subtype_mobile_parts', category_productitemtype_id: cpit11.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'communication equipments', code_name: 'p_subtype_com_equipment', category_productitemtype_id: cpit11.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'walkie talkie', code_name: 'p_subtype_walkie', category_productitemtype_id: cpit11.id, user_id: us01.id)
 # computer & office
 # education & office supplies
 # security & protection
