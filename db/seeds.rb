@@ -7,24 +7,17 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 
-# User.delete_all
-# us01 = User.create!(email: "aku@gmail.com", password: "password")
-# us02 = User.create!(email: "richill@gmail.com", password: "password")
+User.delete_all
+us01 = User.create!(email: "aku@gmail.com", password: "password")
+us02 = User.create!(email: "richill@gmail.com", password: "password")
 
-# User.delete_all
-users = User.create(
-  [
-    { email: "aku@gmail.com", password: "password" },
-    { email: "richill@gmail.com", password: "password" }
-  ]
-)
 
 # level_01
 CategoryProducttype.delete_all
-cpt01 = CategoryProducttype.create!(name: 'men', code_name: 'p_cat_men', user_id: users.first)
-cpt02 = CategoryProducttype.create!(name: 'women', code_name: 'p_cat_women', user_id: users.first)
-cpt03 = CategoryProducttype.create!(name: 'kids', code_name: 'p_cat_kids_boys', user_id: users.first)
-cpt04 = CategoryProducttype.create!(name: 'product', code_name: 'p_cat_product', user_id: users.first)
+cpt01 = CategoryProducttype.create!(name: 'men', code_name: 'p_cat_men', user_id: us01.id)
+cpt02 = CategoryProducttype.create!(name: 'women', code_name: 'p_cat_women', user_id: us01.id)
+cpt03 = CategoryProducttype.create!(name: 'kids', code_name: 'p_cat_kids_boys', user_id: us01.id)
+cpt04 = CategoryProducttype.create!(name: 'product', code_name: 'p_cat_product', user_id: us01.id)
 
 
 # level_02
