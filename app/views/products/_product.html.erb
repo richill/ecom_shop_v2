@@ -17,15 +17,4 @@
   <%= content_tag(:p, "", class: "result", data: {
     share_target: "result"
   }) %>
-
-  <p class="hide">
-    <a onclick="javascript:window.open('http://www.facebook.com/sharer/sharer.php?u=<%= url_for([product, {only_path: false}]) %>',
-      '_blank',
-      'width=800, height=500, top=200, left=300');void(0);">here FB!!!<i class="fa fa-facebook" aria-hidden="true"></i>
-    </a>
-    <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=<%= product.name %> by @someuser - &amp;url=<%= url_for([product, {only_path: false}]) %>',
-      '_blank',
-      'width=800, height=500, top=200, left=300');void(0);">here TT!!<i class="fa fa-twitter" aria-hidden="true"></i></i>
-    </a>
-  </p>
 </div>
