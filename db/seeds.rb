@@ -54,6 +54,18 @@ cps01 = CategoryProductsubtype.create!(name: 'belts', code_name: 'p_subtype_belt
 cps02 = CategoryProductsubtype.create!(name: 'gloves', code_name: 'p_subtype_gloves', category_productitemtype_id: cpit01.id, user_id: us01.id)
 cps03 = CategoryProductsubtype.create!(name: 'hats & caps', code_name: 'p_subtype_hats', category_productitemtype_id: cpit01.id, user_id: us01.id)
 cps04 = CategoryProductsubtype.create!(name: 'hair accessories', code_name: 'p_subtype_hair_acc', category_productitemtype_id: cpit01.id, user_id: us01.id)
+cps05 = CategoryProductsubtype.create!(name: 'handbags & purses', code_name: 'p_subtype_handbags', category_productitemtype_id: cpit01.id, user_id: us01.id)
+cps06 = CategoryProductsubtype.create!(name: 'jewellery', code_name: 'p_subtype_jewellery', category_productitemtype_id: cpit01.id, user_id: us01.id)
+cps07 = CategoryProductsubtype.create!(name: 'sunglasses', code_name: 'p_subtype_sunglasses', category_productitemtype_id: cpit01.id, user_id: us01.id)
+cps08 = CategoryProductsubtype.create!(name: 'scarves', code_name: 'p_subtype_scarves', category_productitemtype_id: cpit01.id, user_id: us01.id)
+cps09 = CategoryProductsubtype.create!(name: 'umbrellas', code_name: 'p_subtype_umbrellas', category_productitemtype_id: cpit01.id, user_id: us01.id)
+cps10 = CategoryProductsubtype.create!(name: 'watches', code_name: 'p_subtype_watches', category_productitemtype_id: cpit01.id, user_id: us01.id)
+cps11 = CategoryProductsubtype.create!(name: 'handkerchiefs', code_name: 'p_subtype_handkerchiefs', category_productitemtype_id: cpit01.id, user_id: us01.id)
+cps12 = CategoryProductsubtype.create!(name: 'ties & bow ties', code_name: 'p_subtype_ties_bows', category_productitemtype_id: cpit01.id, user_id: us01.id)
+
+
+
+
 # coats & jackets
 cps05 = CategoryProductsubtype.create!(name: 'jackets', code_name: 'p_subtype_jackets', category_productitemtype_id: cpit02.id, user_id: us01.id)
 cps06 = CategoryProductsubtype.create!(name: 'coats', code_name: 'p_subtype_coats', category_productitemtype_id: cpit02.id, user_id: us01.id)
