@@ -20,6 +20,7 @@ cpt03 = CategoryProducttype.create!(name: 'kids (boys)', code_name: 'p_cat_kids_
 cpt04 = CategoryProducttype.create!(name: 'kids (girls)', code_name: 'p_cat_kids_girls', user_id: us01.id)
 cpt05 = CategoryProducttype.create!(name: 'product', code_name: 'p_cat_product', user_id: us01.id)
 
+
 # level_02
 CategoryProductitemtype.delete_all
 cpit01 = CategoryProductitemtype.create!(name: 'accessories', code_name: 'p_type_accessories', user_id: us01.id)
@@ -85,9 +86,22 @@ cps29 = CategoryProductsubtype.create!(name: 'boots', code_name: 'p_subtype_boot
 cps30 = CategoryProductsubtype.create!(name: 'flats', code_name: 'p_subtype_flats', category_productitemtype_id: cpit04.id, user_id: us01.id)
 cps31 = CategoryProductsubtype.create!(name: 'shoes', code_name: 'p_subtype_shoes', category_productitemtype_id: cpit04.id, user_id: us01.id)
 cps32 = CategoryProductsubtype.create!(name: 'shoes accessories', code_name: 'p_subtype_shoes_accessories', category_productitemtype_id: cpit04.id, user_id: us01.id)
-
 # gifts
+cps00 = CategoryProductsubtype.create!(name: 'product items', code_name: 'p_subtype_prod_items', category_productitemtype_id: cpit05.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'food items', code_name: 'p_subtype_food_items', category_productitemtype_id: cpit05.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'alcohol items', code_name: 'p_subtype_alcohol_items', category_productitemtype_id: cpit05.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'toys', code_name: 'p_subtype_toys', category_productitemtype_id: cpit05.id, user_id: us01.id)
 # skincare
+cps00 = CategoryProductsubtype.create!(name: 'skin & body care', code_name: 'p_subtype_skin_body', category_productitemtype_id: cpit06.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'oral hygiene', code_name: 'p_subtype_oral', category_productitemtype_id: cpit06.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'tattoo & body art', code_name: 'p_subtype_tattoo', category_productitemtype_id: cpit06.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'hair care', code_name: 'p_subtype_hair_care', category_productitemtype_id: cpit06.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'make-up', code_name: 'p_subtype_make_up', category_productitemtype_id: cpit06.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'bath & body', code_name: 'p_subtype_bath', category_productitemtype_id: cpit06.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'nails', code_name: 'p_subtype_nails', category_productitemtype_id: cpit06.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'perfume & colognes', code_name: 'p_subtype_perfume_colognes', category_productitemtype_id: cpit06.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'sun care', code_name: 'p_subtype_sun_care', category_productitemtype_id: 6, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'personal care appliances & equipments', code_name: 'p_subtype_personal_care', category_productitemtype_id: cpit06.id, user_id: us01.id)
 # home furnishing
 # furniture
 # home & gardening
