@@ -301,7 +301,13 @@ cps00 = CategoryProductsubtype.create!(name: 'rhythm sticks', code_name: 'p_subt
 cps00 = CategoryProductsubtype.create!(name: 'triangle', code_name: 'p_subtype_triangle', category_productitemtype_id: cpit18.id, user_id: us01.id)
 cps00 = CategoryProductsubtype.create!(name: 'kokiriko', code_name: 'p_subtype_kokiriko', category_productitemtype_id: cpit18.id, user_id: us01.id)
 # hair extensions & wigs
+cps00 = CategoryProductsubtype.create!(name: 'human hair', code_name: 'p_subtype_human_hair', category_productitemtype_id: cpit19.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'synthetic hair', code_name: 'p_subtype_synthetic_hair', category_productitemtype_id: cpit19.id, user_id: us01.id)
+cps00 = CategoryProductsubtype.create!(name: 'hair supplies', code_name: 'p_subtype_hair_supplies', category_productitemtype_id: cpit19.id, user_id: us01.id)
 # salon equipments
+cps00 = CategoryProductsubtype.create!(name: 'salon furniture', code_name: 'p_subtype_salon_furniture', category_productitemtype_id: 20, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'salon electrical equipments', code_name: 'p_subtype_salon_electrical_equipments', category_productitemtype_id: 20, admin_id: 1)
+cps00 = CategoryProductsubtype.create!(name: 'salon tools & supplies', code_name: 'p_subtype_salon_tools_supplies', category_productitemtype_id: 20, admin_id: 1)
 # automobiles & motorcycles
 # sport equipments
 # construction & real estate
