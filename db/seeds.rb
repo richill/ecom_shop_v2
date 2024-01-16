@@ -8,10 +8,11 @@
 
 # level_01
 CategoryProducttype.delete_all
-cc00 = CategoryProducttype.create!(name: 'men', code_name: 'p_cat_men', user_id: 1)
-cc00 = CategoryProducttype.create!(name: 'women', code_name: 'p_cat_women', user_id: 1)
-cc00 = CategoryProducttype.create!(name: 'kids', code_name: 'p_cat_kids_boys', user_id: 1)
-cc00 = CategoryProducttype.create!(name: 'product', code_name: 'p_cat_product', user_id: 1)
+cpt00 = CategoryProducttype.create!(name: 'men', code_name: 'p_cat_men', user_id: 1)
+cpt00 = CategoryProducttype.create!(name: 'women', code_name: 'p_cat_women', user_id: 1)
+cpt00 = CategoryProducttype.create!(name: 'kids', code_name: 'p_cat_kids_boys', user_id: 1)
+cpt00 = CategoryProducttype.create!(name: 'product', code_name: 'p_cat_product', user_id: 1)
+
 
 # level_02
 CategoryProductitemtype.delete_all
@@ -43,3 +44,17 @@ cc00 = CategoryProductsubtype.create!(name: 'boots', code_name: 'p_subtype_boots
 cc00 = CategoryProductsubtype.create!(name: 'flats', code_name: 'p_subtype_flats', category_productitemtype_id: 4, admin_id: 1)
 cc00 = CategoryProductsubtype.create!(name: 'shoes', code_name: 'p_subtype_shoes', category_productitemtype_id: 4, admin_id: 1)
 cc00 = CategoryProductsubtype.create!(name: 'shoes accessories', code_name: 'p_subtype_shoes_accessories', category_productitemtype_id: 4, admin_id: 1)
+
+# level_04
+CategoryProductstyle.delete_all
+# accessories/belts
+cc00 = CategoryProductstyle.create!(name: 'buckle', code_name: 'p_style_buckle', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'non buckle', code_name: 'p_style_non_buckle', category_productsubtype_id: 0, admin_id: 1)
+# accessories/gloves
+cc00 = CategoryProductstyle.create!(name: 'knitted', code_name: 'p_style_knitted', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'fingerless', code_name: 'p_style_fingerless', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'mitten', code_name: 'p_style_mitten', category_productsubtype_id: 0, admin_id: 1)
+# accessories/hats & caps
+cc00 = CategoryProductstyle.create!(name: 'hats', code_name: 'p_style_mitten', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'caps', code_name: 'p_style_caps', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'beanies', code_name: 'p_style_beanies', category_productsubtype_id: 0, admin_id: 1)
