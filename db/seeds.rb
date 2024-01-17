@@ -626,21 +626,21 @@ ccpst227 = CategoryProductstyle.create!(name: 'shoe tree', code_name: 'p_style_s
 ccpst228 = CategoryProductstyle.create!(name: 'ice gripper', code_name: 'p_style_ice_gripper', category_productsubtype_id: cps32.id, user_id: us01.id)
 # --------------------------------------
 # gifts/product items
-ccpst229 = CategoryProductstyle.create!(name: 'flowers', code_name: 'p_style_flowers', category_productsubtype_id: 0, admin_id: 1)
-ccpst230 = CategoryProductstyle.create!(name: 'hampers', code_name: 'p_style_hampers', category_productsubtype_id: 0, admin_id: 1)
-ccpst231 = CategoryProductstyle.create!(name: 'artificial flowers', code_name: 'p_style_artificial_flowers', category_productsubtype_id: 0, admin_id: 1)
-ccpst232 = CategoryProductstyle.create!(name: 'cards', code_name: 'p_style_cards', category_productsubtype_id: 0, admin_id: 1)
+ccpst229 = CategoryProductstyle.create!(name: 'flowers', code_name: 'p_style_flowers', category_productsubtype_id: cps33.id, user_id: us01.id)
+ccpst230 = CategoryProductstyle.create!(name: 'hampers', code_name: 'p_style_hampers', category_productsubtype_id: cps33.id, user_id: us01.id)
+ccpst231 = CategoryProductstyle.create!(name: 'artificial flowers', code_name: 'p_style_artificial_flowers', category_productsubtype_id: cps33.id, user_id: us01.id)
+ccpst232 = CategoryProductstyle.create!(name: 'cards', code_name: 'p_style_cards', category_productsubtype_id: cps33.id, user_id: us01.id)
 # gifts/food items
-ccpst233 = CategoryProductstyle.create!(name: 'chocolate', code_name: 'p_style_chocolate', category_productsubtype_id: 0, admin_id: 1)
+ccpst233 = CategoryProductstyle.create!(name: 'chocolate', code_name: 'p_style_chocolate', category_productsubtype_id: cps34.id, user_id: us01.id)
 # gifts/alcohol items
-ccpst234 = CategoryProductstyle.create!(name: 'champagne', code_name: 'p_style_champagne', category_productsubtype_id: 0, admin_id: 1)
-ccpst235 = CategoryProductstyle.create!(name: 'prosecco & sparkling wine', code_name: 'p_style_prosecco', category_productsubtype_id: 0, admin_id: 1)
-ccpst236 = CategoryProductstyle.create!(name: 'red wine', code_name: 'p_style_red_wine', category_productsubtype_id: 0, admin_id: 1)
-ccpst237 = CategoryProductstyle.create!(name: 'white wine', code_name: 'p_style_white_wine', category_productsubtype_id: 0, admin_id: 1)
-ccpst238 = CategoryProductstyle.create!(name: 'cocktails & spirits', code_name: 'p_style_cocktails_spirits', category_productsubtype_id: 0, admin_id: 1)
+ccpst234 = CategoryProductstyle.create!(name: 'champagne', code_name: 'p_style_champagne', category_productsubtype_id: cps35.id, user_id: us01.id)
+ccpst235 = CategoryProductstyle.create!(name: 'prosecco & sparkling wine', code_name: 'p_style_prosecco', category_productsubtype_id: cps35.id, user_id: us01.id)
+ccpst236 = CategoryProductstyle.create!(name: 'red wine', code_name: 'p_style_red_wine', category_productsubtype_id: cps35.id, user_id: us01.id)
+ccpst237 = CategoryProductstyle.create!(name: 'white wine', code_name: 'p_style_white_wine', category_productsubtype_id: cps35.id, user_id: us01.id)
+ccpst238 = CategoryProductstyle.create!(name: 'cocktails & spirits', code_name: 'p_style_cocktails_spirits', category_productsubtype_id: cps35.id, user_id: us01.id)
 # gifts/toys
-ccpst239 = CategoryProductstyle.create!(name: 'soft toys', code_name: 'p_style_soft_toys', category_productsubtype_id: 0, admin_id: 1)
-ccpst240 = CategoryProductstyle.create!(name: 'hard toys', code_name: 'p_style_toys', category_productsubtype_id: 0, admin_id: 1)
+ccpst239 = CategoryProductstyle.create!(name: 'soft toys', code_name: 'p_style_soft_toys', category_productsubtype_id: cps36.id, user_id: us01.id)
+ccpst240 = CategoryProductstyle.create!(name: 'hard toys', code_name: 'p_style_toys', category_productsubtype_id: cps36.id, user_id: us01.id)
 # --------------------------------------
 
 
