@@ -20,6 +20,8 @@
 
 .product_item {
     background-color: #CCCCCC;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 .radio_cover {
