@@ -1,4 +1,11 @@
 <div id="<%= dom_id product %>" data-controller="share" data-share-url-value="<%= product_url(product) %>">
+  <!--section-->
+  <div class="margin_bottom_15px">
+    <div class="product_title">product image</div>
+    <div class="product_image"><%= image_tag "#{product.image_url}" %></div>
+  </div>
+  <!--section-->
+
   <div class="margin_bottom_15px product_name_cover">
     <div class="product_title">name</div>
     <div>
