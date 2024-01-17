@@ -115,3 +115,7 @@ input[type='radio']:checked:after {
 .category_drop_field {
     margin-right: 15px;
 }
+
+.product_image img {
+    width: 100px;
+}
