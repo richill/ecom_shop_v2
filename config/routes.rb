@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :variants
   resources :favorite_products, only: [:create, :destroy]
 
   # ----- user -----
