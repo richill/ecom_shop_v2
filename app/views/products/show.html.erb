@@ -1,6 +1,17 @@
 <p style="color: green"><%= notice %></p>
 <div class="product_item">
 
+  <div class="margin_bottom_15px">
+    <div class="product_title">product category</div>
+    <span><%= @product.category_producttype.name %></span>
+    <span>--></span>
+    <span><%= @product.category_productitemtype.name %></span>
+    <span>--></span>
+    <span><%= @product.category_productsubtype.name %></span>
+    <span>--></span>
+    <span><%= @product.category_productstyle.name %></span>
+  </div>
+
   <!--section-->
   <div><%= render @product %></div>
   <!--section-->
