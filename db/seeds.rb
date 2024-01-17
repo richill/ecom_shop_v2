@@ -2237,128 +2237,128 @@ ccpst1658 = CategoryProductstyle.create!(name: 'math toys', code_name: 'p_style_
 ccpst1659 = CategoryProductstyle.create!(name: '-', code_name: 'p_style_blank', category_productsubtype_id: cps191.id, user_id: us01.id)
 # --------------------------------------
 # musical instruments/guitar
-ccpst1660 = CategoryProductstyle.create!(name: 'guitar instruments', code_name: 'p_style_guitar_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1661 = CategoryProductstyle.create!(name: 'guitar parts & accessories', code_name: 'p_style_guitar_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1660 = CategoryProductstyle.create!(name: 'guitar instruments', code_name: 'p_style_guitar_instruments', category_productsubtype_id: cps192.id, user_id: us01.id)
+ccpst1661 = CategoryProductstyle.create!(name: 'guitar parts & accessories', code_name: 'p_style_guitar_parts_accessories', category_productsubtype_id: cps192.id, user_id: us01.id)
 # musical instruments/violin
-ccpst1662 = CategoryProductstyle.create!(name: 'violin instruments', code_name: 'p_style_violin_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1663 = CategoryProductstyle.create!(name: 'violin parts & accessories', code_name: 'p_style_violin_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1662 = CategoryProductstyle.create!(name: 'violin instruments', code_name: 'p_style_violin_instruments', category_productsubtype_id: cps193.id, user_id: us01.id)
+ccpst1663 = CategoryProductstyle.create!(name: 'violin parts & accessories', code_name: 'p_style_violin_parts_accessories', category_productsubtype_id: cps193.id, user_id: us01.id)
 # musical instruments/drum
-ccpst1664 = CategoryProductstyle.create!(name: 'drum instruments', code_name: 'p_style_drum_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1665 = CategoryProductstyle.create!(name: 'drum parts & accessories', code_name: 'p_style_drum_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1664 = CategoryProductstyle.create!(name: 'drum instruments', code_name: 'p_style_drum_instruments', category_productsubtype_id: cps194.id, user_id: us01.id)
+ccpst1665 = CategoryProductstyle.create!(name: 'drum parts & accessories', code_name: 'p_style_drum_parts_accessories', category_productsubtype_id: cps194.id, user_id: us01.id)
 # musical instruments/ukulele
-ccpst1666 = CategoryProductstyle.create!(name: 'ukulele instruments', code_name: 'p_style_ukulele_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1667 = CategoryProductstyle.create!(name: 'ukulele parts & accessories', code_name: 'p_style_ukulele_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1666 = CategoryProductstyle.create!(name: 'ukulele instruments', code_name: 'p_style_ukulele_instruments', category_productsubtype_id: cps195.id, user_id: us01.id)
+ccpst1667 = CategoryProductstyle.create!(name: 'ukulele parts & accessories', code_name: 'p_style_ukulele_parts_accessories', category_productsubtype_id: cps195.id, user_id: us01.id)
 # musical instruments/cello
-ccpst1668 = CategoryProductstyle.create!(name: 'cello instruments', code_name: 'p_style_cello_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1669 = CategoryProductstyle.create!(name: 'cello parts & accessories', code_name: 'p_style_cello_parts_accessorie', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1668 = CategoryProductstyle.create!(name: 'cello instruments', code_name: 'p_style_cello_instruments', category_productsubtype_id: cps196.id, user_id: us01.id)
+ccpst1669 = CategoryProductstyle.create!(name: 'cello parts & accessories', code_name: 'p_style_cello_parts_accessorie', category_productsubtype_id: cps196.id, user_id: us01.id)
 # musical instruments/guzheng
-ccpst1670 = CategoryProductstyle.create!(name: 'guzheng instruments', code_name: 'p_style_guzheng_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1671 = CategoryProductstyle.create!(name: 'guzheng parts & accessories', code_name: 'p_style_guzheng_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1670 = CategoryProductstyle.create!(name: 'guzheng instruments', code_name: 'p_style_guzheng_instruments', category_productsubtype_id: cps197.id, user_id: us01.id)
+ccpst1671 = CategoryProductstyle.create!(name: 'guzheng parts & accessories', code_name: 'p_style_guzheng_parts_accessories', category_productsubtype_id: cps197.id, user_id: us01.id)
 # musical instruments/harp
-ccpst1672 = CategoryProductstyle.create!(name: 'harp instruments', code_name: 'p_style_harp_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1673 = CategoryProductstyle.create!(name: 'harp parts & accessories', code_name: 'p_style_harp_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1672 = CategoryProductstyle.create!(name: 'harp instruments', code_name: 'p_style_harp_instruments', category_productsubtype_id: cps198.id, user_id: us01.id)
+ccpst1673 = CategoryProductstyle.create!(name: 'harp parts & accessories', code_name: 'p_style_harp_parts_accessories', category_productsubtype_id: cps198.id, user_id: us01.id)
 # musical instruments/urheen
-ccpst1674 = CategoryProductstyle.create!(name: 'urheen instruments', code_name: 'p_style_urheen_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1675 = CategoryProductstyle.create!(name: 'urheen parts & accessories', code_name: 'p_style_urheen_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1674 = CategoryProductstyle.create!(name: 'urheen instruments', code_name: 'p_style_urheen_instruments', category_productsubtype_id: cps199.id, user_id: us01.id)
+ccpst1675 = CategoryProductstyle.create!(name: 'urheen parts & accessories', code_name: 'p_style_urheen_parts_accessories', category_productsubtype_id: cps199.id, user_id: us01.id)
 # musical instruments/viola
-ccpst1676 = CategoryProductstyle.create!(name: 'viola instruments', code_name: 'p_style_viola_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1677 = CategoryProductstyle.create!(name: 'viola parts & accessories', code_name: 'p_style_viola_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1676 = CategoryProductstyle.create!(name: 'viola instruments', code_name: 'p_style_viola_instruments', category_productsubtype_id: cps200.id, user_id: us01.id)
+ccpst1677 = CategoryProductstyle.create!(name: 'viola parts & accessories', code_name: 'p_style_viola_parts_accessories', category_productsubtype_id: cps200.id, user_id: us01.id)
 # musical instruments/mandolin
-ccpst1678 = CategoryProductstyle.create!(name: 'mandolin instruments', code_name: 'p_style_mandolin_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1679 = CategoryProductstyle.create!(name: 'mandolin parts & accessories', code_name: 'p_style_mandolin_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1678 = CategoryProductstyle.create!(name: 'mandolin instruments', code_name: 'p_style_mandolin_instruments', category_productsubtype_id: cps201.id, user_id: us01.id)
+ccpst1679 = CategoryProductstyle.create!(name: 'mandolin parts & accessories', code_name: 'p_style_mandolin_parts_accessories', category_productsubtype_id: cps201.id, user_id: us01.id)
 # musical instruments/harmonica
-ccpst1680 = CategoryProductstyle.create!(name: 'harmonica instruments', code_name: 'p_style_harmonica_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1681 = CategoryProductstyle.create!(name: 'harmonica parts & accessories', code_name: 'p_style_harmonica_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1680 = CategoryProductstyle.create!(name: 'harmonica instruments', code_name: 'p_style_harmonica_instruments', category_productsubtype_id: cps202.id, user_id: us01.id)
+ccpst1681 = CategoryProductstyle.create!(name: 'harmonica parts & accessories', code_name: 'p_style_harmonica_parts_accessories', category_productsubtype_id: cps202.id, user_id: us01.id)
 # musical instruments/saxophone
-ccpst1682 = CategoryProductstyle.create!(name: 'saxophone instruments', code_name: 'p_style_saxophone_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1683 = CategoryProductstyle.create!(name: 'saxophone parts & accessories', code_name: 'p_style_saxophone_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1682 = CategoryProductstyle.create!(name: 'saxophone instruments', code_name: 'p_style_saxophone_instruments', category_productsubtype_id: cps203.id, user_id: us01.id)
+ccpst1683 = CategoryProductstyle.create!(name: 'saxophone parts & accessories', code_name: 'p_style_saxophone_parts_accessories', category_productsubtype_id: cps203.id, user_id: us01.id)
 # musical instruments/flute
-ccpst1684 = CategoryProductstyle.create!(name: 'flute instruments', code_name: 'p_style_flute_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1685 = CategoryProductstyle.create!(name: 'flute parts & accessories', code_name: 'p_style_flute_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1684 = CategoryProductstyle.create!(name: 'flute instruments', code_name: 'p_style_flute_instruments', category_productsubtype_id: cps204.id, user_id: us01.id)
+ccpst1685 = CategoryProductstyle.create!(name: 'flute parts & accessories', code_name: 'p_style_flute_parts_accessories', category_productsubtype_id: cps204.id, user_id: us01.id)
 # musical instruments/clarinet
-ccpst1686 = CategoryProductstyle.create!(name: 'clarinet instruments', code_name: 'p_style_clarinet_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1687 = CategoryProductstyle.create!(name: 'clarinet parts & accessories', code_name: 'p_style_clarinet_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1686 = CategoryProductstyle.create!(name: 'clarinet instruments', code_name: 'p_style_clarinet_instruments', category_productsubtype_id: cps205.id, user_id: us01.id)
+ccpst1687 = CategoryProductstyle.create!(name: 'clarinet parts & accessories', code_name: 'p_style_clarinet_parts_accessories', category_productsubtype_id: cps205.id, user_id: us01.id)
 # musical instruments/piccolo
-ccpst1688 = CategoryProductstyle.create!(name: 'piccolo instruments', code_name: 'p_style_piccolo_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1689 = CategoryProductstyle.create!(name: 'piccolo parts & accessories', code_name: 'p_style_piccolo_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1688 = CategoryProductstyle.create!(name: 'piccolo instruments', code_name: 'p_style_piccolo_instruments', category_productsubtype_id: cps206.id, user_id: us01.id)
+ccpst1689 = CategoryProductstyle.create!(name: 'piccolo parts & accessories', code_name: 'p_style_piccolo_parts_accessories', category_productsubtype_id: cps206.id, user_id: us01.id)
 # musical instruments/recorder
-ccpst1690 = CategoryProductstyle.create!(name: 'recorder instruments', code_name: 'p_style_recorder_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1691 = CategoryProductstyle.create!(name: 'recorder parts & accessories', code_name: 'p_style_recorder_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1690 = CategoryProductstyle.create!(name: 'recorder instruments', code_name: 'p_style_recorder_instruments', category_productsubtype_id: cps207.id, user_id: us01.id)
+ccpst1691 = CategoryProductstyle.create!(name: 'recorder parts & accessories', code_name: 'p_style_recorder_parts_accessories', category_productsubtype_id: cps207.id, user_id: us01.id)
 # musical instruments/oboe
-ccpst1692 = CategoryProductstyle.create!(name: 'oboe instruments', code_name: 'p_style_oboe_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1693 = CategoryProductstyle.create!(name: 'obe parts & accessories', code_name: 'p_style_obe_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1692 = CategoryProductstyle.create!(name: 'oboe instruments', code_name: 'p_style_oboe_instruments', category_productsubtype_id: cps208.id, user_id: us01.id)
+ccpst1693 = CategoryProductstyle.create!(name: 'obe parts & accessories', code_name: 'p_style_obe_parts_accessories', category_productsubtype_id: cps208.id, user_id: us01.id)
 # musical instruments/bells & chimes
-ccpst1694 = CategoryProductstyle.create!(name: 'bells & chimes instruments', code_name: 'p_style_bells_chimes_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1695 = CategoryProductstyle.create!(name: 'bells & chimes parts & accessories', code_name: 'p_style_bells_chimes _arts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1694 = CategoryProductstyle.create!(name: 'bells & chimes instruments', code_name: 'p_style_bells_chimes_instruments', category_productsubtype_id: cps209.id, user_id: us01.id)
+ccpst1695 = CategoryProductstyle.create!(name: 'bells & chimes parts & accessories', code_name: 'p_style_bells_chimes _arts_accessories', category_productsubtype_id: cps209.id, user_id: us01.id)
 # musical instruments/gong & cymbals
-ccpst1686 = CategoryProductstyle.create!(name: 'gong & cymbals instruments', code_name: 'p_style_gong_cymbals_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1697 = CategoryProductstyle.create!(name: 'gong & cymbals parts & accessories', code_name: 'p_style_ong_cymbals_arts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1686 = CategoryProductstyle.create!(name: 'gong & cymbals instruments', code_name: 'p_style_gong_cymbals_instruments', category_productsubtype_id: cps210.id, user_id: us01.id)
+ccpst1697 = CategoryProductstyle.create!(name: 'gong & cymbals parts & accessories', code_name: 'p_style_ong_cymbals_arts_accessories', category_productsubtype_id: cps210.id, user_id: us01.id)
 # musical instruments/trumpet
-ccpst1698 = CategoryProductstyle.create!(name: 'trumpet instruments', code_name: 'p_style_trumpet_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1699 = CategoryProductstyle.create!(name: 'trumpet parts & accessories', code_name: 'p_style_trumpet_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1698 = CategoryProductstyle.create!(name: 'trumpet instruments', code_name: 'p_style_trumpet_instruments', category_productsubtype_id: cps211.id, user_id: us01.id)
+ccpst1699 = CategoryProductstyle.create!(name: 'trumpet parts & accessories', code_name: 'p_style_trumpet_parts_accessories', category_productsubtype_id: cps211.id, user_id: us01.id)
 # musical instruments/trombone
-ccpst1700 = CategoryProductstyle.create!(name: 'trombone instruments', code_name: 'p_style_trombone_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1701 = CategoryProductstyle.create!(name: 'trombone parts & accessories', code_name: 'p_style_trombone_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1700 = CategoryProductstyle.create!(name: 'trombone instruments', code_name: 'p_style_trombone_instruments', category_productsubtype_id: cps212.id, user_id: us01.id)
+ccpst1701 = CategoryProductstyle.create!(name: 'trombone parts & accessories', code_name: 'p_style_trombone_parts_accessories', category_productsubtype_id: cps212.id, user_id: us01.id)
 # musical instruments/baritone
-ccpst1702 = CategoryProductstyle.create!(name: 'baritone instruments', code_name: 'p_style_baritone_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1703 = CategoryProductstyle.create!(name: 'baritone parts & accessories', code_name: 'p_style_bariton_ parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1702 = CategoryProductstyle.create!(name: 'baritone instruments', code_name: 'p_style_baritone_instruments', category_productsubtype_id: cps213.id, user_id: us01.id)
+ccpst1703 = CategoryProductstyle.create!(name: 'baritone parts & accessories', code_name: 'p_style_bariton_ parts_accessories', category_productsubtype_id: cps213.id, user_id: us01.id)
 # musical instruments/tuba
-ccpst1704 = CategoryProductstyle.create!(name: 'tuba instruments', code_name: 'p_style_tuba_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1705 = CategoryProductstyle.create!(name: 'tuba parts & accessories', code_name: 'p_style_tuba_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1704 = CategoryProductstyle.create!(name: 'tuba instruments', code_name: 'p_style_tuba_instruments', category_productsubtype_id: cps214.id, user_id: us01.id)
+ccpst1705 = CategoryProductstyle.create!(name: 'tuba parts & accessories', code_name: 'p_style_tuba_parts_accessories', category_productsubtype_id: cps214.id, user_id: us01.id)
 # musical instruments/mellophone
-ccpst1706 = CategoryProductstyle.create!(name: 'mellophone instruments', code_name: 'p_style_mellophone_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1707 = CategoryProductstyle.create!(name: 'mellophone parts & accessories', code_name: 'p_style_mellophone_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1706 = CategoryProductstyle.create!(name: 'mellophone instruments', code_name: 'p_style_mellophone_instruments', category_productsubtype_id: cps215.id, user_id: us01.id)
+ccpst1707 = CategoryProductstyle.create!(name: 'mellophone parts & accessories', code_name: 'p_style_mellophone_parts_accessories', category_productsubtype_id: cps215.id, user_id: us01.id)
 # musical instruments/cornet
-ccpst1708 = CategoryProductstyle.create!(name: 'cornet instruments', code_name: 'p_style_cornet_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1709 = CategoryProductstyle.create!(name: 'cornet parts & accessories', code_name: 'p_style_cornet_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1708 = CategoryProductstyle.create!(name: 'cornet instruments', code_name: 'p_style_cornet_instruments', category_productsubtype_id: cps216.id, user_id: us01.id)
+ccpst1709 = CategoryProductstyle.create!(name: 'cornet parts & accessories', code_name: 'p_style_cornet_parts_accessories', category_productsubtype_id: cps216.id, user_id: us01.id)
 # musical instruments/euphonium
-ccpst1710 = CategoryProductstyle.create!(name: 'euphonium instruments', code_name: 'p_style_euphonium_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1711 = CategoryProductstyle.create!(name: 'euphonium parts & accessories', code_name: 'p_style_euphonium_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1710 = CategoryProductstyle.create!(name: 'euphonium instruments', code_name: 'p_style_euphonium_instruments', category_productsubtype_id: cps217.id, user_id: us01.id)
+ccpst1711 = CategoryProductstyle.create!(name: 'euphonium parts & accessories', code_name: 'p_style_euphonium_parts_accessories', category_productsubtype_id: cps217.id, user_id: us01.id)
 # musical instruments/flugelhorn
-ccpst1712 = CategoryProductstyle.create!(name: 'flugelhorn instruments', code_name: 'p_style_flugelhorn_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1713 = CategoryProductstyle.create!(name: 'flugelhorn parts & accessories', code_name: 'p_style_flugelhorn_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1712 = CategoryProductstyle.create!(name: 'flugelhorn instruments', code_name: 'p_style_flugelhorn_instruments', category_productsubtype_id: cps218.id, user_id: us01.id)
+ccpst1713 = CategoryProductstyle.create!(name: 'flugelhorn parts & accessories', code_name: 'p_style_flugelhorn_parts_accessories', category_productsubtype_id: cps218.id, user_id: us01.id)
 # musical instruments/piano
-ccpst1714 = CategoryProductstyle.create!(name: 'piano instruments', code_name: 'p_style_piano_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1715 = CategoryProductstyle.create!(name: 'piano parts & accessories', code_name: 'p_style_piano_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1714 = CategoryProductstyle.create!(name: 'piano instruments', code_name: 'p_style_piano_instruments', category_productsubtype_id: cps219.id, user_id: us01.id)
+ccpst1715 = CategoryProductstyle.create!(name: 'piano parts & accessories', code_name: 'p_style_piano_parts_accessories', category_productsubtype_id: cps219.id, user_id: us01.id)
 # musical instruments/electric organ
-ccpst1716 = CategoryProductstyle.create!(name: 'electric organ instruments', code_name: 'p_style_electric_organ_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1717 = CategoryProductstyle.create!(name: 'electric organ parts & accessories', code_name: 'p_style_electric_organ_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1716 = CategoryProductstyle.create!(name: 'electric organ instruments', code_name: 'p_style_electric_organ_instruments', category_productsubtype_id: cps220.id, user_id: us01.id)
+ccpst1717 = CategoryProductstyle.create!(name: 'electric organ parts & accessories', code_name: 'p_style_electric_organ_parts_accessories', category_productsubtype_id: cps220.id, user_id: us01.id)
 # musical instruments/accordion
-ccpst1718 = CategoryProductstyle.create!(name: 'accordion instruments', code_name: 'p_style_accordion_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1719 = CategoryProductstyle.create!(name: 'accordion parts & accessories', code_name: 'p_style_accordion parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1718 = CategoryProductstyle.create!(name: 'accordion instruments', code_name: 'p_style_accordion_instruments', category_productsubtype_id: cps221.id, user_id: us01.id)
+ccpst1719 = CategoryProductstyle.create!(name: 'accordion parts & accessories', code_name: 'p_style_accordion parts_accessories', category_productsubtype_id: cps221.id, user_id: us01.id)
 # musical instruments/ocarina
-ccpst1720 = CategoryProductstyle.create!(name: 'ocarina instruments', code_name: 'p_style_ocarina_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1721 = CategoryProductstyle.create!(name: 'ocarina parts & accessories', code_name: 'p_style_ocarina_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1720 = CategoryProductstyle.create!(name: 'ocarina instruments', code_name: 'p_style_ocarina_instruments', category_productsubtype_id: cps222.id, user_id: us01.id)
+ccpst1721 = CategoryProductstyle.create!(name: 'ocarina parts & accessories', code_name: 'p_style_ocarina_parts_accessories', category_productsubtype_id: cps222.id, user_id: us01.id)
 # musical instruments/kazoo
-ccpst1722 = CategoryProductstyle.create!(name: 'kazoo instruments', code_name: 'p_style_kazoo_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1723 = CategoryProductstyle.create!(name: 'kazoo parts & accessories', code_name: 'p_style_kazoo_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1722 = CategoryProductstyle.create!(name: 'kazoo instruments', code_name: 'p_style_kazoo_instruments', category_productsubtype_id: cps223.id, user_id: us01.id)
+ccpst1723 = CategoryProductstyle.create!(name: 'kazoo parts & accessories', code_name: 'p_style_kazoo_parts_accessories', category_productsubtype_id: cps223.id, user_id: us01.id)
 # musical instruments/maraca
-ccpst1724 = CategoryProductstyle.create!(name: 'maraca instruments', code_name: 'p_style_maraca instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1725 = CategoryProductstyle.create!(name: 'maraca parts & accessories', code_name: 'p_style_maraca_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1724 = CategoryProductstyle.create!(name: 'maraca instruments', code_name: 'p_style_maraca instruments', category_productsubtype_id: cps224.id, user_id: us01.id)
+ccpst1725 = CategoryProductstyle.create!(name: 'maraca parts & accessories', code_name: 'p_style_maraca_parts_accessories', category_productsubtype_id: cps224.id, user_id: us01.id)
 # musical instruments/xylophone
-ccpst1726 = CategoryProductstyle.create!(name: 'xylophone instruments', code_name: 'p_style_xylophone_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1727 = CategoryProductstyle.create!(name: 'xylophone parts & accessories', code_name: 'p_style_xylophone_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1726 = CategoryProductstyle.create!(name: 'xylophone instruments', code_name: 'p_style_xylophone_instruments', category_productsubtype_id: cps225.id, user_id: us01.id)
+ccpst1727 = CategoryProductstyle.create!(name: 'xylophone parts & accessories', code_name: 'p_style_xylophone_parts_accessories', category_productsubtype_id: cps225.id, user_id: us01.id)
 # musical instruments/crow sounder
-ccpst1728 = CategoryProductstyle.create!(name: 'crow sounder instruments', code_name: 'p_style_crow_sounder_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1729 = CategoryProductstyle.create!(name: 'crow sounder parts & accessories', code_name: 'p_style_crow_sounder_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1728 = CategoryProductstyle.create!(name: 'crow sounder instruments', code_name: 'p_style_crow_sounder_instruments', category_productsubtype_id: cps226.id, user_id: us01.id)
+ccpst1729 = CategoryProductstyle.create!(name: 'crow sounder parts & accessories', code_name: 'p_style_crow_sounder_parts_accessories', category_productsubtype_id: cps226.id, user_id: us01.id)
 # musical instruments/stick shaker
-ccpst1730 = CategoryProductstyle.create!(name: 'stick shaker instruments', code_name: 'p_style_stick shaker_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1731 = CategoryProductstyle.create!(name: 'stick shaker parts & accessories', code_name: 'p_style_stick_shaker_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1730 = CategoryProductstyle.create!(name: 'stick shaker instruments', code_name: 'p_style_stick shaker_instruments', category_productsubtype_id: cps227.id, user_id: us01.id)
+ccpst1731 = CategoryProductstyle.create!(name: 'stick shaker parts & accessories', code_name: 'p_style_stick_shaker_parts_accessories', category_productsubtype_id: cps227.id, user_id: us01.id)
 # musical instruments/castanets
-ccpst1732 = CategoryProductstyle.create!(name: 'castanets instruments', code_name: 'p_style_castanets_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1733 = CategoryProductstyle.create!(name: 'castanets parts & accessories', code_name: 'p_style_castanets_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1732 = CategoryProductstyle.create!(name: 'castanets instruments', code_name: 'p_style_castanets_instruments', category_productsubtype_id: cps228.id, user_id: us01.id)
+ccpst1733 = CategoryProductstyle.create!(name: 'castanets parts & accessories', code_name: 'p_style_castanets_parts_accessories', category_productsubtype_id: cps228.id, user_id: us01.id)
 # musical instruments/rainmaker shaker
-ccpst1734 = CategoryProductstyle.create!(name: 'rainmaker shaker instruments', code_name: 'p_style_rainmaker_shaker_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1735 = CategoryProductstyle.create!(name: 'rainmaker shaker parts & accessories', code_name: 'p_style_rainmaker_shaker_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1734 = CategoryProductstyle.create!(name: 'rainmaker shaker instruments', code_name: 'p_style_rainmaker_shaker_instruments', category_productsubtype_id: cps229.id, user_id: us01.id)
+ccpst1735 = CategoryProductstyle.create!(name: 'rainmaker shaker parts & accessories', code_name: 'p_style_rainmaker_shaker_parts_accessories', category_productsubtype_id: cps229.id, user_id: us01.id)
 # musical instruments/rhythm sticks
-ccpst1736 = CategoryProductstyle.create!(name: 'rhythm sticks instruments', code_name: 'p_style_rhythm_sticks_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1737 = CategoryProductstyle.create!(name: 'rhythm sticks parts & accessories', code_name: 'p_style_rhythm_sticks_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1736 = CategoryProductstyle.create!(name: 'rhythm sticks instruments', code_name: 'p_style_rhythm_sticks_instruments', category_productsubtype_id: cps230.id, user_id: us01.id)
+ccpst1737 = CategoryProductstyle.create!(name: 'rhythm sticks parts & accessories', code_name: 'p_style_rhythm_sticks_parts_accessories', category_productsubtype_id: cps230.id, user_id: us01.id)
 # musical instruments/triangle
-ccpst1738 = CategoryProductstyle.create!(name: 'triangle instruments', code_name: 'p_style_triangle_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1739 = CategoryProductstyle.create!(name: 'triangle parts & accessories', code_name: 'p_style_triangle_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1738 = CategoryProductstyle.create!(name: 'triangle instruments', code_name: 'p_style_triangle_instruments', category_productsubtype_id: cps231.id, user_id: us01.id)
+ccpst1739 = CategoryProductstyle.create!(name: 'triangle parts & accessories', code_name: 'p_style_triangle_parts_accessories', category_productsubtype_id: cps231.id, user_id: us01.id)
 # musical instruments/kokiriko
-ccpst1740 = CategoryProductstyle.create!(name: 'kokiriko instruments', code_name: 'p_style_kokiriko_instruments', category_productsubtype_id: 0, user_id: us01.id)
-ccpst1741 = CategoryProductstyle.create!(name: 'kokiriko parts & accessories', code_name: 'p_style_kokiriko_parts_accessories', category_productsubtype_id: 0, user_id: us01.id)
+ccpst1740 = CategoryProductstyle.create!(name: 'kokiriko instruments', code_name: 'p_style_kokiriko_instruments', category_productsubtype_id: cps232.id, user_id: us01.id)
+ccpst1741 = CategoryProductstyle.create!(name: 'kokiriko parts & accessories', code_name: 'p_style_kokiriko_parts_accessories', category_productsubtype_id: cps232.id, user_id: us01.id)
 # --------------------------------------
 # hair extensions & wigs/human hair
 ccpst1742 = CategoryProductstyle.create!(name: 'hair weaves', code_name: 'p_style_hair_weaves', category_productsubtype_id: 0, user_id: us01.id)
