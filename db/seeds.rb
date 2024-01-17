@@ -2985,6 +2985,19 @@ pp01 = Product.create!(
   category_productsubtype_id: cps03.id,     #hats & caps
   category_productstyle_id: cpst06.id,      #hats
   )
+pp02 = Product.create!(
+  name:'cute bear baby knit hat',
+  image: nil,
+  image_url: "https://ae01.alicdn.com/kf/Se8fb6ef862ac432aa5b23fbb2bd5aab6L/Cute-Bear-Baby-Knit-Hat-Solid-Color-Soft-Comfortable-Toddler-Beanies-for-Boy-Girl-Cartoon-Autumn.jpg_.webp",
+  description: "cute bear baby knit hat solid color soft comfortable toddler beanies for boy girl cartoon autumn winter warm kids knitted hat",
+  user_id: us01.id,
+  price: 0.3099e2,
+  impressions_count: 0,
+  category_producttype_id: cpt05.id,        #product
+  category_productitemtype_id: cpit08.id,   #furniture
+  category_productsubtype_id: cps62.id,     #harmchairs
+  category_productstyle_id: cpst627.id,     #accent chair
+  )
 
 # variants
 Variant.delete_all
@@ -2992,7 +3005,7 @@ vv01 = Variant.create!(
   product_id: pp01.id,
   image_url: "https://ae01.alicdn.com/kf/S541405a11b634a6eaa31ea61afa121cdw/Cute-Bear-Baby-Knit-Hat-Solid-Color-Soft-Comfortable-Toddler-Beanies-for-Boy-Girl-Cartoon-Autumn.jpg_.webp",
   colour: "blue"
-  )
+)
 vv02 = Variant.create!(
   product_id: pp01.id,
   image_url: "https://ae01.alicdn.com/kf/S541405a11b634a6eaa31ea61afa121cdw/Cute-Bear-Baby-Knit-Hat-Solid-Color-Soft-Comfortable-Toddler-Beanies-for-Boy-Girl-Cartoon-Autumn.jpg_.webp",
