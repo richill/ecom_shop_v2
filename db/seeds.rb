@@ -2986,10 +2986,10 @@ pp01 = Product.create!(
   category_productstyle_id: cpst06.id,      #hats
   )
 pp02 = Product.create!(
-  name:'cute bear baby knit hat',
+  name:'nordic fabric sofa',
   image: nil,
-  image_url: "https://ae01.alicdn.com/kf/Se8fb6ef862ac432aa5b23fbb2bd5aab6L/Cute-Bear-Baby-Knit-Hat-Solid-Color-Soft-Comfortable-Toddler-Beanies-for-Boy-Girl-Cartoon-Autumn.jpg_.webp",
-  description: "cute bear baby knit hat solid color soft comfortable toddler beanies for boy girl cartoon autumn winter warm kids knitted hat",
+  image_url: "https://ae01.alicdn.com/kf/S2781e0ebd07a449bb6f1efb816798b4cH/Joylove-Nordic-Fabric-Sofa-Living-Room-Furniture-Balcony-Bedroom-Tables-And-Chairs-Leisure-Single-Small-Sofa.jpg_.webp",
+  description: "Nordic Fabric Sofa Living Room Furniture Balcony Bedroom Tables And Chairs Leisure Single Small Sofa Dressing Lazy Chair",
   user_id: us01.id,
   price: 0.3099e2,
   impressions_count: 0,
