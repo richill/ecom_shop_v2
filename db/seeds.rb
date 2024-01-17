@@ -453,6 +453,39 @@ ccpst74 = CategoryProductstyle.create!(name: 'patterned', code_name: 'p_style_pa
 ccpst75 = CategoryProductstyle.create!(name: 'ties', code_name: 'p_style_ties', category_productsubtype_id: cps12.id, user_id: us01.id)
 ccpst76 = CategoryProductstyle.create!(name: 'bow ties', code_name: 'p_style_bow_ties', category_productsubtype_id: cps12.id, user_id: us01.id)
 # --------------------------------------
+# coats & jackets/jackets
+ccpst77 = CategoryProductstyle.create!(name: 'puffer jacket', code_name: 'p_style_puffer_jacket', category_productsubtype_id: cps13.id, user_id: us01.id)
+ccpst78 = CategoryProductstyle.create!(name: 'parkas', code_name: 'p_style_parkas', category_productsubtype_id: cps13.id, user_id: us01.id)
+ccpst79 = CategoryProductstyle.create!(name: 'cropped jacket', code_name: 'p_style_cropped_jacket', category_productsubtype_id: cps13.id, user_id: us01.id)
+ccpst80 = CategoryProductstyle.create!(name: 'padded jackets', code_name: 'p_style_padded_jacket', category_productsubtype_id: cps13.id, user_id: us01.id)
+ccpst81 = CategoryProductstyle.create!(name: 'sports jacket', code_name: 'p_style_sports_jacket', category_productsubtype_id: cps13.id, user_id: us01.id)
+ccpst82 = CategoryProductstyle.create!(name: 'biker jacket', code_name: 'p_style_biker_jacket', category_productsubtype_id: cps13.id, user_id: us01.id)
+ccpst83 = CategoryProductstyle.create!(name: 'lightweight jacket', code_name: 'p_style_lightweight_jacket', category_productsubtype_id: cps13.id, user_id: us01.id)
+ccpst84 = CategoryProductstyle.create!(name: 'short jacket', code_name: 'p_style_short_jacket', category_productsubtype_id: cps13.id, user_id: us01.id)
+ccpst85 = CategoryProductstyle.create!(name: 'bomber jacket', code_name: 'p_style_bomber_jacket', category_productsubtype_id: cps13.id, user_id: us01.id)
+ccpst86 = CategoryProductstyle.create!(name: 'rain jackets', code_name: 'p_style_rain_jackets', category_productsubtype_id: cps13.id, user_id: us01.id)
+ccpst87 = CategoryProductstyle.create!(name: 'pullover', code_name: 'p_style_pullover', category_productsubtype_id: cps13.id, user_id: us01.id)
+# coats & jackets/coats
+ccpst88 = CategoryProductstyle.create!(name: 'puffer coats', code_name: 'p_style_puffer_coats', category_productsubtype_id: cps14.id, user_id: us01.id)
+ccpst89 = CategoryProductstyle.create!(name: 'tweed coats', code_name: 'p_style_tweed_coats', category_productsubtype_id: cps14.id, user_id: us01.id)
+ccpst90 = CategoryProductstyle.create!(name: 'blazers', code_name: 'p_style_blazers', category_productsubtype_id: cps14.id, user_id: us01.id)
+ccpst91 = CategoryProductstyle.create!(name: 'rain coats', code_name: 'p_style_rain_coats', category_productsubtype_id: cps14.id, user_id: us01.id)
+ccpst92 = CategoryProductstyle.create!(name: 'trench coats', code_name: 'p_style_trench_coats', category_productsubtype_id: cps14.id, user_id: us01.id)
+ccpst93 = CategoryProductstyle.create!(name: 'padded coat', code_name: 'p_style_padded_coat', category_productsubtype_id: cps14.id, user_id: us01.id)
+ccpst94 = CategoryProductstyle.create!(name: 'waistcoats', code_name: 'p_style_waistcoats', category_productsubtype_id: cps14.id, user_id: us01.id)
+ccpst95 = CategoryProductstyle.create!(name: 'pea coats', code_name: 'p_style_pea_coats', category_productsubtype_id: cps14.id, user_id: us01.id)
+ccpst96 = CategoryProductstyle.create!(name: 'quilted', code_name: 'p_style_quilted', category_productsubtype_id: cps14.id, user_id: us01.id)
+# coats & jackets/capes
+ccpst97 = CategoryProductstyle.create!(name: 'ponchos', code_name: 'p_style_ponchos', category_productsubtype_id: cps15.id, user_id: us01.id)
+ccpst98 = CategoryProductstyle.create!(name: 'kimonos', code_name: 'p_style_kimonos', category_productsubtype_id: cps15.id, user_id: us01.id)
+ccpst99 = CategoryProductstyle.create!(name: 'shawl', code_name: 'p_style_shawl', category_productsubtype_id: cps15.id, user_id: us01.id)
+ccpst100 = CategoryProductstyle.create!(name: 'cloaks', code_name: 'p_style_cloaks', category_productsubtype_id: cps15.id, user_id: us01.id)
+ccpst101 = CategoryProductstyle.create!(name: 'capelet', code_name: 'p_style_capelet', category_productsubtype_id: cps15.id, user_id: us01.id)
+ccpst102 = CategoryProductstyle.create!(name: 'tweed capes', code_name: 'p_style_tweed_capes', category_productsubtype_id: cps15.id, user_id: us01.id)
+# coats & jackets/gilet
+ccpst103 = CategoryProductstyle.create!(name: 'puffer', code_name: 'p_style_puffer', category_productsubtype_id: cps16.id, user_id: us01.id)
+ccpst104 = CategoryProductstyle.create!(name: 'teddy', code_name: 'p_style_teddy', category_productsubtype_id: cps16.id, user_id: us01.id)
+# --------------------------------------
 
 
 
