@@ -602,7 +602,7 @@ ccpst201 = CategoryProductstyle.create!(name: 'other accessories', code_name: 'p
 # ccpst204 = CategoryProductstyle.create!(name: 'snow boots', code_name: 'p_style_snow_boots', category_productsubtype_id: 0, admin_id: 1)
 # ccpst205 = CategoryProductstyle.create!(name: 'wellington boots (wellies)', code_name: 'p_style_wellies', category_productsubtype_id: 0, admin_id: 1)
 # ccpst206 = CategoryProductstyle.create!(name: 'motorcycle boots', code_name: 'p_style_motorcycle_boots', category_productsubtype_id: 0, admin_id: 1)
-# ccpst27 = CategoryProductstyle.create!(name: 'work & safety boots', code_name: 'p_style_work_safety_boots', category_productsubtype_id: 0, admin_id: 1)
+# ccpst207 = CategoryProductstyle.create!(name: 'work & safety boots', code_name: 'p_style_work_safety_boots', category_productsubtype_id: 0, admin_id: 1)
 # # footwear/flats
 # ccpst208 = CategoryProductstyle.create!(name: 'sliders & slippers', code_name: 'p_style_sliders_slippers', category_productsubtype_id: 0, admin_id: 1)
 # ccpst209 = CategoryProductstyle.create!(name: 'flip flops', code_name: 'p_style_flip_flops', category_productsubtype_id: 0, admin_id: 1)
