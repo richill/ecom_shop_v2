@@ -13,10 +13,12 @@ class VariantsController < ApplicationController
   # GET /variants/new
   def new
     @variant = Variant.new
+    @product = Product.find(params[:product_id])
   end
 
   # GET /variants/1/edit
   def edit
+    @product = Product.find(params[:product_id])
   end
 
   # POST /variants or /variants.json
@@ -25,7 +27,7 @@ class VariantsController < ApplicationController
 
     respond_to do |format|
       if @variant.save
-        format.html { redirect_to variant_url(@variant), notice: "Variant was successfully created." }
+        format.html { redirect_to product_url(@variant.product), notice: "Variant was successfully created." }
         format.json { render :show, status: :created, location: @variant }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +40,8 @@ class VariantsController < ApplicationController
   def update
     respond_to do |format|
       if @variant.update(variant_params)
-        format.html { redirect_to variant_url(@variant), notice: "Variant was successfully updated." }
+        format.html { redirect_to product_url(@variant.product), notice: "Variant was successfully created." }
+        # format.html { redirect_to variant_url(@variant), notice: "Variant was successfully updated." }
         format.json { render :show, status: :ok, location: @variant }
       else
         format.html { render :edit, status: :unprocessable_entity }

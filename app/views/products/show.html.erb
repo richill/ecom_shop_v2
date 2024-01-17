@@ -26,7 +26,21 @@
   <!--section-->
 
   <!--section-->
-  <div class="margin_bottom_15px"><%= link_to "create variant for product", "#" %></div>
+  <div class="margin_bottom_15px"><%= link_to "create variant for product", new_variant_path(product_id: @product) %></div>
+  <div class="margin_bottom_15px">
+    <div class="product_title">product variants</div>
+    <div class="variant_cover">
+      <ul>
+        <% @product.variants.each do |var| %>
+        <li>
+          <div><%= image_tag "#{var.image_url}" %></div>
+          <div><%= "colour: #{var.colour}" %></div>
+          <div><%= link_to "edit", edit_variant_path(var, product_id: @product) %></div>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
   <!--section-->
 
   <!--section-->
