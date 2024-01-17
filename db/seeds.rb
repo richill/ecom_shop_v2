@@ -2237,7 +2237,193 @@ ccpst1658 = CategoryProductstyle.create!(name: 'math toys', code_name: 'p_style_
 # toys & hobbies/board games
 ccpst1659 = CategoryProductstyle.create!(name: '-', code_name: 'p_style_blank', category_productsubtype_id: 0, admin_id: 1)
 # --------------------------------------
-
+# musical instruments/guitar
+ccpst1660 = CategoryProductstyle.create!(name: 'guitar instruments', code_name: 'p_style_guitar_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1661 = CategoryProductstyle.create!(name: 'guitar parts & accessories', code_name: 'p_style_guitar_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/violin
+ccpst1662 = CategoryProductstyle.create!(name: 'violin instruments', code_name: 'p_style_violin_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1663 = CategoryProductstyle.create!(name: 'violin parts & accessories', code_name: 'p_style_violin_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/drum
+ccpst1664 = CategoryProductstyle.create!(name: 'drum instruments', code_name: 'p_style_drum_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1665 = CategoryProductstyle.create!(name: 'drum parts & accessories', code_name: 'p_style_drum_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/ukulele
+ccpst1666 = CategoryProductstyle.create!(name: 'ukulele instruments', code_name: 'p_style_ukulele_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1667 = CategoryProductstyle.create!(name: 'ukulele parts & accessories', code_name: 'p_style_ukulele_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/cello
+ccpst1668 = CategoryProductstyle.create!(name: 'cello instruments', code_name: 'p_style_cello_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1669 = CategoryProductstyle.create!(name: 'cello parts & accessories', code_name: 'p_style_cello_parts_accessorie', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/guzheng
+ccpst1670 = CategoryProductstyle.create!(name: 'guzheng instruments', code_name: 'p_style_guzheng_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1671 = CategoryProductstyle.create!(name: 'guzheng parts & accessories', code_name: 'p_style_guzheng_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/harp
+ccpst1672 = CategoryProductstyle.create!(name: 'harp instruments', code_name: 'p_style_harp_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1673 = CategoryProductstyle.create!(name: 'harp parts & accessories', code_name: 'p_style_harp_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/urheen
+ccpst1674 = CategoryProductstyle.create!(name: 'urheen instruments', code_name: 'p_style_urheen_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1675 = CategoryProductstyle.create!(name: 'urheen parts & accessories', code_name: 'p_style_urheen_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/viola
+ccpst1676 = CategoryProductstyle.create!(name: 'viola instruments', code_name: 'p_style_viola_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1677 = CategoryProductstyle.create!(name: 'viola parts & accessories', code_name: 'p_style_viola_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/mandolin
+ccpst1678 = CategoryProductstyle.create!(name: 'mandolin instruments', code_name: 'p_style_mandolin_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1679 = CategoryProductstyle.create!(name: 'mandolin parts & accessories', code_name: 'p_style_mandolin_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/harmonica
+ccpst1680 = CategoryProductstyle.create!(name: 'harmonica instruments', code_name: 'p_style_harmonica_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1681 = CategoryProductstyle.create!(name: 'harmonica parts & accessories', code_name: 'p_style_harmonica_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/saxophone
+ccpst1682 = CategoryProductstyle.create!(name: 'saxophone instruments', code_name: 'p_style_saxophone_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1683 = CategoryProductstyle.create!(name: 'saxophone parts & accessories', code_name: 'p_style_saxophone_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/flute
+ccpst1684 = CategoryProductstyle.create!(name: 'flute instruments', code_name: 'p_style_flute_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1685 = CategoryProductstyle.create!(name: 'flute parts & accessories', code_name: 'p_style_flute_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/clarinet
+ccpst1686 = CategoryProductstyle.create!(name: 'clarinet instruments', code_name: 'p_style_clarinet_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1687 = CategoryProductstyle.create!(name: 'clarinet parts & accessories', code_name: 'p_style_clarinet_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/piccolo
+ccpst1688 = CategoryProductstyle.create!(name: 'piccolo instruments', code_name: 'p_style_piccolo_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1689 = CategoryProductstyle.create!(name: 'piccolo parts & accessories', code_name: 'p_style_piccolo_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/recorder
+ccpst1690 = CategoryProductstyle.create!(name: 'recorder instruments', code_name: 'p_style_recorder_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1691 = CategoryProductstyle.create!(name: 'recorder parts & accessories', code_name: 'p_style_recorder_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/oboe
+ccpst1692 = CategoryProductstyle.create!(name: 'oboe instruments', code_name: 'p_style_oboe_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1693 = CategoryProductstyle.create!(name: 'obe parts & accessories', code_name: 'p_style_obe_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/bells & chimes
+ccpst1694 = CategoryProductstyle.create!(name: 'bells & chimes instruments', code_name: 'p_style_bells_chimes_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1695 = CategoryProductstyle.create!(name: 'bells & chimes parts & accessories', code_name: 'p_style_bells_chimes _arts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/gong & cymbals
+ccpst1686 = CategoryProductstyle.create!(name: 'gong & cymbals instruments', code_name: 'p_style_gong_cymbals_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1697 = CategoryProductstyle.create!(name: 'gong & cymbals parts & accessories', code_name: 'p_style_ong_cymbals_arts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/trumpet
+ccpst1698 = CategoryProductstyle.create!(name: 'trumpet instruments', code_name: 'p_style_trumpet_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1699 = CategoryProductstyle.create!(name: 'trumpet parts & accessories', code_name: 'p_style_trumpet_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/trombone
+ccpst1700 = CategoryProductstyle.create!(name: 'trombone instruments', code_name: 'p_style_trombone_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1701 = CategoryProductstyle.create!(name: 'trombone parts & accessories', code_name: 'p_style_trombone_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/baritone
+ccpst1702 = CategoryProductstyle.create!(name: 'baritone instruments', code_name: 'p_style_baritone_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1703 = CategoryProductstyle.create!(name: 'baritone parts & accessories', code_name: 'p_style_bariton_ parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/tuba
+ccpst1704 = CategoryProductstyle.create!(name: 'tuba instruments', code_name: 'p_style_tuba_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1705 = CategoryProductstyle.create!(name: 'tuba parts & accessories', code_name: 'p_style_tuba_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/mellophone
+ccpst1706 = CategoryProductstyle.create!(name: 'mellophone instruments', code_name: 'p_style_mellophone_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1707 = CategoryProductstyle.create!(name: 'mellophone parts & accessories', code_name: 'p_style_mellophone_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/cornet
+ccpst1708 = CategoryProductstyle.create!(name: 'cornet instruments', code_name: 'p_style_cornet_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1709 = CategoryProductstyle.create!(name: 'cornet parts & accessories', code_name: 'p_style_cornet_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/euphonium
+ccpst1710 = CategoryProductstyle.create!(name: 'euphonium instruments', code_name: 'p_style_euphonium_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1711 = CategoryProductstyle.create!(name: 'euphonium parts & accessories', code_name: 'p_style_euphonium_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/flugelhorn
+ccpst1712 = CategoryProductstyle.create!(name: 'flugelhorn instruments', code_name: 'p_style_flugelhorn_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1713 = CategoryProductstyle.create!(name: 'flugelhorn parts & accessories', code_name: 'p_style_flugelhorn_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/piano
+ccpst1714 = CategoryProductstyle.create!(name: 'piano instruments', code_name: 'p_style_piano_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1715 = CategoryProductstyle.create!(name: 'piano parts & accessories', code_name: 'p_style_piano_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/electric organ
+ccpst1716 = CategoryProductstyle.create!(name: 'electric organ instruments', code_name: 'p_style_electric_organ_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1717 = CategoryProductstyle.create!(name: 'electric organ parts & accessories', code_name: 'p_style_electric_organ_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/accordion
+ccpst1718 = CategoryProductstyle.create!(name: 'accordion instruments', code_name: 'p_style_accordion_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1719 = CategoryProductstyle.create!(name: 'accordion parts & accessories', code_name: 'p_style_accordion parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/ocarina
+ccpst1720 = CategoryProductstyle.create!(name: 'ocarina instruments', code_name: 'p_style_ocarina_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1721 = CategoryProductstyle.create!(name: 'ocarina parts & accessories', code_name: 'p_style_ocarina_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/kazoo
+ccpst1722 = CategoryProductstyle.create!(name: 'kazoo instruments', code_name: 'p_style_kazoo_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1723 = CategoryProductstyle.create!(name: 'kazoo parts & accessories', code_name: 'p_style_kazoo_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/maraca
+ccpst1724 = CategoryProductstyle.create!(name: 'maraca instruments', code_name: 'p_style_maraca instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1725 = CategoryProductstyle.create!(name: 'maraca parts & accessories', code_name: 'p_style_maraca_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/xylophone
+ccpst1726 = CategoryProductstyle.create!(name: 'xylophone instruments', code_name: 'p_style_xylophone_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1727 = CategoryProductstyle.create!(name: 'xylophone parts & accessories', code_name: 'p_style_xylophone_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/crow sounder
+ccpst1728 = CategoryProductstyle.create!(name: 'crow sounder instruments', code_name: 'p_style_crow_sounder_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1729 = CategoryProductstyle.create!(name: 'crow sounder parts & accessories', code_name: 'p_style_crow_sounder_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/stick shaker
+ccpst1730 = CategoryProductstyle.create!(name: 'stick shaker instruments', code_name: 'p_style_stick shaker_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1731 = CategoryProductstyle.create!(name: 'stick shaker parts & accessories', code_name: 'p_style_stick_shaker_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/castanets
+ccpst1732 = CategoryProductstyle.create!(name: 'castanets instruments', code_name: 'p_style_castanets_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1733 = CategoryProductstyle.create!(name: 'castanets parts & accessories', code_name: 'p_style_castanets_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/rainmaker shaker
+ccpst1734 = CategoryProductstyle.create!(name: 'rainmaker shaker instruments', code_name: 'p_style_rainmaker_shaker_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1735 = CategoryProductstyle.create!(name: 'rainmaker shaker parts & accessories', code_name: 'p_style_rainmaker_shaker_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/rhythm sticks
+ccpst1736 = CategoryProductstyle.create!(name: 'rhythm sticks instruments', code_name: 'p_style_rhythm_sticks_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1737 = CategoryProductstyle.create!(name: 'rhythm sticks parts & accessories', code_name: 'p_style_rhythm_sticks_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/triangle
+ccpst1738 = CategoryProductstyle.create!(name: 'triangle instruments', code_name: 'p_style_triangle_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1739 = CategoryProductstyle.create!(name: 'triangle parts & accessories', code_name: 'p_style_triangle_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# musical instruments/kokiriko
+ccpst1740 = CategoryProductstyle.create!(name: 'kokiriko instruments', code_name: 'p_style_kokiriko_instruments', category_productsubtype_id: 0, admin_id: 1)
+ccpst1741 = CategoryProductstyle.create!(name: 'kokiriko parts & accessories', code_name: 'p_style_kokiriko_parts_accessories', category_productsubtype_id: 0, admin_id: 1)
+# --------------------------------------
+# hair extensions & wigs/human hair
+ccpst1700 = CategoryProductstyle.create!(name: 'hair weaves', code_name: 'p_style_hair_weaves', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'virgin hair weaves', code_name: 'p_style_virgin_hair_weaves', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'wigs/none-lace wigs', code_name: 'p_style_wigs_none_lace_wigs', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'lace wigs', code_name: 'p_style_lace_wigs', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'silk base lace wigs', code_name: 'p_style_silk base_lace_wigs', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'closures', code_name: 'p_style_closures', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'bundles', code_name: 'p_style_bundles', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'bundle packs', code_name: 'p_style_bundle_packs', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: '3/4 bundles with closure', code_name: 'p_style_3_4_bundles_with_closure', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: '3/4 bundles', code_name: 'p_style_3_4_bundles', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'pony tails', code_name: 'p_style_pony_tails', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'clip-in full head', code_name: 'p_style_clip_in_full_head', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'clip-in extensions', code_name: 'p_style_clip_in_extensions', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'bangs', code_name: 'p_style_bangs', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'chignon', code_name: 'p_style_bangs', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'toupees & toppers', code_name: 'p_style_toupees_toppers', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'clip-in one piece', code_name: 'p_style_clip_in_one_piece', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'braided wigs', code_name: 'p_style_braided_wigs', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'tape hair extensions', code_name: 'p_style_tape_hair_extensions', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'skin weft hair extensions', code_name: 'p_style_skin_weft_hair_extensions', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'costume & cosplay wigs', code_name: 'p_style_costume_cosplay_wigs', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'micro loop ring hair extensions', code_name: 'p_style_micro_loop_ring_hair_extensions', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'micro bead hair extensions', code_name: 'p_style_micro_bead_hair_extensions', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'crochet hair', code_name: 'p_style_crochet_hair', category_productsubtype_id: 0, admin_id: 1)
+# hair extensions & wigs/synthetic hair
+ccpst1700 = CategoryProductstyle.create!(name: 'hair weaves', code_name: 'p_style_hair_weaves', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'wigs/none-lace wigs', code_name: 'p_style_wigs_none_lace_wigs', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'lace wigs', code_name: 'p_style_lace_wig', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'silk base lace wigs', code_name: 'p_style_silk_base_lace_wigs', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'closures', code_name: 'p_style_closures', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'bundles', code_name: 'p_style_bundles', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'bundle packs', code_name: 'p_style_bundle_packs', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: '3/4 bundles with closure', code_name: 'p_style_3_4_bundles_with_closure', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: '3/4 bundles', code_name: 'p_style_3_4_bundles', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'pony tails', code_name: 'p_style_pony_tails', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'clip-in full head', code_name: 'p_style_clip_in_full_head', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'clip-in extensions', code_name: 'p_style_clip_in_extensions', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'bangs', code_name: 'p_style_bangs', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'chignon', code_name: 'p_style_chignon', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'toupees & toppers', code_name: 'p_style_toupees_toppers', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'clip-in one piece', code_name: 'p_style_clip_in_one_piece', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'braided wigs', code_name: 'p_style_braided_wigs', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'tape hair extensions', code_name: 'p_style_tape_hair_extensions', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'skin weft hair extensions', code_name: 'p_style_skin_weft_hair_extensions', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'costume & cosplay wigs', code_name: 'p_style_costume_cosplay_wigs', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'micro loop ring hair extensions', code_name: 'p_style_micro_loop_ring _air_extensions', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'micro bead hair extensions', code_name: 'p_style_micro_bead_hair_extensions', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'crochet hair', code_name: 'p_style_crochet_hair', category_productsubtype_id: 0, admin_id: 1)
+# hair extensions & wigs/hair supplies
+ccpst1700 = CategoryProductstyle.create!(name: 'mannequin head', code_name: 'p_style_mannequin_head', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'adhesives', code_name: 'p_style_adhesives', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'hair nets', code_name: 'p_style_hair_nets', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'wig stands', code_name: 'p_style_wig_stands', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'hook needles', code_name: 'p_style_hook_needles', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'links, rings & tubes', code_name: 'p_style_links_rings_tubes', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'loop brushes', code_name: 'p_style_loop_brushes', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'clips', code_name: 'p_style_loop_brushes', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'connectors', code_name: 'p_style_connectors', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'pliers', code_name: 'p_style_pliers', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'colour sticks', code_name: 'p_style_colour_sticks', category_productsubtype_id: 0, admin_id: 1)
+ccpst1700 = CategoryProductstyle.create!(name: 'colour rings', code_name: 'p_style_colour_rings', category_productsubtype_id: 0, admin_id: 1)
+# --------------------------------------
 
 
 
