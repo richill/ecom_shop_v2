@@ -1043,7 +1043,7 @@ ccpst614 = CategoryProductstyle.create!(name: 'mosaic flooring', code_name: 'p_s
 # --------------------------------------
 # furniture/living room furniture
 ccpst615 = CategoryProductstyle.create!(name: 'side tables', code_name: 'p_style_side_tables', category_productsubtype_id: cps59.id, user_id: us01.id)
-ccpst616 = CategoryProductstyle.create!(name: 'bookshelves', ode_name: 'p_style_bookshelves', category_productsubtype_id: cps59.id, user_id: us01.id)
+ccpst616 = CategoryProductstyle.create!(name: 'bookshelves', code_name: 'p_style_bookshelves', category_productsubtype_id: cps59.id, user_id: us01.id)
 ccpst617 = CategoryProductstyle.create!(name: 'TV units', code_name: 'p_style_tv_units', category_productsubtype_id: cps59.id, user_id: us01.id)
 # furniture/bedroom furniture
 ccpst618 = CategoryProductstyle.create!(name: 'chest drawers', code_name: 'p_style_chest_drawers', category_productsubtype_id: cps60.id, user_id: us01.id)
