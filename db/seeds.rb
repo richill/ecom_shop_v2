@@ -3016,3 +3016,21 @@ vv03 = Variant.create!(
   image_url: "https://ae01.alicdn.com/kf/Sff33f50bec3f48c19a11ede81fe96faaJ/Cute-Bear-Baby-Knit-Hat-Solid-Color-Soft-Comfortable-Toddler-Beanies-for-Boy-Girl-Cartoon-Autumn.jpg_640x640.jpg_.webp",
   colour: "black"
 )
+
+vv03 = Variant.create!(
+  product_id: pp02.id,
+  image_url: "https://ae01.alicdn.com/kf/Sa3d6957312f04b4fb13371b68ccbf1c8k/Joylove-Nordic-Fabric-Sofa-Living-Room-Furniture-Balcony-Bedroom-Tables-And-Chairs-Leisure-Single-Small-Sofa.jpg_640x640.jpg_.webp",
+  colour: "yellow"
+)
+vv03 = Variant.create!(
+  product_id: pp02.id,
+  image_url: "https://ae01.alicdn.com/kf/Sb243756daeea49efb49a93a969c89a6bH/Joylove-Nordic-Fabric-Sofa-Living-Room-Furniture-Balcony-Bedroom-Tables-And-Chairs-Leisure-Single-Small-Sofa.jpg_640x640.jpg_.webp",
+  colour: "brown"
+)
+vv03 = Variant.create!(
+  product_id: pp02.id,
+  image_url: "https://ae01.alicdn.com/kf/S4900cc448f8a4dc59cf8096858a3e733e/Joylove-Nordic-Fabric-Sofa-Living-Room-Furniture-Balcony-Bedroom-Tables-And-Chairs-Leisure-Single-Small-Sofa.jpg_640x640.jpg_.webp",
+  colour: "pink"
+)
+
+
