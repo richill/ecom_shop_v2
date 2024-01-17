@@ -1040,6 +1040,60 @@ ccpst612 = CategoryProductstyle.create!(name: 'stone flooring', code_name: 'p_st
 ccpst613 = CategoryProductstyle.create!(name: 'carpets', code_name: 'p_style_carpets', category_productsubtype_id: 0, admin_id: 1)
 ccpst614 = CategoryProductstyle.create!(name: 'mosaic flooring', code_name: 'p_style_mosaic_flooring', category_productsubtype_id: 0, admin_id: 1)
 # --------------------------------------
+# furniture/living room furniture
+ccpst615 = CategoryProductstyle.create!(name: 'side tables', code_name: 'p_style_side_tables', category_productsubtype_id: 0, admin_id: 1)
+ccpst616 = CategoryProductstyle.create!(name: 'bookshelves', ode_name: 'p_style_bookshelves', category_productsubtype_id: 0, admin_id: 1)
+ccpst617 = CategoryProductstyle.create!(name: 'TV units', code_name: 'p_style_tv_units', category_productsubtype_id: 0, admin_id: 1)
+# furniture/bedroom furniture
+ccpst618 = CategoryProductstyle.create!(name: 'chest drawers', code_name: 'p_style_chest_drawers', category_productsubtype_id: 0, admin_id: 1)
+ccpst619 = CategoryProductstyle.create!(name: 'wardrobes', code_name: 'p_style_wardrobes', category_productsubtype_id: 0, admin_id: 1)
+ccpst620 = CategoryProductstyle.create!(name: 'bedside tables', code_name: 'p_style_bedside', category_productsubtype_id: 0, admin_id: 1)
+ccpst621 = CategoryProductstyle.create!(name: 'dressing tables', code_name: 'p_style_dressing_tables', category_productsubtype_id: 0, admin_id: 1)
+# furniture/sofas
+ccpst622 = CategoryProductstyle.create!(name: 'bed sofas', code_name: 'p_style_bed_sofas', category_productsubtype_id: 0, admin_id: 1)
+ccpst623 = CategoryProductstyle.create!(name: 'corner sofas', code_name: 'p_style_corner_sofas', category_productsubtype_id: 0, admin_id: 1)
+# furniture/armchairs
+ccpst624 = CategoryProductstyle.create!(name: 'rocking chair', code_name: 'p_style_rocking_chair', category_productsubtype_id: 0, admin_id: 1)
+ccpst625 = CategoryProductstyle.create!(name: 'lounge chair', code_name: 'p_style_lounge_chair', category_productsubtype_id: 0, admin_id: 1)
+ccpst626 = CategoryProductstyle.create!(name: 'wing chair', code_name: 'p_style_wing_chair', category_productsubtype_id: 0, admin_id: 1)
+ccpst627 = CategoryProductstyle.create!(name: 'accent chair', code_name: 'p_style_accent_chair', category_productsubtype_id: 0, admin_id: 1)
+# furniture/dining tables
+ccpst628 = CategoryProductstyle.create!(name: 'wood tables', code_name: 'p_style_wood_tables', category_productsubtype_id: 0, admin_id: 1)
+ccpst629 = CategoryProductstyle.create!(name: 'extendable tables', code_name: 'p_style_extendable_tables', category_productsubtype_id: 0, admin_id: 1)
+ccpst630 = CategoryProductstyle.create!(name: 'dining tables', code_name: 'p_style_dining_tables', category_productsubtype_id: 0, admin_id: 1)
+ccpst631 = CategoryProductstyle.create!(name: 'dining tables with benches', code_name: 'p_style_dining_tables_with_benches', category_productsubtype_id: 0, admin_id: 1)
+ccpst632 = CategoryProductstyle.create!(name: 'oak dining tables', code_name: 'p_style_oak_dining_tables', category_productsubtype_id: 0, admin_id: 1)
+# furniture/dining chairs
+ccpst633 = CategoryProductstyle.create!(name: 'fabric dining chairs', code_name: 'p_style_fabric_dining_chairs', category_productsubtype_id: 0, admin_id: 1)
+ccpst634 = CategoryProductstyle.create!(name: 'non-fabric dining chairs', code_name: 'p_style_non_fabric_dining_chairs', category_productsubtype_id: 0, admin_id: 1)
+# furniture/sideboards
+ccpst635 = CategoryProductstyle.create!(name: 'small sideboards', code_name: 'p_style_small_sideboards', category_productsubtype_id: 0, admin_id: 1)
+ccpst636 = CategoryProductstyle.create!(name: 'big sideboards', code_name: 'p_style_big_sideboards', category_productsubtype_id: 0, admin_id: 1)
+# furniture/beds
+ccpst637 = CategoryProductstyle.create!(name: 'ottoman', code_name: 'p_style_ottoman', category_productsubtype_id: 0, admin_id: 1)
+ccpst638 = CategoryProductstyle.create!(name: 'headboards', code_name: 'p_style_headboards', category_productsubtype_id: 0, admin_id: 1)
+ccpst639 = CategoryProductstyle.create!(name: 'beds', code_name: 'p_style_beds', category_productsubtype_id: 0, admin_id: 1)
+# furniture/nursery
+ccpst640 = CategoryProductstyle.create!(name: 'nursery cots & cribs', code_name: 'p_style_nursery_cots_cribs', category_productsubtype_id: 0, admin_id: 1)
+ccpst641 = CategoryProductstyle.create!(name: 'dresser changers', code_name: 'p_style_dresser_changers', category_productsubtype_id: 0, admin_id: 1)
+ccpst642 = CategoryProductstyle.create!(name: 'rocking chairs', code_name: 'p_style_rocking_chairs', category_productsubtype_id: 0, admin_id: 1)
+ccpst643 = CategoryProductstyle.create!(name: 'high chairs', code_name: 'p_style_high_chairs', category_productsubtype_id: 0, admin_id: 1)
+ccpst644 = CategoryProductstyle.create!(name: 'bouncers', code_name: 'p_style_bouncers', category_productsubtype_id: 0, admin_id: 1)
+ccpst645 = CategoryProductstyle.create!(name: 'bassinets', code_name: 'p_style_bassinets', category_productsubtype_id: 0, admin_id: 1)
+ccpst646 = CategoryProductstyle.create!(name: 'baby seats & sofas', code_name: 'p_style_baby_seats_sofas', category_productsubtype_id: 0, admin_id: 1)
+# furniture/garden furniture
+ccpst647 = CategoryProductstyle.create!(name: 'tables', code_name: 'p_style_tables', category_productsubtype_id: 0, admin_id: 1)
+ccpst648 = CategoryProductstyle.create!(name: 'sofas', code_name: 'p_style_sofas', category_productsubtype_id: 0, admin_id: 1)
+ccpst649 = CategoryProductstyle.create!(name: 'chairs', code_name: 'p_style_chairs', category_productsubtype_id: 0, admin_id: 1)
+ccpst650 = CategoryProductstyle.create!(name: 'benches', code_name: 'p_style_benches', category_productsubtype_id: 0, admin_id: 1)
+ccpst651 = CategoryProductstyle.create!(name: 'garden armchairs', code_name: 'p_style_arden_armchairs', category_productsubtype_id: 0, admin_id: 1)
+ccpst652 = CategoryProductstyle.create!(name: 'patio umbrellas & bases', code_name: 'p_style_patio_umbrellas_bases', category_productsubtype_id: 0, admin_id: 1)
+ccpst653 = CategoryProductstyle.create!(name: 'hammocks', code_name: 'p_style_hammocks', category_productsubtype_id: 0, admin_id: 1)
+ccpst654 = CategoryProductstyle.create!(name: 'parasol base', code_name: 'p_style_parasol_base', category_productsubtype_id: 0, admin_id: 1)
+# furniture/office furniture
+ccpst655 = CategoryProductstyle.create!(name: 'office desk', code_name: 'p_style_office_desk', category_productsubtype_id: 0, admin_id: 1)
+ccpst656 = CategoryProductstyle.create!(name: 'office chairs', code_name: 'p_style_office_chairs', category_productsubtype_id: 0, admin_id: 1)
+ccpst657 = CategoryProductstyle.create!(name: 'filing cabinets', code_name: 'p_style_filing_cabinets', category_productsubtype_id: 0, admin_id: 1)
 
 
 
