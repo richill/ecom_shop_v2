@@ -20,7 +20,6 @@ cpt03 = CategoryProducttype.create!(name: 'kids (boys)', code_name: 'p_cat_kids_
 cpt04 = CategoryProducttype.create!(name: 'kids (girls)', code_name: 'p_cat_kids_girls', user_id: us01.id)
 cpt05 = CategoryProducttype.create!(name: 'product', code_name: 'p_cat_product', user_id: us01.id)
 
-
 # level_02
 CategoryProductitemtype.delete_all
 cpit01 = CategoryProductitemtype.create!(name: 'accessories', code_name: 'p_type_accessories', user_id: us01.id)
@@ -46,7 +45,6 @@ cpit20 = CategoryProductitemtype.create!(name: 'salon equipments', code_name: 'p
 cpit21 = CategoryProductitemtype.create!(name: 'automobiles & motorcycles', code_name: 'p_type_auto',user_id: us01.id)
 cpit22 = CategoryProductitemtype.create!(name: 'sport equipments', code_name: 'p_type_sport_equip',user_id: us01.id)
 cpit23 = CategoryProductitemtype.create!(name: 'construction & real estate', code_name: 'p_type_construction_estate',user_id: us01.id)
-
 
 # level_03
 CategoryProductsubtype.delete_all
@@ -360,7 +358,6 @@ cps284 = CategoryProductsubtype.create!(name: 'machine tools & accessories', cod
 cps285 = CategoryProductsubtype.create!(name: 'heating, venting & cooling', code_name: 'p_subtype_heating_venting_cooling', category_productitemtype_id: cpit23.id, user_id: us01.id)
 cps286 = CategoryProductsubtype.create!(name: 'prefabricated buildings', code_name: 'p_subtype_prefabricated_buildings', category_productitemtype_id: cpit23.id, user_id: us01.id)
 cps297 = CategoryProductsubtype.create!(name: 'construction & building machinery', code_name: 'p_subtype_construction_building_machinery', category_productitemtype_id: cpit23.id, user_id: us01.id)
-
 
 # level_04
 CategoryProductstyle.delete_all
