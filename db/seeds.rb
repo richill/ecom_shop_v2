@@ -358,7 +358,7 @@ cps283 = CategoryProductsubtype.create!(name: 'tool organisation', code_name: 'p
 cps284 = CategoryProductsubtype.create!(name: 'machine tools & accessories', code_name: 'p_subtype_machine_tools_accessories', category_productitemtype_id: cpit23.id, user_id: us01.id)
 cps285 = CategoryProductsubtype.create!(name: 'heating, venting & cooling', code_name: 'p_subtype_heating_venting_cooling', category_productitemtype_id: cpit23.id, user_id: us01.id)
 cps286 = CategoryProductsubtype.create!(name: 'prefabricated buildings', code_name: 'p_subtype_prefabricated_buildings', category_productitemtype_id: cpit23.id, user_id: us01.id)
-cps297 = CategoryProductsubtype.create!(name: 'construction & building machinery', code_name: 'p_subtype_construction_building_machinery', category_productitemtype_id: cpit23.id, user_id: us01.id)
+cps287 = CategoryProductsubtype.create!(name: 'construction & building machinery', code_name: 'p_subtype_construction_building_machinery', category_productitemtype_id: cpit23.id, user_id: us01.id)
 
 # level_04
 CategoryProductstyle.delete_all
