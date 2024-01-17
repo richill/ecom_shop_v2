@@ -1094,6 +1094,120 @@ ccpst654 = CategoryProductstyle.create!(name: 'parasol base', code_name: 'p_styl
 ccpst655 = CategoryProductstyle.create!(name: 'office desk', code_name: 'p_style_office_desk', category_productsubtype_id: 0, admin_id: 1)
 ccpst656 = CategoryProductstyle.create!(name: 'office chairs', code_name: 'p_style_office_chairs', category_productsubtype_id: 0, admin_id: 1)
 ccpst657 = CategoryProductstyle.create!(name: 'filing cabinets', code_name: 'p_style_filing_cabinets', category_productsubtype_id: 0, admin_id: 1)
+# --------------------------------------
+# home & gardening/fertiliser
+ccpst00 = CategoryProductstyle.create!(name: 'plant food', code_name: 'p_style_plant_food', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'organic fertiliser', code_name: 'p_style_organic_fertiliser', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'compound fertiliser', code_name: 'p_style_compound_fertiliser', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'biological fertilizers', code_name: 'p_style_biological_fertiliser', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'nitrogen fertiliser', code_name: 'p_style_nitrogen_fertiliser', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'potassium fertiliser', code_name: 'p_style_nitrogen_fertiliser', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'phosphate fertiliser', code_name: 'p_style_nitrogen_fertiliser', category_productsubtype_id: 0, admin_id: 1)
+# home & gardening/beekeeping supplies
+cc00 = CategoryProductstyle.create!(name: 'beekeeping tools', code_name: 'p_style_beekeeping_tools', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'bee hives', code_name: 'p_style_bee_hives', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'protective clothing', code_name: 'p_style_protective_clothing', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'protective clothing accessories', code_name: 'p_style_protective_clothing_accessories', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'varroa mite control', code_name: 'p_style_varroa_mite_control', category_productsubtype_id: 0, admin_id: 1)
+# home & gardening/plant support & care
+cc00 = CategoryProductstyle.create!(name: 'plant cages & supports', code_name: 'p_style_plant_cages_supports', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'plant covers', code_name: 'p_style_plan_covers', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'garden netting', code_name: 'p_style_garden_netting', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'grafting film', code_name: 'p_style_grafting_film', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'garden stakes', code_name: 'p_style_garden_stakes', category_productsubtype_id: 0, admin_id: 1)
+# home & gardening/seed disseminators
+cc00 = CategoryProductstyle.create!(name: '-', code_name: 'p_style_blank', category_productsubtype_id: 0, admin_id: 1)
+# home & gardening/indoor gardening & hydroponics
+cc00 = CategoryProductstyle.create!(name: '-', code_name: 'p_style_blank', category_productsubtype_id: 0, admin_id: 1)
+# home & gardening/outdoor hot tubs & accessories
+cc00 = CategoryProductstyle.create!(name: '-', code_name: 'p_style_blank', category_productsubtype_id: 0, admin_id: 1)
+# home & gardening/pest control
+cc00 = CategoryProductstyle.create!(name: 'repellents', code_name: 'p_style_repellents', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'traps', code_name: 'p_style_traps', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'bug zappers', code_name: 'p_style_bug_zappers', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'baits & lures', code_name: 'p_style_baits_lures', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'fly swatters', code_name: 'p_style_fly_swatters', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'foggers & sprayers', code_name: 'p_style_foggers_sprayers', category_productsubtype_id: 0, admin_id: 1)
+# home & gardening/yard & garden decor
+cc00 = CategoryProductstyle.create!(name: 'garden statues & sculptures', code_name: 'p_style_garden_statues_sculptures', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'decorative wind spinners', code_name: 'p_style_decorative_wind_spinners', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'fountains & bird baths', code_name: 'p_style_fountains_bird_baths', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'decorative pebbles', code_name: 'p_style_decorative_pebbles', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'chimes', code_name: 'p_style_decorative_pebbles', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'artificial lawn', code_name: 'p_style_artificial_lawn', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'flagpole hardware', code_name: 'p_style_flagpole_hardware', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'address signs', code_name: 'p_style_address_signs', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'rain chains', code_name: 'p_style_rain_chains', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'mailbox covers', code_name: 'p_style_mailbox_covers', category_productsubtype_id: 0, admin_id: 1)
+# home & gardening/garden carts
+cc00 = CategoryProductstyle.create!(name: '-', code_name: 'p_style_blank', category_productsubtype_id: 0, admin_id: 1)
+# home & gardening/pond liners
+cc00 = CategoryProductstyle.create!(name: '-', code_name: 'p_style_blank', category_productsubtype_id: 0, admin_id: 1)
+# home & gardening/watering & irrigation
+cc00 = CategoryProductstyle.create!(name: 'sprayers', code_name: 'p_style_sprayers', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'garden water connectors', code_name: 'p_style_garden_water_connectors', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'garden sprinklers', code_name: 'p_style_garden_sprinklers', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'watering kits', code_name: 'p_style_watering_kits', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'garden hoses & reels', code_name: 'p_style_garden_hoses_reels', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'garden water guns', code_name: 'p_style_garden_water_guns', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'garden water timer', code_name: 'p_style_garden_water_timer', category_productsubtype_id: 0, admin_id: 1)
+# home & gardening/shade
+cc00 = CategoryProductstyle.create!(name: 'agricultural greenhouses', code_name: 'p_style_agricultural_greenhouses', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'awnings', code_name: 'p_style_awnings', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'shade accessories', code_name: 'p_style_shade_accessories', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'gazebos', code_name: 'p_style_gazebos', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'shade sails & nets', code_name: 'p_style_shade_sails_nets', category_productsubtype_id: 0, admin_id: 1)
+# home & gardening/garden pots & planters
+cc00 = CategoryProductstyle.create!(name: 'flower pots & planters', code_name: 'p_style_flower_pots_planters', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'nursery pots', code_name: 'p_style_nursery_pots', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'grow bags', code_name: 'p_style_grow_bags', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'hanging baskets', code_name: 'p_style_hanging_baskets', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'plant markers', code_name: 'p_style_plant_markers', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'pot trays', code_name: 'p_style_pot_trays', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'nursery trays & lids', code_name: 'p_style_nursery_trays_lids', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'basket liners', code_name: 'p_style_basket_liner', category_productsubtype_id: 0, admin_id: 1)
+# home & gardening/BBQ
+cc00 = CategoryProductstyle.create!(name: 'other BBQ tools', code_name: 'p_style_other_bbq_tools', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'basting brushes', code_name: 'p_style_basting_brushes', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'aprons', code_name: 'p_style_aprons', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'BBQ grills', code_name: 'p_style_bbq_grills', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'forks', code_name: 'p_style_forks', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'BBq blowers', code_name: 'p_style_bbq_blowers', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'tongs', code_name: 'p_style_tongs', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'skewers', code_name: 'p_style_skewers', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'covers', code_name: 'p_style_covers', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'cleaning brushes', code_name: 'p_style_cleaning_brushes', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'pans sticks', code_name: 'p_style_pans_sticks', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'turners', code_name: 'p_style_turners', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'corn holders', code_name: 'p_style_corn_holders', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'lighters', code_name: 'p_style_lighters', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'spatulas', code_name: 'p_style_spatulas', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'gloves', code_name: 'p_style_gloves', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'knives', code_name: 'p_style_knives', category_productsubtype_id: 0, admin_id: 1)
+# home & gardening/garden buildings
+cc00 = CategoryProductstyle.create!(name: 'fencing, trellis & gates', code_name: 'p_style_fencing_trellis_gates', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'paving mods', code_name: 'p_style_paving_mods', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'arches, arbours, pergolas & bridge', code_name: 'p_style_arches_arbours_pergolas_bridge', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'cabin & garden rooms', code_name: 'p_style_cabin_garden_rooms', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'yard waste bins', code_name: 'p_style_yard_waste_bins', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'summer houses', code_name: 'p_style_summer_houses', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'shed & storage', code_name: 'p_style_shed_storage', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'garden floor boards', code_name: 'p_style_garden_floor_boards', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'garden greenhouses', code_name: 'p_style_garden_greenhouses', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'garages, canopies & carports', code_name: 'p_style_garages_canopies_carports', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'playhouses', code_name: 'p_style_playhouses', category_productsubtype_id: 0, admin_id: 1)
+# home & gardening/garden tools
+cc00 = CategoryProductstyle.create!(name: 'garden power tools', code_name: 'p_style_garden_power_tools', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'garden hand tools', code_name: 'p_style_garden_hand_tools', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'protective gears', code_name: 'p_style_protective_gears', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'cleaning tools', code_name: 'p_style_cleaning_tools', category_productsubtype_id: 0, admin_id: 1)
+# home & gardening/mailboxes
+cc00 = CategoryProductstyle.create!(name: '-', code_name: 'p_style_blank', category_productsubtype_id: 0, admin_id: 1)
+# home & gardening/outdoor heaters
+cc00 = CategoryProductstyle.create!(name: 'patio heaters', code_name: 'p_style_patio_heaters', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'fire pits', code_name: 'p_style_fire_pits', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'chimeneas', code_name: 'p_style_chimeneas', category_productsubtype_id: 0, admin_id: 1)
+# --------------------------------------
 
 
 
