@@ -2970,22 +2970,6 @@ ccpst2288 = CategoryProductstyle.create!(name: 'pipe making machines', code_name
 ccpst2289 = CategoryProductstyle.create!(name: 'glass making & processing machines', code_name: 'p_style_glass_making_processing_machines', category_productsubtype_id: 0, user_id: us01.id)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # products
 Product.delete_all
 pp01 = Product.create!(
