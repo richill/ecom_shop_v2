@@ -786,12 +786,12 @@ ccpst371 = CategoryProductstyle.create!(name: 'electric bath brushes', code_name
 ccpst372 = CategoryProductstyle.create!(name: 'electric hair caps', code_name: 'p_style_electric_hair_caps', category_productsubtype_id: 0, admin_id: 1)
 ccpst373 = CategoryProductstyle.create!(name: 'hairdiffusers', code_name: 'p_style_hair_diffusers', category_productsubtype_id: 0, admin_id: 1)
 ccpst374 = CategoryProductstyle.create!(name: 'derma roller', code_name: 'p_style_derma_roller', category_productsubtype_id: 0, admin_id: 1)
-ccpst376 = CategoryProductstyle.create!(name: 'skin cleansing facial machine', code_name: 'p_style_kin_cleansing_facial_machine', category_productsubtype_id: 0, admin_id: 1)
-ccpst377 = CategoryProductstyle.create!(name: 'LED skin rejuvenation machine', code_name: 'p_style_led_skin_rejuvenation_machine', category_productsubtype_id: 0, admin_id: 1)
-ccpst378 = CategoryProductstyle.create!(name: 'microdermabrasion peel machine', code_name: 'p_style_microdermabrasion_peel_machine', category_productsubtype_id: 0, admin_id: 1)
-ccpst379 = CategoryProductstyle.create!(name: 'skin analyzer machine', code_name: 'p_style_skin_analyzer_machine', category_productsubtype_id: 0, admin_id: 1)
-ccpst380 = CategoryProductstyle.create!(name: 'water oxygen facial machine', code_name: 'p_style_water_oxygen_facial_machine', category_productsubtype_id: 0, admin_id: 1)
-ccpst381 = CategoryProductstyle.create!(name: 'magnifying lamp', code_name: 'p_style_magnifying_lamp', category_productsubtype_id: 0, admin_id: 1)
+ccpst375 = CategoryProductstyle.create!(name: 'skin cleansing facial machine', code_name: 'p_style_kin_cleansing_facial_machine', category_productsubtype_id: 0, admin_id: 1)
+ccpst376 = CategoryProductstyle.create!(name: 'LED skin rejuvenation machine', code_name: 'p_style_led_skin_rejuvenation_machine', category_productsubtype_id: 0, admin_id: 1)
+ccpst377 = CategoryProductstyle.create!(name: 'microdermabrasion peel machine', code_name: 'p_style_microdermabrasion_peel_machine', category_productsubtype_id: 0, admin_id: 1)
+ccpst378 = CategoryProductstyle.create!(name: 'skin analyzer machine', code_name: 'p_style_skin_analyzer_machine', category_productsubtype_id: 0, admin_id: 1)
+ccpst379 = CategoryProductstyle.create!(name: 'water oxygen facial machine', code_name: 'p_style_water_oxygen_facial_machine', category_productsubtype_id: 0, admin_id: 1)
+ccpst380 = CategoryProductstyle.create!(name: 'magnifying lamp', code_name: 'p_style_magnifying_lamp', category_productsubtype_id: 0, admin_id: 1)
 # --------------------------------------
 
 
