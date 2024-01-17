@@ -8,6 +8,7 @@ class Product < ApplicationRecord
   belongs_to :category_productsubtype
   belongs_to :category_producttype
   has_many :reviews
+  has_many :variants
 
   def average_rating
     if self.reviews.present?
