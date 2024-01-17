@@ -362,6 +362,98 @@ cps286 = CategoryProductsubtype.create!(name: 'prefabricated buildings', code_na
 cps297 = CategoryProductsubtype.create!(name: 'construction & building machinery', code_name: 'p_subtype_construction_building_machinery', category_productitemtype_id: cpit23.id, user_id: us01.id)
 
 
+# level_04
+CategoryProductstyle.delete_all
+# accessories/belts
+cc00 = CategoryProductstyle.create!(name: 'buckle', code_name: 'p_style_buckle', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'non buckle', code_name: 'p_style_non_buckle', category_productsubtype_id: 0, admin_id: 1)
+# accessories/gloves
+cc00 = CategoryProductstyle.create!(name: 'knitted', code_name: 'p_style_knitted', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'fingerless', code_name: 'p_style_fingerless', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'mitten', code_name: 'p_style_mitten', category_productsubtype_id: 0, admin_id: 1)
+# accessories/hats & caps
+cc00 = CategoryProductstyle.create!(name: 'hats', code_name: 'p_style_mitten', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'caps', code_name: 'p_style_caps', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'beanies', code_name: 'p_style_beanies', category_productsubtype_id: 0, admin_id: 1)
+# accessories/hair accessories
+cc00 = CategoryProductstyle.create!(name: 'headbands', code_name: 'p_style_headbands', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'hair clips', code_name: 'p_style_hair_clips', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'head scarves', code_name: 'p_style_head_scarves', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'hair extensions', code_name: 'p_style_hair_extensions', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'hair bands', code_name: 'p_style_hair_bands', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'hair ribbons', code_name: 'p_style_hair_ribbons', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'hair accessories', code_name: 'p_style_hair_accessories', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'fascinators', code_name: 'p_style_fascinators', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'hair jewelry', code_name: 'p_style_hair_jewelry', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'hair grips', code_name: 'p_style_hair_grips', category_productsubtype_id: 0, admin_id: 1)
+# accessories/handbags & purses
+cc00 = CategoryProductstyle.create!(name: 'waist bags', code_name: 'p_style_waist_bags', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'shoulder bags', code_name: 'p_style_shoulder_bags', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'briefcases', code_name: 'p_style__briefcases', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'crossbody bags', code_name: 'p_style_crossbody_bags', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'money clippers', code_name: 'p_style_money_clippers', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'card & ID holders', code_name: 'p_style_card_id_holder', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'passport holders', code_name: 'p_style_passport_holders', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'coin purses', code_name: 'p_style_coin_purses', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'tote bags', code_name: 'p_style_tote_bags', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'buckets', code_name: 'p_style_buckets', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'bumb bags', code_name: 'p_style_bum_bags', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'backpacks', code_name: 'p_style_backpacks', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'cosmetic bags & cases', code_name: 'p_style_cosmetic_bags', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'wallets', code_name: 'p_style_wallets', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'hobos', code_name: 'p_style_hobos', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'shopping bags', code_name: 'p_style_shopping_bags', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'shoulder bags', code_name: 'p_style_shoulder_bags', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'drawstring bags', code_name: 'p_style_drawstring_bags', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'clutches', code_name: 'p_style_clutches', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'wristlets', code_name: 'p_style_wristlets', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'top-handle bags', code_name: 'p_style_top_handle_bags', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'evening bags', code_name: 'p_style_evening_bags', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'purses', code_name: 'p_style_purses', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'laptop cases', code_name: 'p_style_laptop_cases', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'school bags', code_name: 'p_style_school_bags', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'luggages & travel bags', code_name: 'p_style_luggages', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'maternity bags', code_name: 'p_style_maternity_bags', category_productsubtype_id: 0, admin_id: 1)
+# accessories/jewellery
+cc00 = CategoryProductstyle.create!(name: 'earrings', code_name: 'p_style_earrings', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'necklace', code_name: 'p_style_necklace', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'bracelets', code_name: 'p_style_bracelets', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'rings', code_name: 'p_style_rings', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'chokers', code_name: 'p_style_chokers', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'anklets', code_name: 'p_style_anklets', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'bangles', code_name: 'p_style_bangles', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'ear cuffs', code_name: 'p_style_ear_cuffs', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'belly chains', code_name: 'p_style_belly_chains', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'jewellery packaging', code_name: 'p_style_jewellery_packaging', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'charms', code_name: 'p_style_charms', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'chains', code_name: 'p_style_chains', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'key chains', code_name: 'p_style_key_chains', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'brooches', code_name: 'p_style_brooches', category_productsubtype_id: 0, admin_id: 1)
+# accessories/sunglasses
+cc00 = CategoryProductstyle.create!(name: 'square', code_name: 'p_style_square', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'round', code_name: 'p_style_round', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'retro', code_name: 'p_style_retro', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'cat eye', code_name: 'p_style_cat_eye', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'aviator', code_name: 'p_style_aviator', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'flat brow', code_name: 'p_style_flat_brow', category_productsubtype_id: 0, admin_id: 1)
+# accessories/scarves
+cc00 = CategoryProductstyle.create!(name: 'knitted', code_name: 'p_style_knitted', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'non knitted', code_name: 'p_style_non_knitted', category_productsubtype_id: 0, admin_id: 1)
+# accessories/umbrellas
+cc00 = CategoryProductstyle.create!(name: 'straight', code_name: 'p_style_straight', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'folding', code_name: 'p_style_folding', category_productsubtype_id: 0, admin_id: 1)
+# accessories/watches
+cc00 = CategoryProductstyle.create!(name: 'digital', code_name: 'p_style_digital', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'battery powered', code_name: 'p_style_battery_powered', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'watch accessories', code_name: 'p_style_watch_accessories', category_productsubtype_id: 0, admin_id: 1)
+# accessories/handkerchiefs
+cc00 = CategoryProductstyle.create!(name: 'plain', code_name: 'p_style_plain', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'patterned', code_name: 'p_style_patterned', category_productsubtype_id: 0, admin_id: 1)
+# accessories/ties & bow ties
+cc00 = CategoryProductstyle.create!(name: 'ties', code_name: 'p_style_ties', category_productsubtype_id: 0, admin_id: 1)
+cc00 = CategoryProductstyle.create!(name: 'bow ties', code_name: 'p_style_bow_ties', category_productsubtype_id: 0, admin_id: 1)
+# --------------------------------------
+
 
 
 
