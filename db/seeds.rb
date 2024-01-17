@@ -20,6 +20,7 @@ cpt03 = CategoryProducttype.create!(name: 'kids (boys)', code_name: 'p_cat_kids_
 cpt04 = CategoryProducttype.create!(name: 'kids (girls)', code_name: 'p_cat_kids_girls', user_id: us01.id)
 cpt05 = CategoryProducttype.create!(name: 'product', code_name: 'p_cat_product', user_id: us01.id)
 
+
 # level_02
 CategoryProductitemtype.delete_all
 cpit01 = CategoryProductitemtype.create!(name: 'accessories', code_name: 'p_type_accessories', user_id: us01.id)
@@ -1012,16 +1013,16 @@ ccpst586 = CategoryProductstyle.create!(name: 'iron', code_name: 'p_style_iron',
 ccpst587 = CategoryProductstyle.create!(name: 'garment steamer', code_name: 'p_style_garment_steamer', category_productsubtype_id: cps56.id, user_id: us01.id)
 ccpst588 = CategoryProductstyle.create!(name: 'humidifier', code_name: 'p_style_humidifier', category_productsubtype_id: cps56.id, user_id: us01.id)
 # home furnishing/fabrics & textiles
-ccpst589 = CategoryProductstyle.create!(name: 'leather', ode_name: 'p_style_leather', category_productsubtype_id: cps57.id, user_id: us01.id)
-ccpst590 = CategoryProductstyle.create!(name: 'yarn', ode_name: 'p_style_yarn', category_productsubtype_id: cps57.id, user_id: us01.id)
-ccpst591 = CategoryProductstyle.create!(name: 'fiber', ode_name: 'p_style_fiber', category_productsubtype_id: cps57.id, user_id: us01.id)
-ccpst592 = CategoryProductstyle.create!(name: 'thread', ode_name: 'p_style_thread', category_productsubtype_id: cps57.id, user_id: us01.id)
-ccpst593 = CategoryProductstyle.create!(name: 'textile processing', ode_name: 'p_style_textile_processing', category_productsubtype_id: cps57.id, user_id: us01.id)
-ccpst594 = CategoryProductstyle.create!(name: 'textile accessories', ode_name: 'p_style_textile_accessories', category_productsubtype_id: cps57.id, user_id: us01.id)
-ccpst595 = CategoryProductstyle.create!(name: 'fur', ode_name: 'p_style_fur', category_productsubtype_id: cps57.id, user_id: us01.id)
-ccpst596 = CategoryProductstyle.create!(name: 'down & feather', ode_name: 'p_style_down_feather', category_productsubtype_id: cps57.id, user_id: us01.id)
-ccpst597 = CategoryProductstyle.create!(name: 'fabric', ode_name: 'p_style_fabric', category_productsubtype_id: cps57.id, user_id: us01.id)
-ccpst598 = CategoryProductstyle.create!(name: 'other textile & leather products', ode_name: 'p_style_other_textile_leather_products', category_productsubtype_id: cps57.id, user_id: us01.id)
+ccpst589 = CategoryProductstyle.create!(name: 'leather', code_name: 'p_style_leather', category_productsubtype_id: cps57.id, user_id: us01.id)
+ccpst590 = CategoryProductstyle.create!(name: 'yarn', code_name: 'p_style_yarn', category_productsubtype_id: cps57.id, user_id: us01.id)
+ccpst591 = CategoryProductstyle.create!(name: 'fiber', code_name: 'p_style_fiber', category_productsubtype_id: cps57.id, user_id: us01.id)
+ccpst592 = CategoryProductstyle.create!(name: 'thread', code_name: 'p_style_thread', category_productsubtype_id: cps57.id, user_id: us01.id)
+ccpst593 = CategoryProductstyle.create!(name: 'textile processing', code_name: 'p_style_textile_processing', category_productsubtype_id: cps57.id, user_id: us01.id)
+ccpst594 = CategoryProductstyle.create!(name: 'textile accessories', code_name: 'p_style_textile_accessories', category_productsubtype_id: cps57.id, user_id: us01.id)
+ccpst595 = CategoryProductstyle.create!(name: 'fur', code_name: 'p_style_fur', category_productsubtype_id: cps57.id, user_id: us01.id)
+ccpst596 = CategoryProductstyle.create!(name: 'down & feather', code_name: 'p_style_down_feather', category_productsubtype_id: cps57.id, user_id: us01.id)
+ccpst597 = CategoryProductstyle.create!(name: 'fabric', code_name: 'p_style_fabric', category_productsubtype_id: cps57.id, user_id: us01.id)
+ccpst598 = CategoryProductstyle.create!(name: 'other textile & leather products', code_name: 'p_style_other_textile_leather_products', category_productsubtype_id: cps57.id, user_id: us01.id)
 # home furnishing/home flooring
 ccpst599 = CategoryProductstyle.create!(name: 'laminate flooring', code_name: 'p_style_laminate_flooring', category_productsubtype_id: cps58.id, user_id: us01.id)
 ccpst600 = CategoryProductstyle.create!(name: 'hardwood flooring', code_name: 'p_style_hardwood_flooring', category_productsubtype_id: cps58.id, user_id: us01.id)
