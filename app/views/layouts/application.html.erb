@@ -18,7 +18,7 @@
 <div>
 
   <% if user_signed_in?  %>
-    <div class="header_cover">header_signed_in</div>
+    <div class="header_container"><%= render 'shared/header' %></div>
     <ul>
       <li><%= link_to "products", products_path %></li>
       <li><%= link_to "homepage", root_path %></li>

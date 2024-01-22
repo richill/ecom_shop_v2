@@ -1,5 +1,36 @@
 /*header*/
 
+.header_container {
+    background-color: #2E2F30;
+    padding: 15px 30px;
+}
+
 .header_cover {
     background-color: #2E2F30;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_icon_ul {
+        list-style-type: none;
+        padding: 0px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin: 0px;
+}
+
+.header_icon_ul li {
+    margin-left: 15px;
+}
+
+.icon_box_link {
+    background-color: #ffffff;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    width: 60px;
+    border-radius: 5px;
+    color: #2E2F30;
 }

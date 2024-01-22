@@ -1,0 +1,22 @@
+<div class="header_cover">
+  <div class="left_section">
+    <div><%= link_to "App Logo", root_path %></div>
+  </div>
+  <div class="right_section">
+    <ul class="header_icon_ul">
+      <div><%= link_to "sign out", root_path, class: "icon_box_link" %></div>
+      <li>
+        <%= link_to "#", class: "icon_box_link" do %>
+          <div><span class="material-icons">person</span></div>
+          <div>user</div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to "#", class: "icon_box_link" do %>
+          <div><span class="material-icons">shopping_cart</span></div>
+          <div>cart</div>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</div>
