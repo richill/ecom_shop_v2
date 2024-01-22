@@ -22,6 +22,10 @@ body {
     display: none;
 }
 
+.main_container {
+    padding-top: 100px;
+}
+
 .product_item {
     background-color: #B7BABD;
     padding: 15px;

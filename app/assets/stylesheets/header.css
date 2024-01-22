@@ -4,6 +4,8 @@
     background-color: #2E2F30;
     padding: 15px 30px;
     margin-bottom: 30px;
+    position: fixed;
+    width: 100%;
 }
 
 .header_cover {
@@ -26,11 +28,11 @@
     margin: 0px;
 }
 
-.header_icon_ul li {
+.header_container .header_icon_ul li {
     margin-left: 15px;
 }
 
-.icon_box_link {
+.header_container .icon_box_link {
     background-color: #ffffff;
     display: block;
     text-align: center;
@@ -41,7 +43,7 @@
     text-decoration: none;
 }
 
-.sign_out_btn {
+.header_container .sign_out_btn {
     display: flex;
     height: 40px;
     justify-content: center;
@@ -49,13 +51,13 @@
     text-decoration: none;
 }
 
-.header_text {
+.header_container .header_text {
     font-family: sans-serif;
     font-size: 10px;
     letter-spacing: 1px;
 }
 
-.header_logo {
+.header_container .header_logo {
     display: flex;
     height: 40px;
     justify-content: center;
@@ -72,6 +74,6 @@
     text-decoration: none;
 }
 
-.margin_left_15px {
+.header_container .margin_left_15px {
     margin-left: 15px;
 }
