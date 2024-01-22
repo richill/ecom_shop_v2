@@ -2,24 +2,25 @@
 
 .header_container {
     background-color: #2E2F30;
-    padding: 15px 30px;
+    padding: 15px 0px;
     margin-bottom: 30px;
     position: fixed;
     width: 100%;
 }
 
-.header_cover {
+.header_container .header_cover {
     background-color: #2E2F30;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0px 15px;
 }
 
-.left_section {
+.header_container .left_section {
     display: flex;
 }
 
-.header_icon_ul {
+.header_container .header_icon_ul {
     list-style-type: none;
     padding: 0px;
     display: flex;
