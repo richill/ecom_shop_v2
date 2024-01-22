@@ -3,6 +3,7 @@
 .header_container {
     background-color: #2E2F30;
     padding: 15px 30px;
+    margin-bottom: 30px;
 }
 
 .header_cover {
@@ -12,13 +13,17 @@
     justify-content: space-between;
 }
 
+.left_section {
+    display: flex;
+}
+
 .header_icon_ul {
-        list-style-type: none;
-        padding: 0px;
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0px;
 }
 
 .header_icon_ul li {
@@ -30,7 +35,43 @@
     display: block;
     text-align: center;
     padding: 5px;
-    width: 60px;
+    width: 85px;
     border-radius: 5px;
     color: #2E2F30;
+    text-decoration: none;
+}
+
+.sign_out_btn {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header_text {
+    font-family: sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.header_logo {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    width: 170px;
+    border-radius: 5px;
+    color: #2E2F30;
+    font-family: sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.margin_left_15px {
+    margin-left: 15px;
 }
