@@ -1,10 +1,17 @@
 class ImagevariantUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
-  # include CarrierWave::MiniMagick
+  include CarrierWave::MiniMagick
+
+  process :convert => 'png'
+  process :tags => ['post_image_var']
+
+  version :standard do
+    process resize_to_fill: [150, 150]
+  end
 
   # Choose what kind of storage to use for this uploader:
-  storage :file
+  # storage :file
   # storage :fog
 
   # Override the directory where uploaded files will be stored.
