@@ -7,7 +7,9 @@
       <%= f.input :product_id, input_html: { value: "#{@product.id}" } %>
       <%= f.input :colour %>
 
-      <%= f.input :image_url %>
+      <div><%= f.input :image_url %></div>
+      <div><%= f.file_field :image_var, type: 'file', id: 'imageVariantUploader', accept: '.png, .jpeg, .jpg' %></div>
+      <div><%= f.hidden_field :image_var_cache %></div>
     </div>
 
     <div class="form-actions">
