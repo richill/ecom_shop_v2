@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_01_17_214422) do
+ActiveRecord::Schema[7.0].define(version: 2024_02_12_115814) do
   create_table "category_productitemtypes", force: :cascade do |t|
     t.string "name"
     t.string "code_name"
@@ -139,6 +139,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_17_214422) do
     t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "imagevariant"
   end
 
   add_foreign_key "favorites", "users"
