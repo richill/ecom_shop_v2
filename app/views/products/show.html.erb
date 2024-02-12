@@ -28,7 +28,7 @@
           <li>
             <div>
               <% if var.image_var.present? %>
-                <%= image_tag(var.image_var_url) %>
+                <%= cl_image_tag(var.image_var_url) %>
               <% else %>
                 <%= image_tag "#{var.image_url}" %>
               <% end %>
