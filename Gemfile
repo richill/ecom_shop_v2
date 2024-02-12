@@ -15,6 +15,8 @@ gem "bootsnap", require: false
 gem 'simple_form'
 gem 'impressionist'
 gem 'stripe'
+gem 'carrierwave'
+gem 'cloudinary'
 
 group :development, :test do
   gem "awesome_print"
