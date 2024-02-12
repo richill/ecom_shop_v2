@@ -25,11 +25,18 @@
     <div class="variant_cover">
       <ul>
         <% @product.variants.each do |var| %>
-        <li>
-          <div><%= image_tag "#{var.image_url}" %></div>
-          <div><%= "colour: #{var.colour}" %></div>
-          <div><%= link_to "edit", edit_variant_path(var, product_id: @product) %></div>
-        </li>
+          <li>
+            <div>
+              <% if var.image_var.present? %>
+                <%= cl_image_tag(var.image_var) %>
+              <%# cl_image_tag(var.image_var, :transformation) %>
+              <% else %>
+                <%= image_tag "#{var.image_url}" %>
+              <% end %>
+            </div>
+            <div><%= "colour: #{var.colour}" %></div>
+            <div><%= link_to "edit", edit_variant_path(var, product_id: @product) %></div>
+          </li>
         <% end %>
       </ul>
     </div>

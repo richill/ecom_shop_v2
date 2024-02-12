@@ -4,7 +4,7 @@ class ImagevariantUploader < CarrierWave::Uploader::Base
   include CarrierWave::MiniMagick
 
   process :convert => 'png'
-  process :tags => ['post_image_var']
+  # process :tags => ['post_image_var']
 
   version :standard do
     process resize_to_fill: [150, 150]

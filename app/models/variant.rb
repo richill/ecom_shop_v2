@@ -1,5 +1,6 @@
 class Variant < ApplicationRecord
+  mount_uploader :image_var, ImagevariantUploader
   belongs_to :product
 
-  mount_uploader :image_var, ImagevariantUploader
+
 end
