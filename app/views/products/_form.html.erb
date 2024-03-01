@@ -21,25 +21,25 @@
 
           <!--category-->
           <div class="category_drop_field">
-            <div class="product_label">product type</div>
+            <div class="product_label">product category</div>
             <div><%= f.association :category_producttype, collection: CategoryProducttype.all.order(:name), prompt: "Please Select", label: false %></div>
           </div>
 
           <!--category-->
           <div class="category_drop_field">
-            <div class="product_label">label</div>
+            <div class="product_label">product type</div>
             <div><%= f.association :category_productitemtype, collection: CategoryProductitemtype.all.order(:name), prompt: "Please Select", label: false %></div>
           </div>
 
           <!--category-->
           <div class="category_drop_field">
-            <div class="product_label">label</div>
+            <div class="product_label">product sub-type</div>
             <div><%= f.grouped_collection_select :category_productsubtype_id, CategoryProductitemtype.order(:name), :category_productsubtypes, :name, :id, :name, include_blank: false, prompt: "Please Select", label: false %></div>
           </div>
 
           <!--category-->
           <div class="category_drop_field">
-            <div class="product_label">label</div>
+            <div class="product_label">product style</div>
             <div><%= f.grouped_collection_select :category_productstyle_id, CategoryProductsubtype.order(:name), :category_productstyles, :name, :id, :name, include_blank: false, prompt: "Please Select" %></div>
           </div>
         </div>
