@@ -1,7 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: %i[ show edit update destroy ]
   impressionist :actions=>[:show]
-  before_action :authenticate_user!
 
   def index
     # @products = Product.all
@@ -12,13 +11,15 @@ class ProductsController < ApplicationController
 
   def show
     @user = current_user
+    @admin = current_admin
     impressionist(@product)
   end
 
   def new
     # @product = Product.new
-    @user = current_user
-    @product = @user.products.build
+    # @user = current_user
+    @admin = current_admin
+    @product = @admin.products.build
   end
 
   def edit
@@ -26,8 +27,9 @@ class ProductsController < ApplicationController
 
   def create
     # @product = Product.new(product_params)
-    @user = current_user
-    @product = @user.products.create(product_params)
+    # @user = current_user
+    @admin = current_admin
+    @product = @admin.products.create(product_params)
 
     respond_to do |format|
       if @product.save
@@ -71,6 +73,6 @@ class ProductsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def product_params
-      params.require(:product).permit(:name, :image, :image_url, :user_id, :price, :impressions_count)
+      params.require(:product).permit(:name, :image, :image_url, :user_id, :admin_id, :price, :impressions_count)
     end
 end
