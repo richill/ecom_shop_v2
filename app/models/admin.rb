@@ -7,4 +7,5 @@ class Admin < ApplicationRecord
   has_many :products
   has_many :category_productitemtypes, dependent: :destroy
   has_many :category_productstyles, dependent: :destroy
+  has_many :category_productsubtypes, dependent: :destroy
 end
