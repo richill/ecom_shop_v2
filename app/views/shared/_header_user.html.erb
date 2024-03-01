@@ -13,15 +13,15 @@
           <% end %>
         </li>
         <li>
-          <%= link_to "#", class: "icon_box_link" do %>
-            <div><span class="material-icons">person</span></div>
-            <div class="header_text">user</div>
+          <%= link_to products_path, class: "icon_box_link" do %>
+            <div><span class="material-icons">category</span></div>
+            <div class="header_text">products</div>
           <% end %>
         </li>
         <li>
-          <%= link_to products_path, class: "icon_box_link" do %>
-            <div><span class="material-icons">category</span></div>
-            <div class="header_text">products-user</div>
+          <%= link_to dashboard_user_path(current_user), class: "icon_box_link" do %>
+            <div><span class="material-icons">person</span></div>
+            <div class="header_text">user</div>
           <% end %>
         </li>
         <li>

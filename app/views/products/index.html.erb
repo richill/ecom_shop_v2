@@ -1,6 +1,8 @@
 <!--<p style="color: green"><%#= notice %></p>-->
 
-<div><%= link_to "New product", new_product_path %></div>
+<% if current_admin %>
+  <div><%= link_to "New product", new_product_path %></div>
+<% end %>
 
 <h1>Products</h1>
 
