@@ -16,8 +16,6 @@ class ProductsController < ApplicationController
   end
 
   def new
-    # @product = Product.new
-    # @user = current_user
     @admin = current_admin
     @product = @admin.products.build
   end
@@ -26,8 +24,6 @@ class ProductsController < ApplicationController
   end
 
   def create
-    # @product = Product.new(product_params)
-    # @user = current_user
     @admin = current_admin
     @product = @admin.products.create(product_params)
 
