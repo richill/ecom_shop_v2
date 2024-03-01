@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admins
   resources :variants
   resources :favorite_products, only: [:create, :destroy]
 
