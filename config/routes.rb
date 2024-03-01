@@ -10,9 +10,11 @@ Rails.application.routes.draw do
   devise_for :admins, controllers: {registrations: 'admins/registrations'}, defaults: { format: 'html' }
   resources :admins do
     resources :products
+    member do
+      get 'dashboard'
+    end
   end
   # ----- admin -----
-
 
 
   # ----- user -----
@@ -24,6 +26,9 @@ Rails.application.routes.draw do
   resources :users do
     resources :products
     resources :reviews, except: [:show, :index]
+    member do
+      get 'dashboard'
+    end
   end
   # ----- user -----
 
