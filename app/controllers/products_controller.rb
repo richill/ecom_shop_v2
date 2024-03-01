@@ -77,9 +77,9 @@ class ProductsController < ApplicationController
         :admin_id,
         :price,
         :impressions_count,
-        :category_productitemtype,
-        :category_productstyle,
-        :category_productsubtype,
-        :category_producttype)
+        :category_productitemtype_id,
+        :category_productstyle_id,
+        :category_productsubtype_id,
+        :category_producttype_id)
     end
 end
