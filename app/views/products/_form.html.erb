@@ -18,9 +18,20 @@
       <div class="form_category_drop_down_cover">
         <div class="form_title">category section</div>
         <div class="form_category_drop_downs">
-          <div class="category_drop_field"><%= f.association :category_producttype, collection: CategoryProducttype.all.order(:name), prompt: "Please Select", label: false %></div>
+
+          <!--category-->
+          <div class="category_drop_field">
+            <div class="product_label">product type</div>
+            <div><%= f.association :category_producttype, collection: CategoryProducttype.all.order(:name), prompt: "Please Select", label: false %></div>
+          </div>
+
+          <!--category-->
           <div class="category_drop_field"><%= f.association :category_productitemtype, collection: CategoryProductitemtype.all.order(:name), prompt: "Please Select", label: false %></div>
+
+          <!--category-->
           <div class="category_drop_field"><%= f.grouped_collection_select :category_productsubtype_id, CategoryProductitemtype.order(:name), :category_productsubtypes, :name, :id, :name, include_blank: false, prompt: "Please Select", label: false %></div>
+
+          <!--category-->
           <div class="category_drop_field"><%= f.grouped_collection_select :category_productstyle_id, CategoryProductsubtype.order(:name), :category_productstyles, :name, :id, :name, include_blank: false, prompt: "Please Select" %></div>
         </div>
       </div>

@@ -160,6 +160,12 @@ input[type='radio']:checked:after {
 }
 
 
+.product_label {
+    font-size: 10px;
+    text-transform: capitalize;
+    font-family: Sans-Serif;
+}
+
 
 
 
