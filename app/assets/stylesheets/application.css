@@ -16,6 +16,7 @@
 
 body {
     margin: 0px;
+    position: relative;
 }
 
 .hide {
@@ -24,6 +25,8 @@ body {
 
 .main_container {
     padding-top: 100px;
+    background-color: red;
+    min-height: 300px;
 }
 
 .product_item {
