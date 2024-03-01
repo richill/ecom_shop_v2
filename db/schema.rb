@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_03_01_153929) do
+ActiveRecord::Schema[7.0].define(version: 2024_03_01_154446) do
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -62,9 +62,9 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_01_153929) do
   create_table "category_producttypes", force: :cascade do |t|
     t.string "name"
     t.string "code_name"
-    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "admin_id"
   end
 
   create_table "favorites", force: :cascade do |t|
@@ -109,7 +109,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_01_153929) do
     t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id"
     t.decimal "price"
     t.integer "impressions_count"
     t.integer "category_productitemtype_id"
