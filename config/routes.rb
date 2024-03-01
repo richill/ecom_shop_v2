@@ -1,7 +1,19 @@
 Rails.application.routes.draw do
-  devise_for :admins
   resources :variants
   resources :favorite_products, only: [:create, :destroy]
+
+  # ----- admin -----
+  devise_scope :admin do
+    get 'sign-in', to: 'devise/sessions#new'
+    get 'sign-up', to: 'devise/registrations#new', as: 'new_admin_registration'
+  end
+  devise_for :admins
+  resources :admins do
+    resources :products
+  end
+  # ----- admin -----
+
+
 
   # ----- user -----
   devise_scope :user do
