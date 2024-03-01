@@ -1,0 +1,17 @@
+<div class="header_cover">
+  <div class="left_section">
+    <div><%= link_to "App Logo", root_path, class: "header_logo" %></div>
+  </div>
+  <div class="right_section">
+    <ul class="header_icon_ul">
+        <div><%= link_to "sign-in 01", user_session_path, class: "icon_box_link sign_out_btn header_text" %></div>
+        <div><%= link_to "create account", new_user_registration_path, class: "icon_box_link sign_out_btn header_text margin_left_15px" %></div>
+        <li>
+          <%= link_to root_path, class: "icon_box_link" do %>
+            <div><span class="material-icons">home</span></div>
+            <div class="header_text">home</div>
+          <% end %>
+        </li>
+    </ul>
+  </div>
+</div>
