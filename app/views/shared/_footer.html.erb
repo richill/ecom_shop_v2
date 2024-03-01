@@ -1,10 +1,20 @@
-<div class="footer_cover">
-  <div class="inner_footer_section">
-    <ul>
-      <li><%= link_to "sign-in admin", admin_session_path, class: "#" %></li>
-      <li>|</li>
-      <li><%= link_to "sign-up admin", new_admin_registration_path, class: "#" %></li>
-    </ul>
-  </div>
-</div>
 
+<% if user_signed_in? || admin_signed_in? %>
+  <div class="footer_cover">
+    <div class="inner_footer_section">
+      <ul>
+        <li><%= link_to "ecom-app", root_path, class: "#" %></li>
+      </ul>
+    </div>
+  </div>
+<% else %>
+  <div class="footer_cover">
+    <div class="inner_footer_section">
+      <ul>
+        <li><%= link_to "sign-in admin", admin_session_path, class: "#" %></li>
+        <li>|</li>
+        <li><%= link_to "sign-up admin", new_admin_registration_path, class: "#" %></li>
+      </ul>
+    </div>
+  </div>
+<% end %>
