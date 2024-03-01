@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     get 'sign-in', to: 'devise/sessions#new'
     get 'sign-up', to: 'devise/registrations#new', as: 'new_admin_registration'
   end
-  devise_for :admins
+  devise_for :admins, controllers: {registrations: 'admins/registrations'}, defaults: { format: 'html' }
   resources :admins do
     resources :products
   end
