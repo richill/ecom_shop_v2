@@ -43,13 +43,15 @@
   <!--section-->
 
   <!--section-->
-  <div class="margin_bottom_15px">
-    <% if @product.reviews.reviewer_exist?(@user, @product) %>
-      <p>you have already reviewed this product</p>
-    <% else  %>
-      <%= link_to 'review product', new_user_review_path(@user, product_id: @product) %>
-    <% end %>
-  </div>
+  <% if current_user %>
+    <div class="margin_bottom_15px">
+      <% if @product.reviews.reviewer_exist?(@user, @product) %>
+        <p>you have already reviewed this product</p>
+      <% else  %>
+        <%= link_to 'review product', new_user_review_path(@user, product_id: @product) %>
+      <% end %>
+    </div>
+  <% end %>
   <!--section-->
 
   <!--section-->
