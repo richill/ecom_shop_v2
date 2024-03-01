@@ -3,6 +3,7 @@ class Product < ApplicationRecord
   is_impressionable :counter_cache => true, :column_name => :impressions_count, :unique => true
 
   belongs_to :user
+  belongs_to :admin
   belongs_to :category_productitemtype
   belongs_to :category_productstyle
   belongs_to :category_productsubtype
