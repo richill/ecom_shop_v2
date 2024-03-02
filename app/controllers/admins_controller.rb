@@ -6,6 +6,14 @@ class AdminsController < ApplicationController
     #dashboard
   end
 
+  def product
+    @products = Product.all
+  end
+
+  def variant
+    @variants = Variant.all
+  end
+
   private
   # Use callbacks to share common setup or constraints between actions.
   def set_admin

@@ -1,0 +1,19 @@
+<div class="right_content">
+  <!--bread_crumb-->
+  <div class="bread_crumb">home -> inventory</div>
+
+  <!--content-->
+  <h1>Admins#variant</h1>
+  <p>Find me in app/views/admins/variants.html.erb</p>
+  <div>
+    <ul>
+      <% @variants.all.each do |var| %>
+        <li>
+          <div><%= var.product.name %></div>
+          <div><%= var.product.price %></div>
+          <div><%= var.colour %></div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
