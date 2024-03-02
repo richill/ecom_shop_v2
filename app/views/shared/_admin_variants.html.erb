@@ -3,17 +3,25 @@
   <div class="bread_crumb">home -> inventory</div>
 
   <!--content-->
-  <h1>Admins#variant</h1>
-  <p>Find me in app/views/admins/variants.html.erb</p>
-  <div>
-    <ul>
+  <h1>inventory</h1>
+  <div class="table_container">
+    <table class="table_content">
+      <tr>
+        <th>product</th>
+        <th>price</th>
+        <th>colour</th>
+        <th>stock</th>
+      </tr>
+
       <% @variants.all.each do |var| %>
-        <li>
-          <div><%= var.product.name %></div>
-          <div><%= var.product.price %></div>
-          <div><%= var.colour %></div>
-        </li>
+        <tr>
+          <td><%= var.product.name %></td>
+          <td><%= var.product.price %></td>
+          <td><%= var.colour %></td>
+          <td><%= var.stock %></td>
+        </tr>
       <% end %>
-    </ul>
+    </table>
   </div>
+  <!--content-->
 </div>
