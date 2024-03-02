@@ -12,6 +12,8 @@ Rails.application.routes.draw do
     resources :products
     member do
       get 'dashboard'
+      get 'product'
+      get 'order'
     end
   end
   # ----- admin -----

@@ -1,7 +1,7 @@
 <div class="left_content">
   <ul>
-    <li><%= link_to "dashboard", "#" %></li>
-    <li><%= link_to "products", "#" %></li>
-    <li><%= link_to "orders", "#" %></li>
+    <li><%= link_to "dashboard", dashboard_admin_path(current_admin) %></li>
+    <li><%= link_to "products", product_admin_path(current_admin) %></li>
+    <li><%= link_to "orders", order_admin_path(current_admin) %></li>
   </ul>
 </div>
