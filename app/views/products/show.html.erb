@@ -2,6 +2,10 @@
 <div class="product_item">
 
   <!--section-->
+  <div class="main_product_name"><%= @product.name %></div>
+  <!--section-->
+
+  <!--section-->
   <div class="margin_bottom_15px">
     <div class="product_title">product category</div>
     <span><%= @product.category_producttype.name %></span>
@@ -17,6 +21,8 @@
   <!--section-->
   <div><%= render @product %></div>
   <!--section-->
+
+  <div class="border_content"></div>
 
   <!--section-->
   <div class="margin_bottom_15px"><%= link_to "create variant for product", new_variant_path(product_id: @product) %></div>

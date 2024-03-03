@@ -6,6 +6,7 @@
   </div>
   <!--section-->
 
+  <!--section-->
   <div class="margin_bottom_15px product_name_cover">
     <div class="product_title">name</div>
     <div>
@@ -13,7 +14,9 @@
       <%= content_tag(:div, product.name, data:{ share_target: "name" }) %>
     </div>
   </div>
+  <!--section-->
 
+  <!--section-->
   <div class="margin_bottom_15px price_cover">
     <div class="product_title">description</div>
     <div>
@@ -21,8 +24,9 @@
       <%= content_tag(:div, product.description, data:{ share_target: "description" }) %>
     </div>
   </div>
+  <!--section-->
 
-
+  <!--section-->
   <div class="margin_bottom_15px price_cover">
     <div class="product_title">price</div>
     <div>
@@ -30,6 +34,7 @@
       <%= content_tag(:div, product.price, data:{ share_target: "price" }) %>
     </div>
   </div>
+  <!--section-->
 
   <div class="share_button_cover">
     <%= button_to "Share", "", data: { action: "click->share#share"} %>
