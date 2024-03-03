@@ -15,7 +15,7 @@
 
       <% @products.all.each do |prod| %>
         <tr>
-          <td><%= prod.name %></td>
+          <td><%= link_to "#{prod.name}", prod, target: "_blank" %></td>
           <td><%= prod.price %></td>
           <td><%= prod.variants.count %></td>
           <td><%= prod.stock_count %></td>

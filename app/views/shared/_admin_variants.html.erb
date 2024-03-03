@@ -15,7 +15,7 @@
 
       <% @variants.all.each do |var| %>
         <tr>
-          <td><%= var.product.name %></td>
+          <td><%= link_to  "#{var.product.name}", product_path(var.product), target: "_blank" %></td>
           <td><%= var.product.price %></td>
           <td><%= var.colour %></td>
           <td><%= var.stock %></td>
