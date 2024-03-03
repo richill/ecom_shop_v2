@@ -18,4 +18,8 @@ class Product < ApplicationRecord
     end
   end
 
+  def stock_count
+    variants.map(&:stock).sum.to_i
+  end
+
 end

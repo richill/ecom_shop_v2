@@ -10,6 +10,7 @@
         <th>product</th>
         <th>price</th>
         <th>variants</th>
+        <th>stock</th>
       </tr>
 
       <% @products.all.each do |prod| %>
@@ -17,6 +18,7 @@
           <td><%= prod.name %></td>
           <td><%= prod.price %></td>
           <td><%= prod.variants.count %></td>
+          <td><%= prod.stock_count %></td>
         </tr>
       <% end %>
     </table>
