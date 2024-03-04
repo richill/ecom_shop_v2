@@ -243,3 +243,13 @@ input[type='radio']:checked:after {
 .admin_product_img_cover img {
     width: 70px;
 }
+
+.btn_general {
+    background-color: blue;
+    color: #fff;
+    padding: 10px;
+    font-size: 13px;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 5px;
+}
