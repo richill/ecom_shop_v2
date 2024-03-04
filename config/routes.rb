@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :orders
   resources :variants
   resources :favorite_products, only: [:create, :destroy]
 
@@ -11,6 +10,7 @@ Rails.application.routes.draw do
   devise_for :admins, controllers: {registrations: 'admins/registrations'}, defaults: { format: 'html' }
   resources :admins do
     resources :products
+    resources :orders
     member do
       get 'dashboard'
       get 'product'

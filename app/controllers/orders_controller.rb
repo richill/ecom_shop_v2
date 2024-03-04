@@ -1,5 +1,6 @@
 class OrdersController < ApplicationController
   before_action :set_order, only: %i[ show edit update destroy ]
+  before_action :authenticate_admin!
 
   def index
     @orders = Order.all
@@ -9,14 +10,16 @@ class OrdersController < ApplicationController
   end
 
   def new
-    @order = Order.new
+    @admin = current_admin
+    @product = @admin.orders.build
   end
 
   def edit
   end
 
   def create
-    @order = Order.new(order_params)
+    @admin = current_admin
+    @order = @admin.orders.create(order_params)
 
     respond_to do |format|
       if @order.save
