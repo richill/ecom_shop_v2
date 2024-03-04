@@ -11,7 +11,8 @@ class OrdersController < ApplicationController
 
   def new
     @admin = current_admin
-    @product = @admin.orders.build
+    # @admin = Admin.find(params[:admin_id])
+    @order = @admin.orders.build
   end
 
   def edit
@@ -59,6 +60,6 @@ class OrdersController < ApplicationController
     end
 
     def order_params
-      params.require(:order).permit(:customer_email, :fulfilled, :total, :address)
+      params.require(:order).permit(:customer_email, :fulfilled, :total, :address, :admin_id)
     end
 end
