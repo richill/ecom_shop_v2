@@ -11,7 +11,6 @@ class OrdersController < ApplicationController
 
   def new
     @admin = current_admin
-    # @admin = Admin.find(params[:admin_id])
     @order = @admin.orders.build
   end
 
