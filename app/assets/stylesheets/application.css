@@ -245,9 +245,9 @@ input[type='radio']:checked:after {
 }
 
 .btn_general {
-    background-color: blue;
+    background-color: #2699FB;
     color: #fff;
-    padding: 10px;
+    padding: 10px 15px;
     font-size: 13px;
     text-transform: capitalize;
     text-decoration: none;
