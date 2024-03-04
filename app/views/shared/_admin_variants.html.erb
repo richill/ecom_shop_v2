@@ -11,6 +11,7 @@
         <th>price</th>
         <th>colour</th>
         <th>stock</th>
+        <th>action</th>
       </tr>
 
       <% @variants.all.each do |var| %>
@@ -19,6 +20,7 @@
           <td><%= var.product.price %></td>
           <td><%= var.colour %></td>
           <td><%= var.stock %></td>
+          <td><%= link_to  "edit", edit_variant_path(var, product_id: var.product) %></td>
         </tr>
       <% end %>
     </table>

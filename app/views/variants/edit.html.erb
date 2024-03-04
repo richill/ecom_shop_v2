@@ -1,10 +1,12 @@
 <h1>Editing variant</h1>
-
-<%= render "form", variant: @variant %>
-
+<div><%= render "form", variant: @variant %></div>
 <br>
-
 <div>
   <%= link_to "Show this variant", @variant %> |
-  <%= link_to "Back to variants", variants_path %>
+  <%= link_to "Back to variants", variants_path %> |
+  <% if current_admin %>
+    <%= link_to "admin variant", variant_admin_path(current_admin) %> |
+    <%= link_to "admin products", product_admin_path(current_admin) %> |
+    <%= link_to "var product", product_path(@variant.product) %>
+  <% end %>
 </div>

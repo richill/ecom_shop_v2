@@ -11,6 +11,7 @@
         <th>price</th>
         <th>variants</th>
         <th>stock</th>
+        <th>action</th>
       </tr>
 
       <% @products.all.each do |prod| %>
@@ -19,6 +20,11 @@
           <td><%= prod.price %></td>
           <td><%= prod.variants.count %></td>
           <td><%= prod.stock_count %></td>
+          <td>
+            <span><%= link_to "edit product", edit_product_path(prod) %></span>
+            <span>|</span>
+            <span><%= link_to "add variant", new_variant_path(product_id: prod) %></span>
+          </td>
         </tr>
       <% end %>
     </table>
