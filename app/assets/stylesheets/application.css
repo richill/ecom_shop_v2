@@ -173,7 +173,6 @@ input[type='radio']:checked:after {
 .dashboard_container .left_content {
     background-color: #F5F5F5;
     width: 200px;
-    height: 630px;
 }
 
 .left_content ul {
@@ -198,6 +197,7 @@ input[type='radio']:checked:after {
 
 .right_content {
     padding: 15px;
+    height: 1200px;
 }
 
 .right_content .bread_crumb {
