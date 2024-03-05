@@ -1,2 +1,21 @@
-<h1>Editing order</h1>
-<div><%= render "form", order: @order %></div>
+<!--<h1>Editing order</h1>-->
+<!--<div><%#= render "form", order: @order %></div>-->
+
+
+<div class="dashboard_container">
+  <div class="dashboard_inner_container">
+    <!--left_content-->
+    <%= render "shared/admin_dashboard_menu" %>
+
+    <!--right_content-->
+    <div class="right_content">
+      <!--bread_crumb-->
+      <div class="bread_crumb">home -> <%= link_to 'orders', listed_orders_admin_path(current_admin) %> -> <%= @order.customer_email %> -> edit order</div>
+
+      <!--content-->
+      <div>
+        <%= render "form", order: @order %>
+      </div>
+    </div>
+  </div>
+</div>

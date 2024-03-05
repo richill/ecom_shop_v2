@@ -4,6 +4,6 @@
 
   <!--content-->
   <h1>orders <%= "[#{@orders.all.count}]" %></h1>
-  <div><%= link_to "new order", new_admin_order_path(current_admin), class: "btn_general" %></div>
+  <div class="btn_cover"><%= link_to "new order", new_admin_order_path(current_admin), class: "btn_general" %></div>
   <div><%= render "orders/index" %></div>
 </div>

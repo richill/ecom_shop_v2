@@ -15,6 +15,7 @@ class OrdersController < ApplicationController
   end
 
   def edit
+    @admin = current_admin
   end
 
   def create

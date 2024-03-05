@@ -261,3 +261,8 @@ input[type='radio']:checked:after {
 .margin_hor_15px {
     margin: 0px 15px;
 }
+
+.btn_cover {
+    display: flex;
+    margin-bottom: 15px;
+}
