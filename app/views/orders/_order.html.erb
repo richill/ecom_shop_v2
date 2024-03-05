@@ -26,25 +26,27 @@
   </div>
 
   <div class="table_container">
-    <h3>ordered products by <u><%= order.customer_email %></u></h3>
-    <table class="table_content">
-      <tr>
-        <th>product</th>
-        <th>image</th>
-        <th>price</th>
-        <th>colour</th>
-        <th>quantity</th>
-      </tr>
-
-      <% order.order_products.each do |prod| %>
+    <% if order.order_products.present? %>
+      <h3>ordered products by <u><%= order.customer_email %></u></h3>
+      <table class="table_content">
         <tr>
-          <td><%= link_to "#{prod.product.name}", product_path(prod.product), target: "_blank" %></td>
-          <td class="admin_product_img_cover"><%= image_tag "#{prod.product.image_url}" %></td>
-          <td><%= prod.product.price %></td>
-          <td><%= prod.size %></td>
-          <td><%= prod.quantity %></td>
+          <th>product</th>
+          <th>image</th>
+          <th>price</th>
+          <th>colour</th>
+          <th>quantity</th>
         </tr>
-      <% end %>
-    </table>
+
+        <% order.order_products.each do |prod| %>
+          <tr>
+            <td><%= link_to "#{prod.product.name}", product_path(prod.product), target: "_blank" %></td>
+            <td class="admin_product_img_cover"><%= image_tag "#{prod.product.image_url}" %></td>
+            <td><%= prod.product.price %></td>
+            <td><%= prod.size %></td>
+            <td><%= prod.quantity %></td>
+          </tr>
+        <% end %>
+      </table>
+    <% end %>
   </div>
 </div>
