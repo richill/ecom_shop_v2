@@ -15,7 +15,7 @@ class AdminsController < ApplicationController
   end
 
   def listed_orders
-    @orders = Order.order_desc.all
+    @orders = Order.where(fulfilled: false).order_desc
   end
 
   private

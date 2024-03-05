@@ -17,7 +17,7 @@
         <td><%= link_to "#{order.customer_email}", admin_order_path(order.admin, order) %></td>
         <td><%= order.total %></td>
         <td><%= order.address %></td>
-        <td>-</td>
+        <td><%= order.fulfilled %></td>
         <td><%= order.created_at.strftime('%d %b %Y') %></td>
         <td class="display_flex_style">
           <div><%= link_to "edit", edit_admin_order_path(order.admin, order) %></div>
