@@ -1,9 +1,17 @@
-<h1>New variant</h1>
+<div class="dashboard_container">
+  <div class="dashboard_inner_container">
+    <!--left_content-->
+    <%= render "shared/admin_dashboard_menu" %>
 
-<%= render "form", variant: @variant %>
+    <!--right_content-->
+    <div class="right_content">
+      <!--bread_crumb-->
+      <div class="bread_crumb">home -> <%= link_to "variants", admin_variant_path(current_admin) %> -> new variant</div>
 
-<br>
-
-<div>
-  <%= link_to "Back to variants", variants_path %>
+      <!--content-->
+      <div>
+        <%= render "form", variant: @variant %>
+      </div>
+    </div>
+  </div>
 </div>

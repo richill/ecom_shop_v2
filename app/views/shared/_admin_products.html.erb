@@ -4,6 +4,7 @@
 
   <!--content-->
   <h1>products <%= "[#{@products.all.count}]" %></h1>
+  <div class="btn_cover"><%= link_to "new product", new_admin_product_path(current_admin), class: "btn_general" %></div>
   <div class="table_container">
     <table class="table_content">
       <tr>

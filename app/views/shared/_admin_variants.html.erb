@@ -4,30 +4,6 @@
 
   <!--content-->
   <h1>inventory <%= "[#{@variants.all.count}]" %></h1>
-  <div class="table_container">
-    <table class="table_content">
-      <tr>
-        <th>product</th>
-        <th>image</th>
-        <th>price</th>
-        <th>colour</th>
-        <th>stock</th>
-        <th>created</th>
-        <th>action</th>
-      </tr>
-
-      <% @variants.all.each do |var| %>
-        <tr>
-          <td><%= link_to  "#{var.product.name}", product_path(var.product), target: "_blank" %></td>
-          <td class="admin_product_img_cover"><%= image_tag "#{var.image_url}" %></td>
-          <td><%= var.product.price %></td>
-          <td><%= var.colour %></td>
-          <td><%= var.stock %></td>
-          <td><%= var.created_at.strftime('%d %b %Y') %></td>
-          <td><%= link_to  "edit", edit_variant_path(var, product_id: var.product) %></td>
-        </tr>
-      <% end %>
-    </table>
-  </div>
+  <%= render "variants/index" %>
   <!--content-->
 </div>
