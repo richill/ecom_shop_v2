@@ -256,6 +256,8 @@ input[type='radio']:checked:after {
 
 .display_flex_style {
     display: flex;
+    height: 100px !important;
+    align-items: center;
 }
 
 .margin_hor_15px {

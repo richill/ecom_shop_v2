@@ -6,7 +6,7 @@
     <!--right_content-->
     <div class="right_content">
       <!--bread_crumb-->
-      <div class="bread_crumb">home -> <%= link_to "inventory", variant_admin_path(current_admin) %> -> new variant</div>
+      <div class="bread_crumb">home -> <%= link_to "inventory", variant_admin_path(current_admin) %> -> <%= link_to "#{@product.name}", product_admin_path(current_admin) %> -> new variant</div>
 
       <!--content-->
       <div>

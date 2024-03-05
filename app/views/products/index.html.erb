@@ -1,11 +1,4 @@
-<!--<p style="color: green"><%#= notice %></p>-->
-
-<% if current_admin %>
-  <div><%= link_to "New product", new_product_path %></div>
-<% end %>
-
 <h1>Products</h1>
-
 <div id="products">
   <ul>
     <% @products.each do |product| %>

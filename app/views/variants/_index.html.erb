@@ -18,7 +18,11 @@
         <td><%= var.colour %></td>
         <td><%= var.stock %></td>
         <td><%= var.created_at.strftime('%d %b %Y') %></td>
-        <td><%= link_to  "edit", edit_variant_path(var, product_id: var.product) %></td>
+        <td class="display_flex_style">
+          <div><%= link_to  "edit", edit_variant_path(var, product_id: var.product) %></div>
+          <div class="margin_hor_15px">|</div>
+          <div><%= button_to "delete", variant_path(var), method: :delete %></div>
+        </td>
       </tr>
     <% end %>
   </table>
