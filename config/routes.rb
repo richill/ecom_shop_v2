@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     resources :orders
     member do
       get 'dashboard'
+      get 'customers'
       get 'product'
       get 'variant'
       get 'listed-orders'
