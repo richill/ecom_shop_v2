@@ -1,22 +1,27 @@
 <div id="<%= dom_id order %>">
-  <p>
-    <strong>Customer email:</strong>
-    <%= order.customer_email %>
-  </p>
+  <div class="table_container">
+    <table class="table_content">
+      <tr>
+        <th>customer</th>
+        <th>total</th>
+        <th>address</th>
+        <th>fulfilled</th>
+        <th>created</th>
+        <th>action</th>
+      </tr>
 
-  <p>
-    <strong>Fulfilled:</strong>
-    <%= order.fulfilled %>
-  </p>
-
-  <p>
-    <strong>Total:</strong>
-    <%= order.total %>
-  </p>
-
-  <p>
-    <strong>Address:</strong>
-    <%= order.address %>
-  </p>
-
+      <tr>
+        <td><%= link_to "#{order.customer_email}", admin_order_path(order.admin, order) %></td>
+        <td><%= order.total %></td>
+        <td><%= order.address %></td>
+        <td>-</td>
+        <td><%= order.created_at.strftime('%d %b %Y') %></td>
+        <td class="display_flex_style">
+          <div><%= link_to "edit", edit_admin_order_path(order.admin, order) %></div>
+          <div class="margin_hor_15px">|</div>
+          <div><%= button_to "delete", admin_order_path(order.admin, order), method: :delete %></div>
+        </td>
+      </tr>
+    </table>
+  </div>
 </div>

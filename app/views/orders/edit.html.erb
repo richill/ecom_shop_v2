@@ -6,7 +6,7 @@
     <!--right_content-->
     <div class="right_content">
       <!--bread_crumb-->
-      <div class="bread_crumb">home -> <%= link_to 'orders', listed_orders_admin_path(current_admin) %> -> <%= @order.customer_email %> -> edit order</div>
+      <div class="bread_crumb">home -> <%= link_to 'orders', listed_orders_admin_path(current_admin) %> -> <%= link_to @order.customer_email, admin_order_path(@order.admin, @order) %> -> edit order</div>
 
       <!--content-->
       <div>
