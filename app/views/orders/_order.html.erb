@@ -24,4 +24,23 @@
       </tr>
     </table>
   </div>
+
+  <div class="table_container">
+    <h3>ordered products by <u><%= order.customer_email %></u></h3>
+    <table class="table_content">
+      <tr>
+        <th>product</th>
+        <th>image</th>
+        <th>price</th>
+      </tr>
+
+      <% order.order_products.each do |prod| %>
+        <tr>
+          <td><%= prod.name %></td>
+          <td class="admin_product_img_cover"><%= image_tag "#{prod.image_url}" %></td>
+          <td><%= prod.price %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
 </div>

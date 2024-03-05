@@ -1,5 +1,6 @@
 class Order < ApplicationRecord
   belongs_to :admin
+  has_many :order_products
 
   def self.order_asc
     order(created_at: :asc)
