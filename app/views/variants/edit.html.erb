@@ -1,12 +1,25 @@
-<h1>Editing variant</h1>
-<div><%= render "form", variant: @variant %></div>
-<br>
-<div>
-  <%= link_to "Show this variant", @variant %> |
-  <%= link_to "Back to variants", variants_path %> |
-  <% if current_admin %>
-    <%= link_to "admin variant", variant_admin_path(current_admin) %> |
-    <%= link_to "admin products", product_admin_path(current_admin) %> |
-    <%= link_to "var product", product_path(@variant.product) %>
-  <% end %>
+<div class="dashboard_container">
+  <div class="dashboard_inner_container">
+    <!--left_content-->
+    <%= render "shared/admin_dashboard_menu" %>
+
+    <!--right_content-->
+    <div class="right_content">
+      <!--bread_crumb-->
+      <div class="bread_crumb">home -> <%= link_to "inventory", variant_admin_path(current_admin) %> -> edit variant</div>
+
+      <!--content-->
+      <div>
+        <%= render "form", variant: @variant %>
+      </div>
+      <div>
+        <%= link_to "Show this variant", @variant %> |
+        <% if current_admin %>
+          <%= link_to "admin inventory", variant_admin_path(current_admin) %> |
+          <%= link_to "admin products", product_admin_path(current_admin) %> |
+          <%= link_to "product", product_path(@variant.product) %>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>
