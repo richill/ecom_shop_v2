@@ -1,10 +1,24 @@
-<p style="color: green"><%= notice %></p>
+<div class="dashboard_container">
+  <div class="dashboard_inner_container">
+    <!--left_content-->
+    <%= render "shared/admin_dashboard_menu" %>
 
-<%= render @order %>
+    <!--right_content-->
+    <div class="right_content">
+      <!--bread_crumb-->
+      <div class="bread_crumb">home -> <%= link_to 'orders', listed_orders_admin_path(current_admin) %> -> order</div>
 
-<div>
-  <%= link_to "Edit this order", edit_order_path(@order) %> |
-  <%= link_to "Back to orders", orders_path %>
-
-  <%= button_to "Destroy this order", @order, method: :delete %>
+      <!--content-->
+      <div>
+        <%= render @order %>
+      </div>
+    </div>
+  </div>
 </div>
+
+<!--<div>-->
+<!--  <%#= link_to "Edit this order", edit_order_path(@order) %> |-->
+  <%#= link_to "Back to orders", orders_path %>
+
+  <%#= button_to "Destroy this order", @order, method: :delete %>
+<!--</div>-->
