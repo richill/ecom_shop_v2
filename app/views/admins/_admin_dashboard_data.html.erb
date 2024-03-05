@@ -1,1 +1,12 @@
 <div>admin_dashboard_data 2:00:00</div>
+
+<div>
+  <ul>
+    <li>
+      <div>
+        <div>Revenue</div>
+        <div><%= "$#{@quick_stats[:revenue] ? (@quick_stats[:revenue]/100.0).to_s}" %></div>
+      </div>
+    </li>
+  </ul>
+</div>

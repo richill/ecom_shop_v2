@@ -23,7 +23,7 @@ class AdminsController < ApplicationController
     #we did not have a full set of data over the last 7 days - we had only 6 days where we made revenue - create condition
     if @revenue_by_day.count < 7
       days_of_week = %w[Monday Tuesday Wednesday Thursday Friday Saturday Sunday]
-      data_hash = days_of_week.to_h
+      data_hash = @revenue_by_day.to_h
       current_day = Date.today.strftime("%A") #display day of the week
       current_day_index = days_of_week.index(current_day)
       next_day_index = (current_day_index + 1) % days_of_week.length
