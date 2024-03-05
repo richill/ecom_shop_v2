@@ -1,0 +1,28 @@
+<p style="color: green"><%= notice %></p>
+<!--content-->
+<div class="table_container">
+  <table class="table_content">
+    <tr>
+      <th>customer</th>
+      <th>total</th>
+      <th>address</th>
+      <th>fulfilled</th>
+      <th>action</th>
+    </tr>
+
+    <% @orders.all.each do |order| %>
+      <tr>
+        <td><%= link_to "#{order.customer_email}", admin_order_path(order.admin, order), target: "_blank" %></td>
+        <td><%= order.total %></td>
+        <td><%= order.address %></td>
+        <td>-</td>
+        <td>
+          <span><%= link_to "edit", edit_admin_order_path(order.admin, order) %></span>
+          <span>|</span>
+          <span><%= button_to "delete", admin_order_path(order.admin, order), method: :delete %></span>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+<!--content-->

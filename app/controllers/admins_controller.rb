@@ -14,6 +14,10 @@ class AdminsController < ApplicationController
     @variants = Variant.all
   end
 
+  def listed_orders
+    @orders = Order.all
+  end
+
   private
   # Use callbacks to share common setup or constraints between actions.
   def set_admin

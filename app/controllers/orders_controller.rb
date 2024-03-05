@@ -45,10 +45,11 @@ class OrdersController < ApplicationController
   end
 
   def destroy
+    @admin = current_admin
     @order.destroy
 
     respond_to do |format|
-      format.html { redirect_to orders_url, notice: "Order was successfully destroyed." }
+      format.html { redirect_to listed_orders_admin_path(@admin), notice: "Order was successfully destroyed." }
       format.json { head :no_content }
     end
   end
