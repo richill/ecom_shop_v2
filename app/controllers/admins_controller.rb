@@ -7,15 +7,15 @@ class AdminsController < ApplicationController
   end
 
   def product
-    @products = Product.all
+    @products = Product.order_desc.all
   end
 
   def variant
-    @variants = Variant.all
+    @variants = Variant.order_desc.all
   end
 
   def listed_orders
-    @orders = Order.all
+    @orders = Order.order_desc.all
   end
 
   private

@@ -253,3 +253,11 @@ input[type='radio']:checked:after {
     text-decoration: none;
     border-radius: 5px;
 }
+
+.display_flex_style {
+    display: flex;
+}
+
+.margin_hor_15px {
+    margin: 0px 15px;
+}

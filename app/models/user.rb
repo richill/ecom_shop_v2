@@ -8,4 +8,8 @@ class User < ApplicationRecord
   has_many :favorite_products, through: :favorites, source: :favorited, source_type: 'Product'
 
   has_many :reviews, dependent: :destroy
+
+  def self.order_desc
+    order(created_at: :desc)
+  end
 end

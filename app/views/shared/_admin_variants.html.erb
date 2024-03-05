@@ -12,6 +12,7 @@
         <th>price</th>
         <th>colour</th>
         <th>stock</th>
+        <th>created</th>
         <th>action</th>
       </tr>
 
@@ -22,6 +23,7 @@
           <td><%= var.product.price %></td>
           <td><%= var.colour %></td>
           <td><%= var.stock %></td>
+          <td><%= var.created_at.strftime('%d %b %Y') %></td>
           <td><%= link_to  "edit", edit_variant_path(var, product_id: var.product) %></td>
         </tr>
       <% end %>

@@ -12,4 +12,8 @@ class Review < ApplicationRecord
     exists?(user_id: user, product_id: product)
   end
   # this methods checks if the user has already reviewed the product
+
+  def self.order_desc
+    order(created_at: :desc)
+  end
 end

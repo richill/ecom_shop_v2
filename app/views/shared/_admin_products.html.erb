@@ -12,6 +12,7 @@
         <th>price</th>
         <th>variants</th>
         <th>total stock</th>
+        <th>created</th>
         <th>action</th>
       </tr>
 
@@ -22,6 +23,7 @@
           <td><%= prod.price %></td>
           <td><%= prod.variants.count %></td>
           <td><%= prod.stock_count %></td>
+          <td><%= prod.created_at.strftime('%d %b %Y') %></td>
           <td>
             <span><%= link_to "edit product", edit_product_path(prod) %></span>
             <span>|</span>

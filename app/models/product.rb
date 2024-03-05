@@ -22,4 +22,8 @@ class Product < ApplicationRecord
     variants.map(&:stock).sum.to_i
   end
 
+  def self.order_desc
+    order(created_at: :desc)
+  end
+
 end
