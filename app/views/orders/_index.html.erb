@@ -12,7 +12,7 @@
 
     <% @orders.all.each do |order| %>
       <tr>
-        <td><%= link_to "#{order.customer_email}", admin_order_path(order.admin, order), target: "_blank" %></td>
+        <td><%= link_to "#{order.customer_email}", admin_order_path(order.admin, order) %></td>
         <td><%= order.total %></td>
         <td><%= order.address %></td>
         <td>-</td>

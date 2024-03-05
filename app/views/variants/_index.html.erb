@@ -12,7 +12,7 @@
 
     <% @variants.all.each do |var| %>
       <tr>
-        <td><%= link_to  "#{var.product.name}", product_path(var.product), target: "_blank" %></td>
+        <td><%= link_to  "#{var.product.name}", product_path(var.product) %></td>
         <td class="admin_product_img_cover"><%= image_tag "#{var.image_url}" %></td>
         <td><%= var.product.price %></td>
         <td><%= var.colour %></td>
