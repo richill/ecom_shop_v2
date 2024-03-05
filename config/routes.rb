@@ -15,7 +15,7 @@ Rails.application.routes.draw do
       get 'dashboard'
       get 'product'
       get 'variant'
-      get 'order'
+      get 'listed-orders'
     end
   end
   # ----- admin -----
