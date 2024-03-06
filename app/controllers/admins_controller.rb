@@ -10,9 +10,12 @@ class AdminsController < ApplicationController
 
       # revenue
       revenue: Order.where(created_at: Time.now.midnight..Time.now).sum(:total).round(),
-
-      # avg_sales: Order.where(created_at: Time.now.midnight..Time.now).average(:total).round(),
       avg_sales: Order.where(created_at: Time.now.midnight..Time.now).average(:total),
+
+      # avg_sales
+      avg_sales: Order.where(created_at: Time.now.midnight..Time.now).average(:total),
+      # avg_sales: Order.where(created_at: Time.now.midnight..Time.now).average(:total).round(),
+
 
       # per_sale
       per_sale: OrderProduct.joins(:order).where(orders: {created_at: Time.now.midnight..Time.now}).average(:quantity)

@@ -272,3 +272,28 @@ input[type='radio']:checked:after {
 .table_container {
     margin-bottom: 100px;
 }
+
+.data_box {
+    background-color: #2699FB;
+    color: #ffffff;
+    padding: 22px 15px;
+    width: 50px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.data_title {
+    margin-bottom: 5px;
+}
+
+.data_summary ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.data_summary ul li {
+    display: block;
+    float: left;
+    margin: 5px;
+}
