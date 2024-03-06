@@ -1,28 +1,14 @@
 import { Controller } from "@hotwired/stimulus"
-
 import { Chart, registerables } from "chart.js";
 Chart.register(...registerables);
 
-
-
-// Connects to data-controller="dashboard"
-// export default class extends Controller {
-//   initialize() {
-//     console.log("Hello controller")
-//
-//   }
-// }
-
-
 export default class extends Controller {
-  static targets = ['myRevenueChart'];
-
   initialize() {
     console.log("Hello controller")
     const ctx = document.getElementById('revenueChart')
 
     new Chart(ctx, {
-      type: 'bar',
+      type: 'line',
       data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [{
