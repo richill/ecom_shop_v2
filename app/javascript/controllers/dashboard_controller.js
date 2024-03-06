@@ -17,12 +17,17 @@ Chart.register(...registerables);
 export default class extends Controller {
   static targets = ['myChart'];
 
-  canvasContext() {
-    return this.myChartTarget.getContext('2d');
-  }
+  // canvasContext() {
+  //   return this.myChartTarget.getContext('2d');
+  // }
 
-  connect() {
-    new Chart(this.canvasContext(), {
+
+
+  initialize() {
+    console.log("Hello controller")
+    const ctx = this.myChartTarget.getContext('2d');
+
+    new Chart(ctx, {
       type: 'bar',
       data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
