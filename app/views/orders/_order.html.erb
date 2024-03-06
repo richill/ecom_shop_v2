@@ -33,7 +33,7 @@
 
   <div class="table_container">
     <% if order.order_products.present? %>
-      <h3>ordered products by <u><%= order.customer_email %></u></h3>
+      <h3>ordered products [<%= order.order_products.count %>] by <u><%= order.customer_email %></u></h3>
       <table class="table_content">
         <tr>
           <th>product</th>
