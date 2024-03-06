@@ -5,9 +5,16 @@ class AdminsController < ApplicationController
   def dashboard
     @orders = Order.unfulfilled_orders.order_asc.take(5)
     @quick_stats = {
+      # sales
       sales: Order.where(created_at: Time.now.midnight..Time.now).count,
+
+      # revenue
       revenue: Order.where(created_at: Time.now.midnight..Time.now).sum(:total).round(),
-      avg_sales: Order.where(created_at: Time.now.midnight..Time.now).average(:total).round(),
+
+      # avg_sales: Order.where(created_at: Time.now.midnight..Time.now).average(:total).round(),
+      avg_sales: Order.where(created_at: Time.now.midnight..Time.now).average(:total),
+
+      # per_sale
       per_sale: OrderProduct.joins(:order).where(orders: {created_at: Time.now.midnight..Time.now}).average(:quantity)
     }
 
