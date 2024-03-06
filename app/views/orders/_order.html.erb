@@ -49,7 +49,7 @@
             <td><%= link_to "#{prod.product.name}", product_path(prod.product), target: "_blank" %></td>
             <td class="admin_product_img_cover"><%= image_tag "#{prod.product.image_url}" %></td>
             <td><%= prod.product.price %></td>
-            <td><%= prod.size %></td>
+            <td><%= prod.colour %></td>
             <td><%= prod.quantity %></td>
             <td><%= prod.created_at.strftime('%d %b %Y') %></td>
           </tr>
