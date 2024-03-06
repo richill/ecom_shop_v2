@@ -19,6 +19,22 @@
           <div class="data_stats"><%= @quick_stats[:sales] ? (@quick_stats[:sales]).to_s : "0" %></div>
         </div>
       </li>
+
+      <!--data-->
+      <li>
+        <div class="data_box">
+          <div class="data_title">average sale</div>
+          <div class="data_stats"><%= @quick_stats[:avg_sale] ? (@quick_stats[:avg_sale]/100.0).to_s : "0" %></div>
+        </div>
+      </li>
+
+      <!--data-->
+      <li>
+        <div class="data_box">
+          <div class="data_title">items/sale</div>
+          <div class="data_stats"><%= @quick_stats[:per_sale] ? (@quick_stats[:per_sale]/100.0).to_s : "0" %></div>
+        </div>
+      </li>
     </ul>
   </div>
 

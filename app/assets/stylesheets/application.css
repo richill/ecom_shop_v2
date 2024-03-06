@@ -277,7 +277,7 @@ input[type='radio']:checked:after {
     background-color: #2699FB;
     color: #ffffff;
     padding: 22px 15px;
-    width: 60px;
+    width: 100px;
     font-size: 12px;
     text-align: center;
     border-radius: 5px;
