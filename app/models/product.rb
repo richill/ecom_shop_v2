@@ -26,5 +26,4 @@ class Product < ApplicationRecord
   def self.order_desc
     order(created_at: :desc)
   end
-
 end

@@ -286,14 +286,15 @@ input[type='radio']:checked:after {
     margin-bottom: 5px;
 }
 
-.data_summary ul {
+.data_summary_section ul {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
 }
 
-.data_summary ul li {
+.data_summary_section ul li {
     display: block;
     float: left;
     margin: 5px;
 }
+
