@@ -41,6 +41,7 @@
           <th>price</th>
           <th>colour</th>
           <th>quantity</th>
+          <th>ordered date</th>
         </tr>
 
         <% order.order_products.each do |prod| %>
@@ -50,6 +51,7 @@
             <td><%= prod.product.price %></td>
             <td><%= prod.size %></td>
             <td><%= prod.quantity %></td>
+            <td><%= prod.created_at.strftime('%d %b %Y') %></td>
           </tr>
         <% end %>
       </table>
