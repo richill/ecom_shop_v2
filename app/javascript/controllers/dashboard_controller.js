@@ -15,17 +15,11 @@ Chart.register(...registerables);
 
 
 export default class extends Controller {
-  static targets = ['myChart'];
-
-  // canvasContext() {
-  //   return this.myChartTarget.getContext('2d');
-  // }
-
-
+  static targets = ['myRevenueChart'];
 
   initialize() {
     console.log("Hello controller")
-    const ctx = this.myChartTarget.getContext('2d');
+    const ctx = document.getElementById('revenueChart')
 
     new Chart(ctx, {
       type: 'bar',
