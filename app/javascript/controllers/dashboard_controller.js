@@ -6,38 +6,55 @@ Chart.register(...registerables);
 
 
 // Connects to data-controller="dashboard"
+// export default class extends Controller {
+//   initialize() {
+//     console.log("Hello controller")
+//
+//   }
+// }
+
+
 export default class extends Controller {
-  initialize() {
-    console.log("Hello controller")
+  static targets = ['myChart'];
 
-    // ---- dummy data for revenue made in a day ----
-    const data = [10, 20, 30, 40, 50, 60, 70]
-    const labels = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"]
-    // ---- dummy data for revenue made in a day ----
+  canvasContext() {
+    return this.myChartTarget.getContext('2d');
+  }
 
-    const ctx = document.getElementById('revenueChart ');
-
-    // ---- chart ----
-    // https://stackoverflow.com/questions/41280857/chart-js-failed-to-create-chart-cant-acquire-context-from-the-given-item
-    new Chart(ctx, {
-      type: 'line',
+  connect() {
+    new Chart(this.canvasContext(), {
+      type: 'bar',
       data: {
-        labels: labels,
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [{
-          label: 'Revenue $',
-          data: data,
-          borderWidth: 3,
-          fill: true
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 2, 3],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)'
+          ],
+          borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
+          ],
+          borderWidth: 1
         }]
       },
       options: {
-        plugins: { legend: {display: false} },
         scales: {
-          x: { grid: {display: false} },
-          y: { border: {dash: [5, 5]}, grid: {color: "d4f3ef"}, beginAtZero: true }
+          y: {
+            beginAtZero: true
+          }
         }
       }
-    })
-    // ---- chart ----
+    });
   }
 }
