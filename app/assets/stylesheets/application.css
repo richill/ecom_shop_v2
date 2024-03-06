@@ -277,13 +277,15 @@ input[type='radio']:checked:after {
     background-color: #2699FB;
     color: #ffffff;
     padding: 22px 15px;
-    width: 50px;
+    width: 60px;
     font-size: 12px;
     text-align: center;
+    border-radius: 5px;
 }
 
 .data_title {
     margin-bottom: 5px;
+    text-transform: capitalize;
 }
 
 .data_summary_section ul {
@@ -295,6 +297,21 @@ input[type='radio']:checked:after {
 .data_summary_section ul li {
     display: block;
     float: left;
-    margin: 5px;
+    margin-right: 10px;
+}
+
+.data_section_header {
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.blue_text {
+    color: #2699FB;
+}
+
+.red_text {
+    color: #B00100;
 }
 

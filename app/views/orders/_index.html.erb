@@ -7,6 +7,7 @@
       <th>customer</th>
       <th>total</th>
       <th>address</th>
+      <th># orders</th>
       <th>fulfilled</th>
       <th>created</th>
       <th>action</th>
@@ -18,7 +19,14 @@
         <td><%= link_to "#{order.customer_email}", admin_order_path(order.admin, order) %></td>
         <td><%= order.total %></td>
         <td><%= order.address %></td>
-        <td><%= order.fulfilled %></td>
+        <td><%= order.order_products.all.count %></td>
+        <td>
+          <% if order.fulfilled.present? %>
+            <div class="blue_text"><%= order.fulfilled %></div>
+          <% else %>
+            <div class="red_text"><%= order.fulfilled %></div>
+          <% end %>
+        </td>
         <td><%= order.created_at.strftime('%d %b %Y') %></td>
         <td class="display_flex_style">
           <div><%= link_to "edit", edit_admin_order_path(order.admin, order) %></div>
@@ -38,6 +46,7 @@
       <th>customer</th>
       <th>total</th>
       <th>address</th>
+      <th># orders</th>
       <th>fulfilled</th>
       <th>created</th>
       <th>action</th>
@@ -49,7 +58,14 @@
         <td><%= link_to "#{order.customer_email}", admin_order_path(order.admin, order) %></td>
         <td><%= order.total %></td>
         <td><%= order.address %></td>
-        <td><%= order.fulfilled %></td>
+        <td><%= order.order_products.all.count %></td>
+        <td>
+          <% if order.fulfilled.present? %>
+            <div class="blue_text"><%= order.fulfilled %></div>
+          <% else %>
+            <div class="red_text"><%= order.fulfilled %></div>
+          <% end %>
+        </td>
         <td><%= order.created_at.strftime('%d %b %Y') %></td>
         <td class="display_flex_style">
           <div><%= link_to "edit", edit_admin_order_path(order.admin, order) %></div>
