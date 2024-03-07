@@ -12,7 +12,7 @@ export default class extends Controller {
     const ctx = document.getElementById('revenueChart')
 
     new Chart(ctx, {
-      type: 'bar',
+      type: 'line',
 
       data: {
         labels: labels,
