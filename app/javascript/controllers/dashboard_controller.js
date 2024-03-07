@@ -8,13 +8,11 @@ export default class extends Controller {
   initialize() {
     console.log("Hello controller")
 
-    // const data = this.revenueValue.map((item) => item[1]/100.0)
-    // // const data = this.revenueValue.map((item) => item[1]/100.0)
-    // const labels = this.revenueValue.map((item) => item[0])
-    // console.log("data----->", data)
+    const data = this.revenueValue.map((item) => item[1]/100.0)
+    const labels = this.revenueValue.map((item) => item[0])
 
-    const data = [0, 20, 30, 40, 50, 60, 70]
-    const labels = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"]
+    // const data = [0, 20, 30, 40, 50, 60, 70]
+    // const labels = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"]
 
     const ctx = document.getElementById('revenueChart')
 
