@@ -3,11 +3,16 @@ import { Chart, registerables } from "chart.js";
 Chart.register(...registerables);
 
 export default class extends Controller {
+  static values = { revenue: Array }
+
   initialize() {
     console.log("Hello controller")
 
-    const data = [0, 20, 30, 40, 50, 60, 70]
-    const labels = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"]
+    // const data = [0, 20, 30, 40, 50, 60, 70]
+    const data = this.revenueValue.map((item) => item[1]/100.0)
+
+    // const labels = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"]
+    const labels = this.revenueValue.map((item) => item[0])
 
     const ctx = document.getElementById('revenueChart')
 
