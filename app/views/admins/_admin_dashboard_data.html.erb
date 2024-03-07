@@ -61,6 +61,7 @@
         <th># orders</th>
         <th>fulfilled</th>
         <th>created</th>
+        <th>amount</th>
         <th>action</th>
       </tr>
 
@@ -78,7 +79,8 @@
               <div class="red_text"><%= order.fulfilled %></div>
             <% end %>
           </td>
-          <td><%= order.created_at.strftime('%d %b %Y [%a]') %></td>
+          <td><%= order.created_at.strftime('%d %b %Y [%a], %H:%M') %></td>
+          <td><%= (order.total/100.0).to_s %></td>
           <td class="display_flex_style">
             <div><%= link_to "edit", edit_admin_order_path(order.admin, order) %></div>
             <div class="margin_hor_15px">|</div>
