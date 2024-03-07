@@ -41,10 +41,11 @@
 
 
   <!--data_graph-->
-
-    <div class="data_graph_section" data-controller="dashboard" data-dashboard-revenue-value="<%= @orders_by_day.to_json %>">
-      <h2>Revenue</h2>
-      <canvas id="revenueChart" width="100%" height="30%"></canvas>
+  <div>
+    <h2>Revenue</h2>
+    <div class="w-full" data-controller="dashboard" data-dashboard-revenue-value="<%= @revenue_by_day.to_json %>">
+      <canvas id="revenueChart"></canvas>
     </div>
+  </div>
   <!--data_graph-->
 </div>
