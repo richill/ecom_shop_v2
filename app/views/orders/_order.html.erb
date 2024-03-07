@@ -21,7 +21,7 @@
             <div class="red_text"><%= order.fulfilled %></div>
           <% end %>
         </td>
-        <td><%= order.created_at.strftime('%d %b %Y') %></td>
+        <td><%= order.created_at.strftime('%d %b %Y [%a]') %></td>
         <td class="display_flex_style">
           <div><%= link_to "edit", edit_admin_order_path(order.admin, order) %></div>
           <div class="margin_hor_15px">|</div>
@@ -51,7 +51,7 @@
             <td><%= prod.product.price %></td>
             <td><%= prod.colour %></td>
             <td><%= prod.quantity %></td>
-            <td><%= prod.created_at.strftime('%d %b %Y') %></td>
+            <td><%= prod.created_at.strftime('%d %b %Y [%a]') %></td>
           </tr>
         <% end %>
       </table>

@@ -26,7 +26,7 @@
           <td><%= prod.price %></td>
           <td><%= prod.variants.count %></td>
           <td><%= prod.stock_count %></td>
-          <td><%= prod.created_at.strftime('%d %b %Y') %></td>
+          <td><%= prod.created_at.strftime('%d %b %Y [%a]') %></td>
           <td class="display_flex_style">
             <div><%= link_to "add variant", new_variant_path(product_id: prod) %></div>
             <div class="margin_hor_15px">|</div>

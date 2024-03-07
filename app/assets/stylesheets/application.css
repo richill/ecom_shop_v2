@@ -327,3 +327,8 @@ input[type='radio']:checked:after {
     margin-top: 30px;
 }
 
+#revenueChart {
+    width: 50% !important;
+    height: 50% !important;
+}
+
