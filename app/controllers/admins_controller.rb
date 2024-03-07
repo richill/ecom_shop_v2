@@ -35,6 +35,7 @@ class AdminsController < ApplicationController
 
       @revenue_by_day = complete_ordered_array_with_current_last
     end
+    @not_fulfilled_orders = Order.unfulfilled_orders.order_asc
   end
 
   def product

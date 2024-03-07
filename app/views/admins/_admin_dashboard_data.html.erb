@@ -48,4 +48,48 @@
     </div>
   </div>
   <!--data_graph-->
+
+  <!--un-fulfilled orders-->
+  <h1>un-fulfilled orders</h1>
+  <div class="table_container">
+    <table class="table_content">
+      <tr>
+        <th>order ID</th>
+        <th>customer</th>
+        <th>total</th>
+        <th>address</th>
+        <th># orders</th>
+        <th>fulfilled</th>
+        <th>created</th>
+        <th>action</th>
+      </tr>
+
+      <% @not_fulfilled_orders.all.limit(5).each do |order| %>
+        <tr>
+          <td><%= link_to "#{order.id}", admin_order_path(order.admin, order) %></td>
+          <td><%= link_to "#{order.customer_email}", admin_order_path(order.admin, order) %></td>
+          <td><%= order.total %></td>
+          <td><%= order.address %></td>
+          <td><%= order.order_products.all.count %></td>
+          <td>
+            <% if order.fulfilled.present? %>
+              <div class="blue_text"><%= order.fulfilled %></div>
+            <% else %>
+              <div class="red_text"><%= order.fulfilled %></div>
+            <% end %>
+          </td>
+          <td><%= order.created_at.strftime('%d %b %Y [%a]') %></td>
+          <td class="display_flex_style">
+            <div><%= link_to "edit", edit_admin_order_path(order.admin, order) %></div>
+            <div class="margin_hor_15px">|</div>
+            <div><%= button_to "delete", admin_order_path(order.admin, order), method: :delete %></div>
+          </td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+  <!--un-fulfilled orders-->
+
+
+
 </div>
