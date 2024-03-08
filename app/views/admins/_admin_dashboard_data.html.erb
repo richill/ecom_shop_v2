@@ -58,11 +58,11 @@
           <th>order ID</th>
           <th>customer</th>
           <th>total</th>
+          <th>amount (£)</th>
           <th>address</th>
           <th># orders</th>
           <th>fulfilled</th>
           <th>created</th>
-          <th>amount (£)</th>
           <th>action</th>
         </tr>
 
@@ -71,6 +71,7 @@
             <td><%= link_to "#{order.id}", admin_order_path(order.admin, order) %></td>
             <td><%= link_to "#{order.customer_email}", admin_order_path(order.admin, order) %></td>
             <td><%= order.total %></td>
+            <td><%= (order.total/100.0).to_s %></td>
             <td><%= order.address %></td>
             <td><%= order.order_products.all.count %></td>
             <td>
@@ -81,7 +82,6 @@
               <% end %>
             </td>
             <td><%= order.created_at.strftime('%d %b %Y [%a], %H:%M') %></td>
-            <td><%= (order.total/100.0).to_s %></td>
             <td class="display_flex_style">
               <div><%= link_to "edit", edit_admin_order_path(order.admin, order) %></div>
               <div class="margin_hor_15px">|</div>
