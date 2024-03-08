@@ -46,19 +46,26 @@
 
 <div class="border_content"></div>
 
-<div>
-  <div class="product_title">product variants (Customer View)</div>
-  <div>
-    <ul class="product_colour_ul">
-      <% product.variants.each do |var| %>
-        <% if var.stock.present? && var.stock > 0  %>
-          <!--do something-->
-          <button value="<%= var.colour %>" class="product_btn_colour"><%= var.colour %></button>
-        <% elsif var.stock.nil? || var.stock == 0 %>
-          <!--do something-->
-          <button disabled value="<%= var.colour %>" class="product_btn_colour"><%= var.colour %></button>
+<div class="product_variation_submit">
+  <!--variants-->
+  <div class="product_variants">
+    <div class="product_title">product variants (Customer View)</div>
+    <div>
+      <ul class="product_colour_ul">
+        <% product.variants.each do |var| %>
+          <% if var.stock.present? && var.stock > 0  %>
+            <!--do something-->
+            <button value="<%= var.colour %>" class="product_btn_colour"><%= var.colour %></button>
+          <% elsif var.stock.nil? || var.stock == 0 %>
+            <!--do something-->
+            <button disabled value="<%= var.colour %>" class="product_btn_colour"><%= var.colour %></button>
+          <% end %>
         <% end %>
-      <% end %>
-    </ul>
+      </ul>
+    </div>
+  </div>
+  <!--submit-->
+  <div class="product_submit_btn_section">
+    <button data-contoller="products">add to cart</button>
   </div>
 </div>

@@ -8,7 +8,7 @@ export default class extends Controller {
   static values = { revenue: Array }
 
   initialize() {
-    console.log("Hello controller")
+    console.log("connected to the dashboard controller")
     // const data = [0, 20, 30, 40, 50, 60, 70]
     // const labels = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"]
 
