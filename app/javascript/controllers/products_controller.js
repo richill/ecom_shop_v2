@@ -9,6 +9,20 @@ export default class extends Controller {
 
     const cart = localStorage.getItem("cart");
     if (cart) {
+      const cartArray = JSON.parse(cart);
+      const foundIndex = cartArray.findIndex(item => item.id === this.productValue.id && item.colour === this.colourValue);
+      //already a product in the cart that exist with the same ID
+      if (foundIndex >= 0) {
+        cartArray[foundIndex].quantity = parseInt(cartArray[foundIndex]) + 1
+      } else {
+        cartArray.push({
+          id: this.productValue.id,
+          name: this.productValue.name,
+          price: this.productValue.price,
+          colour: this.colourValue,
+          quantity: 1
+        })
+      }
 
     } else {
       const cartArray = []
@@ -19,6 +33,7 @@ export default class extends Controller {
         colour: this.colourValue,
         quantity: 1
       })
+      localStorage.setItem("cart", JSON.stringify(cartArray));
     }
   }
 
