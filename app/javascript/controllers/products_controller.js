@@ -2,18 +2,16 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="products"
 export default class extends Controller {
-  static values = { size: String, product: Object }
+  static values = { colour: String, product: Object }
 
   addToCart() {
-    console.log("product: ", this.productValue);
-
-    const cart = localStorage.getItem("cart");
+    console.log("product: ", this.productValue)
+    const cart = localStorage.getItem("cart")
     if (cart) {
-      const cartArray = JSON.parse(cart);
-      const foundIndex = cartArray.findIndex(item => item.id === this.productValue.id && item.colour === this.colourValue);
-      //already a product in the cart that exist with the same ID
+      const cartArray = JSON.parse(cart)
+      const foundIndex = cartArray.findIndex(item => item.id === this.productValue.id && item.colour === this.colourValue)
       if (foundIndex >= 0) {
-        cartArray[foundIndex].quantity = parseInt(cartArray[foundIndex]) + 1
+        cartArray[foundIndex].quantity = parseInt(cartArray[foundIndex].quantity) + 1
       } else {
         cartArray.push({
           id: this.productValue.id,
@@ -23,7 +21,7 @@ export default class extends Controller {
           quantity: 1
         })
       }
-
+      localStorage.setItem("cart", JSON.stringify(cartArray))
     } else {
       const cartArray = []
       cartArray.push({
@@ -33,7 +31,7 @@ export default class extends Controller {
         colour: this.colourValue,
         quantity: 1
       })
-      localStorage.setItem("cart", JSON.stringify(cartArray));
+      localStorage.setItem("cart", JSON.stringify(cartArray))
     }
   }
 
