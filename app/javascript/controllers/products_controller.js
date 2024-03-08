@@ -4,10 +4,6 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   static values = { size: String, product: Object }
 
-  // connect() {
-  //   console.log("connected to the products controller")
-  // }
-
   addToCart() {
     console.log("product: ", this.productValue)
   }
