@@ -341,3 +341,12 @@ input[type='radio']:checked:after {
     list-style-type: none;
 }
 
+.product_btn_colour {
+    width: 100px;
+    height: 50px;
+}
+
+.product_colour_ul {
+    padding: 0px;
+}
+

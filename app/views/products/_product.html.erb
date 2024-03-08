@@ -48,5 +48,18 @@
 
 <div>
   <div class="product_title">product variants (Customer View)</div>
-  <div>variations</div>
+  <div>
+    <ul class="product_colour_ul">
+      <% product.variants.each do |var| %>
+        <% if var.stock.present? || var.stock > 0  %>
+          <!--do something-->
+          <button value="<%= var.colour %>" class="product_btn_colour"><%= var.colour %></button>
+        <% elsif var.stock.nil? || var.stock == 0 %>
+          <!--do something-->
+          <button disabled value="<%= var.colour %>" class="product_btn_colour"><%= var.colour %></button>
+        <% end %>
+
+      <% end %>
+    </ul>
+  </div>
 </div>

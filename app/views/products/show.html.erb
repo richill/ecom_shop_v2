@@ -41,6 +41,7 @@
               <% end %>
             </div>
             <div><%= "#{var.colour}" %></div>
+            <div><%= "stock: #{var.stock}" %></div>
             <div><%= link_to "edit", edit_variant_path(var, product_id: @product) %></div>
           </li>
         <% end %>
