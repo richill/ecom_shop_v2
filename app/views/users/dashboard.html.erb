@@ -1,2 +1,10 @@
-<h1>Users#dashboard</h1>
-<p>Find me in app/views/users/dashboard.html.erb</p>
+<div class="dashboard_container">
+  <div class="dashboard_inner_container">
+    <!--left_content-->
+    <%= render "shared/user_dashboard_menu" %>
+
+    <!--right_content-->
+    <%= render "users/user_dashboard" %>
+  </div>
+</div>
+
