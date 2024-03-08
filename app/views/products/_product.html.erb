@@ -51,7 +51,7 @@
   <div>
     <ul class="product_colour_ul">
       <% product.variants.each do |var| %>
-        <% if var.stock.present? || var.stock > 0  %>
+        <% if var.stock.present? && var.stock > 0  %>
           <!--do something-->
           <button value="<%= var.colour %>" class="product_btn_colour"><%= var.colour %></button>
         <% elsif var.stock.nil? || var.stock == 0 %>
