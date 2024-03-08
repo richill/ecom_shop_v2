@@ -20,8 +20,7 @@ Rails.application.routes.draw do
     end
   end
   # ----- admin -----
-
-
+  
   # ----- user -----
   devise_scope :user do
     get 'sign-in', to: 'devise/sessions#new'
@@ -35,6 +34,10 @@ Rails.application.routes.draw do
     end
   end
   # ----- user -----
+
+  # ----- cart -----
+  get 'carts', to: 'carts#show'
+  # ----- cart -----
 
   resources :products
 
