@@ -35,7 +35,6 @@
     </div>
   </div>
   <!--section-->
-
   <div class="share_button_cover">
     <%= button_to "Share", "", data: { action: "click->share#share"} %>
     <%= content_tag(:p, "", class: "result", data: {
@@ -54,18 +53,18 @@
       <ul class="product_colour_ul">
         <% product.variants.each do |var| %>
           <% if var.stock.present? && var.stock > 0  %>
-            <!--do something-->
-            <button value="<%= var.colour %>" class="product_btn_colour"><%= var.colour %></button>
+            <button data-action="click->products#selectColour" value="<%= var.colour %>" class="product_btn_colour"><%= var.colour %></button>
           <% elsif var.stock.nil? || var.stock == 0 %>
-            <!--do something-->
             <button disabled value="<%= var.colour %>" class="product_btn_colour"><%= var.colour %></button>
           <% end %>
         <% end %>
       </ul>
     </div>
   </div>
+
   <!--submit-->
   <div class="product_submit_btn_section">
+    <div id="selected-colour"></div>
     <button>add to cart</button>
   </div>
 </div>
