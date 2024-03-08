@@ -1,4 +1,4 @@
-<div id="<%= dom_id product %>">
+<div id="<%= dom_id product %>" data-controller="share" data-share-url-value="<%= product_url(product) %>">
   <!--section-->
   <div class="margin_bottom_15px">
     <div class="product_title">product image</div>
@@ -36,7 +36,7 @@
   </div>
   <!--section-->
 
-  <div class="share_button_cover" data-controller="share" data-share-url-value="<%= product_url(product) %>">
+  <div class="share_button_cover">
     <%= button_to "Share", "", data: { action: "click->share#share"} %>
     <%= content_tag(:p, "", class: "result", data: {
       share_target: "result"
@@ -46,7 +46,7 @@
 
 <div class="border_content"></div>
 
-<div class="product_variation_submit" data-contoller="product" data-product-product-value="<%= product.to_json %>">
+<div class="product_variation_submit" data-controller="products" data-products-product-value="<%= product.to_json %>">
   <!--variants-->
   <div class="product_variants">
     <div class="product_title">product variants (Customer View)</div>
