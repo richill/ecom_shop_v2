@@ -1,1 +1,31 @@
-<div>cart page</div>
+<div data-controller="cart">
+  <h1>Cart page</h1>
+
+  <!--cart_total-->
+  <div id="total"></div>
+  <!--cart_total-->
+
+  <!--cart_table-->
+  <div class="table_container">
+    <table class="table_content">
+      <tr>
+        <th>header 1</th>
+        <th>header 2</th>
+      </tr>
+
+      <%# @not_fulfilled_orders.all.limit(5).each do |order| %>
+      <tr>
+        <td>content 1</td>
+        <td>content 2</td>
+      </tr>
+      <%# end %>
+    </table>
+  </div>
+  <!--cart_table-->
+
+  <!--button-->
+  <button data-cation="click->cart#checkout">checkout</button>
+  <button data-cation="click->clear">clear cart</button>
+  <!--button-->
+</div>
+

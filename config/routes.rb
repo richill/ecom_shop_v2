@@ -36,7 +36,7 @@ Rails.application.routes.draw do
   # ----- user -----
 
   # ----- cart -----
-  get 'carts', to: 'carts#show'
+  get 'cart', to: 'carts#show'
   # ----- cart -----
 
   resources :products
