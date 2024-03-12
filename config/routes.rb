@@ -47,6 +47,6 @@ Rails.application.routes.draw do
 
   root    'static_pages#homepage'
 
-  # redirects all unknown routes to homepage
-  get '*path' => redirect('/')
+  # # redirects all unknown routes to homepage
+  # get '*path' => redirect('/')
 end

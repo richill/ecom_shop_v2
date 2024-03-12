@@ -21,8 +21,8 @@ class CheckoutsController < ApplicationController
             name: item["name"],
             metadata: { product_id: product.id, colour: item["colour"], product_stock_id: product_stock.id }
           },
-          currency: "usd",
-          unit_amount: item["price"].to_i
+          currency: "gbp",
+          unit_amount: (item["price"]*100)
         }
       }
     end
