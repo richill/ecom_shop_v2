@@ -41,12 +41,14 @@ Rails.application.routes.draw do
 
   # ----- checkout -----
   post 'checkout', to: 'checkouts#create'
+  get 'success', to: 'checkouts#success'
+  get 'cancel', to: 'checkouts#cancel'
   # ----- checkout -----
 
   resources :products
 
   root    'static_pages#homepage'
 
-  # # redirects all unknown routes to homepage
-  # get '*path' => redirect('/')
+  # redirects all unknown routes to homepage
+  get '*path' => redirect('/')
 end

@@ -17,6 +17,8 @@ gem 'impressionist'
 gem 'stripe'
 gem 'carrierwave'
 gem 'cloudinary'
+gem 'pry', '~> 0.14.2'
+gem 'byebug'
 
 group :development, :test do
   gem "awesome_print"
