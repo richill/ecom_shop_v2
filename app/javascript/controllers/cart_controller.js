@@ -48,6 +48,7 @@ export default class extends Controller {
     const id = event.target.value
     const index = cart.findIndex( item => item.id === id )
     cart.splice(index, 1)
+    localStorage.setItem("cart", JSON.stringify(cart))
   }
 }
 
