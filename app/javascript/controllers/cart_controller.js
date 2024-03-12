@@ -15,7 +15,7 @@ export default class extends Controller {
       total += item.price * item.quantity
       const div = document.createElement("div")
       div.classList.add("mt-2")
-      div.innerText = `Item: ${item.name} - $${item.price/100.0} - Colour: ${item.colour} - Quantity: ${item.quantity}`
+      div.innerText = `Item: ${item.name} - £${item.price} - Colour: ${item.colour} - Quantity: ${item.quantity}`
       const deleteButton = document.createElement("button")
       deleteButton.innerText = "Remove"
       console.log("item.id: ", item.id)
@@ -27,7 +27,7 @@ export default class extends Controller {
     }
 
     const totalEl = document.createElement("div")
-    totalEl.innerText= `Total: $${total/100.0}`
+    totalEl.innerText= `Total: £${total}`
     let totalContainer = document.getElementById("total")
     totalContainer.appendChild(totalEl)
   }
