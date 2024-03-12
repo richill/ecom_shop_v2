@@ -10,6 +10,6 @@ class WebhooksController < ApplicationController
     # the signature key that stripe sends to us and we use the webhook & payload key to verify that is stripe calling our webhook
     # and now someone else
     sig_header = request.env["HTT_STRIPE_SIGNATURE"]
-    endpoint_secret = Rails.application.credentials.dig(:stripe, :webhook_secret)
+    endpoint_secret = ENV["ST_ART_STRIPE_WEBHOOK_SECRET_TEST"]
   end
 end
