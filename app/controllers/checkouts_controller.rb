@@ -5,11 +5,11 @@ class CheckoutsController < ApplicationController
     cart = params[:cart]
     line_items = cart.map do |item|
       product = Product.find(item["id"])
-      product_stock = product.variants.find{ |ps| ps.size == item["colour"] }
+      product_stock = product.variants.find{ |ps| ps.colour == item["colour"] }
 
       # if customer is trying to order more than what we have in stock (product_stock.stock ) we will return an error message
       if product_stock.stock < item["quantity"].to_i
-        render json: { error: "Not enough stock for #{product.name} in size #{item["colour"]}. Only #{product_stock.stock} left." }, status: 400
+        render json: { error: "Not enough stock for #{product.name} in colour #{item["colour"]}. Only #{product_stock.stock} left." }, status: 400
         return
       end
 
