@@ -3,8 +3,8 @@
 .footer_container {
     background-color: #2E2F30;
     padding: 15px 0px;
-    position: absolute;
-    bottom: 0;
+    /*position: absolute;*/
+    /*bottom: 0;*/
     width: 100%;
 }
 
