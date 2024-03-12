@@ -1,10 +1,10 @@
-<div class="min-h-screen">
+<div>
   <h1>Cart Page</h1>
   <div id="errorContainer"></div>
   <div data-controller="cart">
-    <div class="mt-4 font-medium" id="total"></div>
-    <button class="mt-6 py-2 px-4 bg-gray-500 hover:bg-gray-600 rounded text-white" data-action="click->cart#checkout">Checkout</button>
-    <button class="py-2 px-4 bg-gray-500 hover:bg-gray-600 rounded text-white" data-action="click->cart#clear">Clear Cart</button>
+    <div id="total"></div>
+    <button data-action="click->cart#checkout">Checkout</button>
+    <button data-action="click->cart#clear">Clear Cart</button>
   </div>
 </div>
 
