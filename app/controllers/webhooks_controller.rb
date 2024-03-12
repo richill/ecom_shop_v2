@@ -44,14 +44,15 @@ class WebhooksController < ApplicationController
       line_items["data"].each do |item|
         product = Stripe::Product.retrieve(item["price"]["product"])
         product_id = product["metadata"]["product_id"].to_i
-        OrderProduct.create!(order: order, product_id: product_id, quantity: item["quantity"], size: product["metadata"]["size"])
-        Variant.find(product["metadata"]["product_stock_id"]).decrement!(:amount, item["quantity"])
+        OrderProduct.create!(order: order, product_id: product_id, quantity: item["quantity"], colour: product["metadata"]["colour"])
+        Variant.find(product["metadata"]["product_stock_id"]).decrement!(:stock, item["quantity"])
       end
     else
       puts "Unhandled event type: #{event.type}"
     end
 
     render json: { message: 'success' }
+    status 200
     # -------- Handle the event --------
   end
 end
