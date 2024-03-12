@@ -25,10 +25,16 @@ export default class extends Controller {
       console.log("item.id: ", item.id)
       deleteButton.value = JSON.stringify({id: item.id, colour: item.colour})
       deleteButton.classList.add("rounded", "text-white", "px-2", "py-1", "ml-2")
-       
-      // div.appendChild(deleteButton)
-      // this.element.prepend(div)
+
+      // removes individual item from cart
+      deleteButton.addEventListener("click", this.removeFromCart)
+      div.appendChild(deleteButton)
+      this.element.prepend(div)
     }
 
+    const totalEl = document.createElement("div")
+    totalEl.innerText = `Total: $${total/100.0}`
+    let totalContainer = document.getElementById("total")
+    totalContainer.appendChild(totalEl)
   }
 }
