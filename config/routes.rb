@@ -39,6 +39,10 @@ Rails.application.routes.draw do
   get 'cart', to: 'carts#show'
   # ----- cart -----
 
+  # ----- checkout -----
+  post 'checkout', to: 'checkouts#create'
+  # ----- checkout -----
+
   resources :products
 
   root    'static_pages#homepage'
