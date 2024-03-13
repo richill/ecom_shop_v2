@@ -27,7 +27,7 @@ class WebhooksController < ApplicationController
     # -------- begin --------
 
 
-    # -------- Handle the event --------
+    # -------- handle the event --------
     case event.type
     when 'checkout.session.completed'
       session = event.data.object
@@ -53,6 +53,6 @@ class WebhooksController < ApplicationController
 
     render json: { message: 'success' }
     status 200
-    # -------- Handle the event --------
+    # -------- handle the event --------
   end
 end
