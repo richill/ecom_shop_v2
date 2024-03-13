@@ -2,12 +2,6 @@ class WebhooksController < ApplicationController
   skip_forgery_protection
 
   def stripe
-    # stripe_secret_key = ENV["ST_ART_STRIPE_API_KEY_TEST"]
-    # Stripe.api_key = stripe_secret_key
-    # payload = request.body.read
-    # sig_header = request.env["HTTP_STRIPE_SIGNATURE"]
-    # endpoint_secret = ENV["ST_ART_STRIPE_WEBHOOK_SECRET_TEST"]
-    # event = nil
     stripe_secret_key = Rails.application.credentials.dig(:stripe, :private_key)
     Stripe.api_key = stripe_secret_key
     payload = request.body.read
