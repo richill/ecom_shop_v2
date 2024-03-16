@@ -58,7 +58,7 @@ export default class extends Controller {
 
     const csrfToken = document.querySelector("[name='csrf-token']").content
 
-    fetch("http://localhost:3102/checkout", {
+    fetch("/checkout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
