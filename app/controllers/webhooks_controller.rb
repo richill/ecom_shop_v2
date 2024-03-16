@@ -3,6 +3,7 @@ class WebhooksController < ApplicationController
 
   def stripe
     stripe_secret_key = Rails.application.credentials.dig(:stripe, :private_key)
+    binding.pry
     Stripe.api_key = stripe_secret_key
     payload = request.body.read
     sig_header = request.env["HTTP_STRIPE_SIGNATURE"]
