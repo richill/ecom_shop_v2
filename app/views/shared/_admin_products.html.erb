@@ -4,6 +4,18 @@
 
   <!--content-->
   <h1>products <%= "[#{@products.all.count}]" %></h1>
+
+  <!--search-->
+  <div class="search_section_container">
+    <div>
+      <%= form_with url: product_admin_path, method: :get, class: "search_section" do |f| %>
+      <%= f.text_field :query, placeholder: "search", class: "search_content" %>
+        <%= f.submit "Submit", class: "submit_btn" %>
+      <% end %>
+    </div>
+  </div>
+  <!--search-->
+
   <div class="btn_cover"><%= link_to "new product", new_admin_product_path(current_admin), class: "btn_general" %></div>
   <div class="table_container">
     <table class="table_content">
