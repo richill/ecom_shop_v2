@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
+  include Pagy::Backend
   protect_from_forgery with: :exception
   before_action :configure_permitted_parameters, if: :devise_controller?
-  include Pagy::Backend
 
   def after_sign_in_path_for(resources)
     if current_user

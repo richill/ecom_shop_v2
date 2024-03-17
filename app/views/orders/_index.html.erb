@@ -1,4 +1,10 @@
 <!--content-->
+<div class="page_section">
+  <span>Orders:</span>
+  <span><%= @not_fulfilled_orders.count %></span>
+  <span>/</span>
+  <span><%= Order.unfulfilled_orders.count %></span>
+</div>
 <h1>un-fulfilled orders</h1>
 <div class="table_container">
   <table class="table_content">
@@ -76,4 +82,5 @@
     <% end %>
   </table>
 </div>
+<%== pagy_nav(@pagy)  %>
 <!--content-->

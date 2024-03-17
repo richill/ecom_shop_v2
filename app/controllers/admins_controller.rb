@@ -48,7 +48,8 @@ class AdminsController < ApplicationController
 
   def listed_orders
     @orders = Order.order_asc
-    @not_fulfilled_orders = Order.unfulfilled_orders.order_asc
+    # @not_fulfilled_orders = Order.unfulfilled_orders.order_asc
+    @pagy, @not_fulfilled_orders = pagy(Order.unfulfilled_orders.order_asc, items: 5)
     @fulfilled = Order.fulfilled_orders.order_asc
   end
 
