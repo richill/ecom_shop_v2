@@ -40,6 +40,7 @@ class AdminsController < ApplicationController
 
   def product
     @products = Product.order_desc.all
+    # search code here
   end
 
   def variant
