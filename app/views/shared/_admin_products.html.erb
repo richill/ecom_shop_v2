@@ -13,6 +13,12 @@
         <%= f.submit "Submit", class: "submit_btn" %>
       <% end %>
     </div>
+    <div>
+      <%= form_with url: product_admin_path, method: :get, class: "search_section" do |f| %>
+        <%= f.submit "Clear Search", class: "submit_btn" %>
+      <% end %>
+    </div>
+    <div class="searched_info">searched for: <%= @searched_item %></div>
   </div>
   <!--search-->
 
@@ -50,5 +56,6 @@
       <% end %>
     </table>
   </div>
+  <%== pagy_nav(@pagy)  %>
   <!--content-->
 </div>

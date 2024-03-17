@@ -4,9 +4,6 @@ class ProductsController < ApplicationController
   impressionist :actions=>[:show]
 
   def index
-    # @products = Product.all
-    # @products = Product.order(impressions_count: :desc)
-    # impressionist_count(filter: :ip_address)
     @products = Product.order(impressions_count: :desc)
   end
 

@@ -39,8 +39,12 @@ class AdminsController < ApplicationController
   end
 
   def product
-    @products = Product.order_desc.all
-    # search code here
+    if params[:query].present?
+      @pagy, @products = pagy(Product.where("name LIKE ?",  "%#{params[:query]}%"), items: 2)
+      @searched_item = params[:query]
+    else
+      @pagy, @products = pagy(Product.order_desc.all, items: 2)
+    end
   end
 
   def variant

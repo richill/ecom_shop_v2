@@ -375,3 +375,9 @@ input[type='radio']:checked:after {
     margin: 15px 0px;
 }
 
+.searched_info {
+    background-color: #CCCCCC;
+    padding: 5px;
+    margin: 5px 0px;
+}
+
