@@ -155,6 +155,7 @@ GEM
     nokogiri (1.15.4-x86_64-darwin)
       racc (~> 1.4)
     orm_adapter (0.5.0)
+    pagy (6.5.0)
     pg (1.5.4)
     pry (0.14.2)
       coderay (~> 1.1)
@@ -261,6 +262,7 @@ DEPENDENCIES
   importmap-rails
   impressionist
   jbuilder
+  pagy (~> 6.5)
   pg
   pry (~> 0.14.2)
   puma (~> 5.0)
