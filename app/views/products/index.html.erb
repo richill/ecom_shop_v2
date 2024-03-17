@@ -2,7 +2,16 @@
 <div id="products" class="left_right_content_products">
   <!--left_content_products-->
   <div class="left_content_products">
+    <!--form-->
     <div>filter</div>
+    <div>
+      <%= form_with url: products_path, method: :get, class: "search_section" do |f| %>
+        <%= f.number_field :min, placeholder: "min price", class: "search_input" %>
+        <%= f.number_field :max, placeholder: "max price", class: "search_input" %>
+        <%= f.submit "Filter", class: "" %>
+      <% end %>
+    </div>
+    <!--form-->
   </div>
 
   <!--right_content_products-->
