@@ -339,6 +339,8 @@ input[type='radio']:checked:after {
 
 .listed_products {
     list-style-type: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 .product_btn_colour {
@@ -381,3 +383,17 @@ input[type='radio']:checked:after {
     margin: 5px 0px;
 }
 
+.left_content_products {
+    width: 200px;
+    background-color: red;
+    padding: 15px;
+}
+
+.left_right_content_products {
+    display: flex;
+    width: 100%;
+}
+
+.right_content_products {
+    width: 100%;
+}

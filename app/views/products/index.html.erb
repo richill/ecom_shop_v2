@@ -1,37 +1,45 @@
 <h1>Products</h1>
-<div id="products">
-  <ul class="listed_products">
-    <% @products.each do |product| %>
-      <li class="product_item">
-        <div><%= render product %></div>
-        <div>
-          <% if user_signed_in? %>
-            <% if current_user %>
-              <!--impression code-->
-              <div><%= "#{product.impressions_count} views" %></div>
-              <!--impression code-->
+<div id="products" class="left_right_content_products">
+  <!--left_content_products-->
+  <div class="left_content_products">
+    <div>filter</div>
+  </div>
 
-              <!--views code-->
-              <% if product.reviews.present? %>
-                <div><%= "#{product.average_rating}star (#{product.reviews.count}) reviews" %></div>
-              <% else %>
-                <div>no reviews</div>
+  <!--right_content_products-->
+  <div class="right_content_products">
+    <ul class="listed_products">
+      <% @products.each do |product| %>
+        <li class="product_item">
+          <div><%= render product %></div>
+          <div>
+            <% if user_signed_in? %>
+              <% if current_user %>
+                <!--impression code-->
+                <div><%= "#{product.impressions_count} views" %></div>
+                <!--impression code-->
+
+                <!--views code-->
+                <% if product.reviews.present? %>
+                  <div><%= "#{product.average_rating}star (#{product.reviews.count}) reviews" %></div>
+                <% else %>
+                  <div>no reviews</div>
+                <% end %>
+                <!--views code-->
+
+                <!--favourite code-->
+                <div id="product-<%= product.id %>">
+                  <%= render partial: 'shared/favourites', locals: { product: product} %>
+                </div>
+                <!--favourite code-->
               <% end %>
-              <!--views code-->
-
-              <!--favourite code-->
-              <div id="product-<%= product.id %>">
-                <%= render partial: 'shared/favourites', locals: { product: product} %>
-              </div>
-              <!--favourite code-->
             <% end %>
-          <% end %>
-        </div>
-        <p>
-          <%= link_to "view", product %>
-        </p>
-      </li>
-    <% end %>
-  </ul>
+          </div>
+          <p>
+            <%= link_to "view", product %>
+          </p>
+        </li>
+      <% end %>
+    </ul>
+  </div>
 </div>
 
