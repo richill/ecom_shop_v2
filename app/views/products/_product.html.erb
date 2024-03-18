@@ -79,7 +79,7 @@
   <!--variants-->
 
   <!--add_cart-->
-  <% if user_signed_in? || admin_signed_in? %>
+  <% if user_signed_in? %>
     <div class="product_submit_btn_section">
       <div id="selected-colour"></div>
       <button data-action="click->products#addToCart">add to cart</button>

@@ -7,15 +7,16 @@
       <% if admin_signed_in? %>
         <div><%= link_to "sign out", destroy_admin_session_path, data: { turbo_method: :delete }, class: "icon_box_link sign_out_btn header_text" %></div>
         <li>
-          <%= link_to root_path, class: "icon_box_link" do %>
+          <%= link_to dashboard_admin_path(current_admin), class: "icon_box_link" do %>
             <div><span class="material-icons">smart_toy</span></div>
-            <div class="header_text">AI GPTChat</div>
+            <div class="header_text">dashboard</div>
+            <!--<div class="header_text">AI GPTChat</div>-->
           <% end %>
         </li>
         <li>
           <%= link_to products_path, class: "icon_box_link" do %>
             <div><span class="material-icons">category</span></div>
-            <div class="header_text">products</div>
+            <div class="header_text">shop</div>
           <% end %>
         </li>
         <li>
