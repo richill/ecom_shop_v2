@@ -44,7 +44,7 @@ catps07 = CategoryProductstyle.create!(name: "sofa", code_name: nil, category_pr
 
 Product.delete_all
 prod01 = Product.create!(
-  name: "arm chair",
+  name: "armchair",
   image_url: "https://asset1.cxnmarksandspencer.com/is/image/mands/HF_05_T39_9876P_NC_X_EC_0?wid=640&qlt=80",
   category_producttype_id: catpt01.id, #product
   category_productitemtype_id: catpit03.id, #home furnishing
@@ -55,7 +55,7 @@ prod01 = Product.create!(
   price: 18
 )
 prod02 = Product.create!(
-  name: "body-suit",
+  name: "bodysuit",
   image_url: "https://asset1.cxnmarksandspencer.com/is/image/mands/SD_04_T92_4525S_J4_X_EC_0?wid=640&qlt=80",
   category_producttype_id: catpt01.id, #product
   category_productitemtype_id: catpit01.id, #clothing
@@ -89,6 +89,71 @@ op01 = OrderProduct.create!(product_id: prod03.id, order_id: order04.id, quantit
 op02 = OrderProduct.create!(product_id: prod02.id, order_id: order01.id, quantity: 2, colour: "pink")
 op03 = OrderProduct.create!(product_id: prod01.id, order_id: order01.id, quantity: 3, colour: "yellow")
 op04 = OrderProduct.create!(product_id: prod02.id, order_id: order05.id, quantity: 5, colour: "pink")
+
+Variant.delete_all
+var01 = Variant.create!(
+  product_id: prod03.id, #earrings
+  colour: "gold",
+  image_url: "https://asset1.cxnmarksandspencer.com/is/image/mands/SD_01_T66_9397E_S0_X_EC_0?wid=640&qlt=80",
+  image_var: nil,
+  stock: 10
+)
+var02 = Variant.create!(
+  product_id: prod03.id, #earrings
+  colour: "silver",
+  image_url: "https://asset1.cxnmarksandspencer.com/is/image/mands/SD_01_T66_9442E_XX_X_EC_0?wid=640&qlt=80",
+  image_var: nil,
+  stock: 15
+)
+var03 = Variant.create!(
+  product_id: prod03.id, #earrings
+  colour: "black",
+  image_url: "https://asset1.cxnmarksandspencer.com/is/image/mands/SD_01_T66_9752E_Y0_X_EC_0?wid=640&qlt=80",
+  image_var: nil,
+  stock: 1
+)
+var04 = Variant.create!(
+  product_id: prod01.id, #arhchair
+  colour: "yellow",
+  image_url: "https://asset1.cxnmarksandspencer.com/is/image/mands/HF_05_T39_9343P_NC_X_EC_0?wid=640&qlt=80",
+  image_var: nil,
+  stock: 20
+)
+var05 = Variant.create!(
+  product_id: prod01.id, #arhchair
+  colour: "blue",
+  image_url: "https://asset1.cxnmarksandspencer.com/is/image/mands/HF_05_T39_9345P_NC_X_EC_0?wid=640&qlt=80",
+  image_var: nil,
+  stock: 5
+)
+var06 = Variant.create!(
+  product_id: prod01.id, #arhchair
+  colour: "gray",
+  image_url: "https://asset1.cxnmarksandspencer.com/is/image/mands/HF_05_T39_9876P_NC_X_EC_0?wid=640&qlt=80",
+  image_var: nil,
+  stock: 25
+)
+var07 = Variant.create!(
+  product_id: prod02.id, #bodysuit
+  colour: "green",
+  image_url: "https://asset1.cxnmarksandspencer.com/is/image/mands/SD_04_T92_4525S_J4_X_EC_0?wid=640&qlt=80",
+  image_var: nil,
+  stock: 20
+)
+var08 = Variant.create!(
+  product_id: prod02.id, #bodysuit
+  colour: "pink",
+  image_url: "https://asset1.cxnmarksandspencer.com/is/image/mands/SD_04_T92_2542S_A4_X_EC_90?wid=640&qlt=80",
+  image_var: nil,
+  stock: 25
+)
+var09 = Variant.create!(
+  product_id: prod02.id, #bodysuit
+  colour: "cream",
+  image_url: "https://asset1.cxnmarksandspencer.com/is/image/mands/SD_04_T92_6534S_R4_X_EC_90?wid=640&qlt=80",
+  image_var: nil,
+  stock: 10
+)
 
 
 
