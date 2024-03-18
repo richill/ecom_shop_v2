@@ -153,9 +153,11 @@ input[type='radio']:checked:after {
 }
 
 .variant_cover ul li {
-    background-color: yellow;
+    background-color: #2699FB;
     width: 100px;
     margin-right: 15px;
+    font-size: 12px;
+    text-transform: capitalize;
 }
 
 .variant_cover ul li img {
@@ -352,8 +354,19 @@ input[type='radio']:checked:after {
 }
 
 .product_colour_ul {
-    padding: 0px;
+    display: flex;
+    list-style-type: none;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
 }
+
+.product_colour_ul li {
+    margin-right: 10px;
+}
+
+
+
 
 .product_submit_btn_section {
     margin-top: 15px;
@@ -467,6 +480,10 @@ input[type='radio']:checked:after {
 
 .bc_arrow {
     margin: 0px 5px;
+}
+
+.var_image_cover img {
+    width: 100px;
 }
 
 

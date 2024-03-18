@@ -43,21 +43,26 @@
 
 
 
-
-
-
 <div class="product_variation_submit" data-controller="products" data-products-product-value="<%= product.to_json %>">
   <!--variants-->
   <div class="product_variants">
-    <div class="product_title">product variants (Customer View)</div>
     <div>
       <ul class="product_colour_ul">
         <% product.variants.each do |var| %>
-          <% if var.stock.present? && var.stock > 0  %>
-            <button data-action="click->products#selectColour" value="<%= var.colour %>" class="product_btn_colour"><%= var.colour %></button>
-          <% elsif var.stock.nil? || var.stock == 0 %>
-            <button disabled value="<%= var.colour %>" class="product_btn_colour"><%= var.colour %></button>
-          <% end %>
+          <li>
+            <div class="var_image_cover">
+              <% if var.image_var.present? %>
+                <%= cl_image_tag(var.image_var_url) %>
+              <% else %>
+                <%= image_tag "#{var.image_url}" %>
+              <% end %>
+            </div>
+            <% if var.stock.present? && var.stock > 0  %>
+              <button data-action="click->products#selectColour" value="<%= var.colour %>" class="product_btn_colour"><%= var.colour %></button>
+            <% elsif var.stock.nil? || var.stock == 0 %>
+              <button disabled value="<%= var.colour %>" class="product_btn_colour"><%= var.colour %></button>
+            <% end %>
+          </li>
         <% end %>
       </ul>
     </div>
