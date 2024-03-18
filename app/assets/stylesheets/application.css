@@ -388,7 +388,7 @@ input[type='radio']:checked:after {
 
 .left_content_products {
     width: 200px;
-    background-color: red;
+    background-color: #2699FB;
     padding: 15px;
 }
 
@@ -410,7 +410,7 @@ input[type='radio']:checked:after {
 
 
 .product_user_li {
-    background-color: red;
+    background-color: #2699FB;
     padding: 15px;
     border-radius: 5px;
     font-size: 10px;
