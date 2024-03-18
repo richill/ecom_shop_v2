@@ -19,28 +19,28 @@ user01 = User.create!(
   )
 
 CategoryProducttype.delete_all
-catpt01 = CategoryProducttype.create!(name: "men", code_name: nil,  admin: admin01)
-catpt02 = CategoryProducttype.create!(name: "women", code_name: nil,  admin: admin01)
-catpt03 = CategoryProducttype.create!(name: "products", code_name: nil,  admin: admin01)
+catpt01 = CategoryProducttype.create!(name: "men", code_name: nil,  admin_id: admin01.id)
+catpt02 = CategoryProducttype.create!(name: "women", code_name: nil,  admin_id: admin01.id)
+catpt03 = CategoryProducttype.create!(name: "products", code_name: nil,  admin_id: admin01.id)
 
 CategoryProductitemtype.delete_all
-catpit01 = CategoryProductitemtype.create!(name: "clothing", code_name: nil, admin: admin01)
-catpit02 = CategoryProductitemtype.create!(name: "accessories", code_name: nil, admin: admin01)
-catpit03 = CategoryProductitemtype.create!(name: "home furnishing", code_name: nil, admin: admin01)
+catpit01 = CategoryProductitemtype.create!(name: "clothing", code_name: nil, admin_id: admin01.id)
+catpit02 = CategoryProductitemtype.create!(name: "accessories", code_name: nil, admin_id: admin01.id)
+catpit03 = CategoryProductitemtype.create!(name: "home furnishing", code_name: nil, admin_id: admin01.id)
 
 CategoryProductsubtype.delete_all
-catpst01 = CategoryProductsubtype.create!(name: "earrings", code_name: nil, category_productitemtype_id: catpit02.id,  admin: admin01)
-catpst02 = CategoryProductsubtype.create!(name: "bodysuit", code_name: nil, category_productitemtype_id: catpit01.id,  admin: admin01)
-catpst03 = CategoryProductsubtype.create!(name: "furniture", code_name: nil, category_productitemtype_id: catpit03.id,  admin: admin01)
+catpst01 = CategoryProductsubtype.create!(name: "earrings", code_name: nil, category_productitemtype_id: catpit02.id,  admin_id: admin01.id)
+catpst02 = CategoryProductsubtype.create!(name: "bodysuit", code_name: nil, category_productitemtype_id: catpit01.id,  admin_id: admin01.id)
+catpst03 = CategoryProductsubtype.create!(name: "furniture", code_name: nil, category_productitemtype_id: catpit03.id,  admin_id: admin01.id)
 
 CategoryProductstyle.delete_all
-catps01 = CategoryProductstyle.create!(name: "studs", code_name: nil, category_productsubtype_id: catpst01.id,  admin: admin01)
-catps02 = CategoryProductstyle.create!(name: "clips", code_name: nil, category_productsubtype_id: catpst01.id,  admin: admin01)
-catps03 = CategoryProductstyle.create!(name: "smart bodysuit", code_name: nil, category_productsubtype_id: catpst02.id,  admin: admin01)
-catps04 = CategoryProductstyle.create!(name: "casual bodysuit", code_name: nil, category_productsubtype_id: catpst02.id,  admin: admin01)
-catps05 = CategoryProductstyle.create!(name: "armchair", code_name: nil, category_productsubtype_id: catpst03.id,  admin: admin01)
-catps06 = CategoryProductstyle.create!(name: "shelf", code_name: nil, category_productsubtype_id: catpst03.id,  admin: admin01)
-catps07 = CategoryProductstyle.create!(name: "sofa", code_name: nil, category_productsubtype_id: catpst03.id,  admin: admin01)
+catps01 = CategoryProductstyle.create!(name: "studs", code_name: nil, category_productsubtype_id: catpst01.id,  admin_id: admin01.id)
+catps02 = CategoryProductstyle.create!(name: "clips", code_name: nil, category_productsubtype_id: catpst01.id,  admin_id: admin01.id)
+catps03 = CategoryProductstyle.create!(name: "smart bodysuit", code_name: nil, category_productsubtype_id: catpst02.id,  admin_id: admin01.id)
+catps04 = CategoryProductstyle.create!(name: "casual bodysuit", code_name: nil, category_productsubtype_id: catpst02.id,  admin_id: admin01.id)
+catps05 = CategoryProductstyle.create!(name: "armchair", code_name: nil, category_productsubtype_id: catpst03.id,  admin_id: admin01.id)
+catps06 = CategoryProductstyle.create!(name: "shelf", code_name: nil, category_productsubtype_id: catpst03.id,  admin_id: admin01.id)
+catps07 = CategoryProductstyle.create!(name: "sofa", code_name: nil, category_productsubtype_id: catpst03.id,  admin_id: admin01.id)
 
 Product.delete_all
 prod01 = Product.create!(
@@ -51,7 +51,7 @@ prod01 = Product.create!(
   category_productsubtype_id: catpst03.id, #furniture
   category_productstyle_id: catps05.id, #armchair
   description: nil,
-  admin_id: admin01,
+  admin_id: admin01.id,
   price: 18
 )
 prod02 = Product.create!(
@@ -62,7 +62,7 @@ prod02 = Product.create!(
   category_productsubtype_id: catpst02.id, #bodysuit
   category_productstyle_id: catps04.id, #casual bodysuit
   description: nil,
-  admin_id: admin01,
+  admin_id: admin01.id,
   price: 15
 )
 prod03 = Product.create!(
@@ -73,16 +73,16 @@ prod03 = Product.create!(
   category_productsubtype_id: catpst01.id, #earrings
   category_productstyle_id: catps01.id, #studs
   description: nil,
-  admin_id: admin01,
+  admin_id: admin01.id,
   price: 18
 )
 
 Order.delete_all
-order01 = Order.create!(customer_email: "richill@gmail.com", fulfilled: false, total: 3300, address: "258 loreum ipsum, london, uk",  admin: admin01)
-order02 = Order.create!(customer_email: "emma@gmail.com", fulfilled: true, total: 0, address: "111 loreum ipsum, accra, ghana",  admin: admin01)
-order03 = Order.create!(customer_email: "lily@gmail.com", fulfilled: true, total: 0, address: "234 loreum ipsum , lagos, nigeria",  admin: admin01)
-order04 = Order.create!(customer_email: "test-01@gmail.com", fulfilled: true, total: 1000, address: "876 loreum ipsum, lome, togo",  admin: admin01)
-order05 = Order.create!(customer_email: "rashid@gmail.com", fulfilled: false, total: 1500, address: "11 state street, accra, ghana P.O Box 6767",  admin: admin01)
+order01 = Order.create!(customer_email: "richill@gmail.com", fulfilled: false, total: 3300, address: "258 loreum ipsum, london, uk",  admin_id: admin01.id)
+order02 = Order.create!(customer_email: "emma@gmail.com", fulfilled: true, total: 0, address: "111 loreum ipsum, accra, ghana",  admin_id: admin01.id)
+order03 = Order.create!(customer_email: "lily@gmail.com", fulfilled: true, total: 0, address: "234 loreum ipsum , lagos, nigeria",  admin_id: admin01.id)
+order04 = Order.create!(customer_email: "test-01@gmail.com", fulfilled: true, total: 1000, address: "876 loreum ipsum, lome, togo",  admin_id: admin01.id)
+order05 = Order.create!(customer_email: "rashid@gmail.com", fulfilled: false, total: 1500, address: "11 state street, accra, ghana P.O Box 6767",  admin_id: admin01.id)
 
 OrderProduct.delete_all
 op01 = OrderProduct.create!(product_id: prod03.id, order_id: order04.id, quantity: 4, colour: "black")

@@ -135,7 +135,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_12_162945) do
     t.integer "category_productsubtype_id"
     t.integer "category_producttype_id"
     t.string "description"
-    t.integer "admin_id"
     t.integer "price"
     t.index ["impressions_count"], name: "index_products_on_impressions_count"
   end
