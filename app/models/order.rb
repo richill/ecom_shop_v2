@@ -1,6 +1,7 @@
 class Order < ApplicationRecord
   belongs_to :admin
   has_many :order_products
+  before_save :total
 
   def self.order_asc
     order(created_at: :asc)
@@ -18,9 +19,10 @@ class Order < ApplicationRecord
     where(fulfilled: true)
   end
 
-  def total_order_value
+  def total
     ordered_products = order_products.map { |o| o.product }
     total_price = ordered_products.map(&:price).sum.to_i
     total_price*100
+    self.total = total_price*100
   end
 end

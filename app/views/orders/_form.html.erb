@@ -7,8 +7,11 @@
     <div class="hide"><%= f.input :admin_id %></div>
     <%= f.input :customer_email %>
     <%= f.input :fulfilled %>
-    <%= f.input :total %>
-    <%= @order.total_order %>
+
+    <% if @admin.present? %>
+      <%= f.input :total, disabled: true %>
+    <% end %>
+
     <%= f.input :address %>
   </div>
 
