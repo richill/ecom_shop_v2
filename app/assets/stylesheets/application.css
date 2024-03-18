@@ -365,15 +365,12 @@ input[type='radio']:checked:after {
     margin-right: 10px;
 }
 
-
-
-
 .product_submit_btn_section {
     margin-top: 15px;
 }
 
 .mt-2 {
-    background-color: #DADADA;
+    background-color: #2699FB;
     margin-bottom: 10px;
     padding: 15px;
 }
@@ -382,6 +379,8 @@ input[type='radio']:checked:after {
     background-color: #CCCCCC;
     padding: 15px;
     margin: 30px 0px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .page_section {
