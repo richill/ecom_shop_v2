@@ -42,15 +42,21 @@
     <!--reviews-->
     <div class="clear"></div>
     <div class="header_review"><u>product reviews:</u></div>
-    <ul>
-      <% @product.reviews.each do |review| %>
-        <li>
-          <div>review: <%= review.rating %></div>
-          <div><%= review.comment %></div>
-          <div><%= review.user.email %></div>
-        </li><br/>
-      <% end %>
-    </ul>
+    <% if @product.reviews.present? %>
+      <ul>
+        <% @product.reviews.each do |review| %>
+          <li>
+            <div>review: <%= review.rating %></div>
+            <div><%= review.comment %></div>
+            <div><%= review.user.email %></div>
+          </li><br/>
+        <% end %>
+      </ul>
+    <% else %>
+      <div class="review_no">currently no reviews</div>
+    <% end %>
+
+
     <!--reviews-->
   </div>
   <!--section-->

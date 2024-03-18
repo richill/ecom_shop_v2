@@ -546,5 +546,12 @@ input[type='radio']:checked:after {
     text-transform: capitalize;
 }
 
+.review_no {
+    font-size: 10px;
+    text-transform: capitalize;
+    margin-top: 15px;
+    color: #2699FB;
+}
+
 
 
