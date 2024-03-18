@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_03_12_162945) do
+ActiveRecord::Schema[7.0].define(version: 2024_03_18_232311) do
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -136,6 +136,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_12_162945) do
     t.integer "category_producttype_id"
     t.string "description"
     t.integer "price"
+    t.integer "admin_id"
     t.index ["impressions_count"], name: "index_products_on_impressions_count"
   end
 
