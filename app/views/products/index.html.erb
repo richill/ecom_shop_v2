@@ -19,7 +19,38 @@
     <ul class="listed_products">
       <% @products.each do |product| %>
         <li class="product_item">
-          <div><%= render product %></div>
+          <!--section-->
+          <div class="margin_bottom_15px product_name_cover">
+            <div class="product_title">name</div>
+            <div><%= product.name %></div>
+          </div>
+          <!--section-->
+
+          <!--section-->
+          <div class="margin_bottom_15px">
+            <div class="product_image"><%= image_tag "#{product.image_url}" %></div>
+          </div>
+          <!--section-->
+
+          <!--section-->
+          <% if product.description.present? %>
+            <div class="margin_bottom_15px price_cover">
+              <div class="product_title">description</div>
+              <div><%= product.description %></div>
+            </div>
+          <% end %>
+          <!--section-->
+
+          <!--section-->
+          <div class="margin_bottom_15px price_cover">
+            <div class="product_title">price</div>
+            <div><%= "£#{product.price}" %></div>
+          </div>
+          <!--section-->
+
+
+
+
           <div>
             <% if user_signed_in? %>
               <% if current_user %>
@@ -27,19 +58,19 @@
                 <div><%= "#{product.impressions_count} views" %></div>
                 <!--impression code-->
 
-                <!--views code-->
+                <!--views-->
                 <% if product.reviews.present? %>
                   <div><%= "#{product.average_rating}star (#{product.reviews.count}) reviews" %></div>
                 <% else %>
                   <div>no reviews</div>
                 <% end %>
-                <!--views code-->
+                <!--views-->
 
-                <!--favourite code-->
+                <!--favourite-->
                 <div id="product-<%= product.id %>">
                   <%= render partial: 'shared/favourites', locals: { product: product} %>
                 </div>
-                <!--favourite code-->
+                <!--favourite-->
               <% end %>
             <% end %>
           </div>
@@ -51,4 +82,3 @@
     </ul>
   </div>
 </div>
-
