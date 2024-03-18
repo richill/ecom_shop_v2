@@ -5,11 +5,9 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.order(impressions_count: :desc)
-
     if params[:max].present?
       @products = @products.where("price <= ?",  params[:max])
     end
-
     if params[:min].present?
       @products = @products.where("price >= ?",  params[:min])
     end

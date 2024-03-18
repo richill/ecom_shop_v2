@@ -19,6 +19,8 @@ gem 'carrierwave'
 gem 'cloudinary'
 gem 'pry', '~> 0.14.2'
 gem 'byebug'
+gem "devise", "~> 4.9"
+gem "pagy", "~> 6.5"
 
 group :development, :test do
   gem "awesome_print"
@@ -32,8 +34,3 @@ end
 group :production do
   gem "pg"
 end
-
-
-gem "devise", "~> 4.9"
-
-gem "pagy", "~> 6.5"
