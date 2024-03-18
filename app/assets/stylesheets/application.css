@@ -395,6 +395,7 @@ input[type='radio']:checked:after {
 .left_right_content_products {
     display: flex;
     width: 100%;
+    min-height: 675px;
 }
 
 .right_content_products {
@@ -420,3 +421,44 @@ input[type='radio']:checked:after {
 .height_50px {
     height: 50px !important;
 }
+
+.shop_title {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.search_title {
+    text-transform: capitalize;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.search_input_initial {
+    margin-bottom: 5px;
+}
+
+.filter_buttons_cover {
+    display: flex;
+    margin-top: 10px;
+}
+
+.clear_btn_cover {
+    display: flex;
+    margin-left: 5px;
+}
+
+.clear_btn {
+    font-size: 10px;
+    background-color: #fff;
+    padding: 4px 23px;
+    border-radius: 2px;
+    color: #000;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+

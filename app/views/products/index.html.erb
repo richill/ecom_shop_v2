@@ -2,13 +2,22 @@
   <!--left_content_products-->
   <div class="left_content_products">
     <!--form-->
-    <div>filter</div>
-    <div>
-      <%= form_with url: products_path, method: :get, class: "search_section" do |f| %>
-        <%= f.number_field :min, placeholder: "min price", class: "search_input" %>
-        <%= f.number_field :max, placeholder: "max price", class: "search_input" %>
-        <%= f.submit "Filter", class: "" %>
-      <% end %>
+    <div class="shop_title">ecom shop</div>
+
+    <div class="filter_search_section">
+      <div class="search_title">price filter</div>
+      <div>
+        <%= form_with url: products_path, method: :get, class: "search_section" do |f| %>
+          <%= f.number_field :min, placeholder: "min price", class: "search_input_initial" %>
+          <%= f.number_field :max, placeholder: "max price", class: "search_input_later" %>
+
+          <div class="filter_buttons_cover">
+            <div><%= f.submit "Filter", class: "" %></div>
+            <div class="clear_btn_cover"><%= link_to "clear", products_path, class: "clear_btn" %></div>
+          </div>
+
+        <% end %>
+      </div>
     </div>
     <!--form-->
   </div>
