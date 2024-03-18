@@ -239,7 +239,7 @@ input[type='radio']:checked:after {
 .main_product_name {
     font-weight: bold;
     font-size: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     text-transform: capitalize;
 }
 
@@ -458,6 +458,15 @@ input[type='radio']:checked:after {
     color: #000;
     text-transform: capitalize;
     text-decoration: none;
+}
+
+.bread_crumb_cover {
+    font-size: 10px;
+    text-transform: capitalize;
+}
+
+.bc_arrow {
+    margin: 0px 5px;
 }
 
 
