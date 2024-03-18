@@ -12,6 +12,12 @@ admin01 = Admin.create!(
   password: "password",
 )
 
+User.delete_all
+user01 = User.create!(
+  email: "user@gmail.com",
+  password: "password",
+  )
+
 CategoryProducttype.delete_all
 catpt01 = CategoryProducttype.create!(name: "men", code_name: nil,  admin: admin01)
 catpt02 = CategoryProducttype.create!(name: "women", code_name: nil,  admin: admin01)
@@ -57,13 +63,32 @@ prod02 = Product.create!(
   category_productstyle_id: catps04.id, #casual bodysuit
   description: nil,
   admin_id: admin01,
+  price: 15
+)
+prod03 = Product.create!(
+  name: "earrings",
+  image_url: "https://asset1.cxnmarksandspencer.com/is/image/mands/SD_01_T66_9397E_S0_X_EC_0?wid=640&qlt=80",
+  category_producttype_id: catpt01.id, #product
+  category_productitemtype_id: catpit02.id, #accessories
+  category_productsubtype_id: catpst01.id, #ear-rings
+  category_productstyle_id: catps01.id, #studs
+  description: nil,
+  admin_id: admin01,
   price: 18
 )
 
-
+Order.delete_all
+order01 = Order.create!(customer_email: "richill@gmail.com", fulfilled: false, total: 3300, address: "258 loreum ipsum, london, uk",  admin: admin01)
+order02 = Order.create!(customer_email: "emma@gmail.com", fulfilled: true, total: 0, address: "111 loreum ipsum, accra, ghana",  admin: admin01)
+order03 = Order.create!(customer_email: "lily@gmail.com", fulfilled: true, total: 0, address: "234 loreum ipsum , lagos, nigeria",  admin: admin01)
+order04 = Order.create!(customer_email: "test-01@gmail.com", fulfilled: true, total: 1000, address: "876 loreum ipsum, lome, togo",  admin: admin01)
+order05 = Order.create!(customer_email: "rashid@gmail.com", fulfilled: false, total: 1500, address: "11 state street, accra, ghana P.O Box 6767",  admin: admin01)
 
 OrderProduct.delete_all
-op00 = OrderProduct.create!(product_id: "loreum", order_id: 1, quantity: 4, colour: "black")
+op01 = OrderProduct.create!(product_id: prod03.id, order_id: order04.id, quantity: 4, colour: "black")
+op02 = OrderProduct.create!(product_id: prod02.id, order_id: order01.id, quantity: 2, colour: "pink")
+op03 = OrderProduct.create!(product_id: prod01.id, order_id: order01.id, quantity: 3, colour: "yellow")
+op04 = OrderProduct.create!(product_id: prod02.id, order_id: order05.id, quantity: 5, colour: "pink")
 
 
 
