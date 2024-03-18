@@ -356,7 +356,7 @@ input[type='radio']:checked:after {
 .product_colour_ul {
     display: flex;
     list-style-type: none;
-    background-color: #fff;
+    background-color: #2699FB;
     padding: 15px;
     border-radius: 5px;
 }
@@ -522,6 +522,28 @@ input[type='radio']:checked:after {
 
 .back_to_prod_btn:hover {
     opacity: 0.7;
+}
+
+.homepage_inner_section {
+    min-height: 500px;
+    background-color: #2699FB;
+    text-align: center;
+    padding: 100px 0px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.home_header {
+    margin-bottom: 50px;
+}
+
+.home_link {
+    background-color: #fff;
+    font-size: 30px !important;
+    padding: 15px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
 }
 
 

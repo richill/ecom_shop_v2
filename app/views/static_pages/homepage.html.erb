@@ -1,6 +1,21 @@
-<h1>StaticPages#homepage</h1>
-<p>Find me in app/views/static_pages/homepage.html.erb</p>
-<div><br/><br/>
+
+
+
+
+<div class="homepage_container">
+  <div class="homepage_inner_section">
+    <div class="home_header">Welcome to ECOM SHOP</div>
+    <div><%= link_to "shop items", products_path, class: "home_link" %></div>
+  </div>
+</div>
+
+
+
+
+
+<div class="hide">
+  <h1>StaticPages#homepage</h1>
+  <p>Find me in app/views/static_pages/homepage.html.erb</p>
   <div>video link</div>
   <div><%= link_to "main stripe video", "https://www.youtube.com/watch?v=hURUMwdCWuI&t=15752s", target: "_blank" %></div>
   <div><%= link_to "stripe tutorial", "https://www.youtube.com/watch?v=qEVn9sXNCAI&list=PLdTytUiloS14rDdf6ftW63pIgoxshY12w", target: "_blank" %></div>

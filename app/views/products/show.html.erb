@@ -6,6 +6,10 @@
 
   <!--section-->
   <div class="margin_bottom_15px bread_crumb_cover">
+    <span><%= link_to "home", root_path %></span>
+    <span class="bc_arrow">></span>
+    <span><%= link_to "shop", products_path %></span>
+    <span class="bc_arrow">></span>
     <span><%= @product.category_producttype.name %></span>
     <span class="bc_arrow">></span>
     <span><%= @product.category_productitemtype.name %></span>
@@ -19,8 +23,6 @@
   <!--section-->
   <div><%= render @product %></div>
   <!--section-->
-
-
 
 
 
