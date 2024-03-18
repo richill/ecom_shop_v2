@@ -6,11 +6,11 @@
   <h1>orders <%= "[#{@orders.all.count}]" %></h1>
   <div class="btn_cover"><%= link_to "new order", new_admin_order_path(current_admin), class: "btn_general" %></div>
   <div>
-    <span><%= link_to "all", "#" %></span>
+    <span><%= link_to "all [#{@orders.count}]", "#" %></span>
     <span>|</span>
-    <span><%= link_to "unfulfilled orders", "#" %></span>
+    <span><%= link_to "unfulfilled orders [#{@orders.unfulfilled_orders.count}]", "#" %></span>
     <span>|</span>
-    <span><%= link_to "fulfilled orders", "#" %></span>
+    <span><%= link_to "fulfilled orders [#{@orders.fulfilled_orders.count}]", "#" %></span>
     <span>|</span>
     <span><%= link_to "paid & unfulfilled", "#" %></span>
     <span>|</span>

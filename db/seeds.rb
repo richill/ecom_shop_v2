@@ -6,6 +6,117 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+CategoryAdminidtype.delete_all
+cadmty01 = CategoryAdminidtype.create!(name: 'driving license', code_name: 'adm_id_driving_license')
+cadmty02 = CategoryAdminidtype.create!(name: 'passport', code_name: 'adm_id_passport')
+cadmty03 = CategoryAdminidtype.create!(name: 'ID card', code_name: 'adm_id_card')
+
+CategoryAdmingender.delete_all
+cadmg01 = CategoryAdmingender.create!(name: 'male', code_name: 'adm_gen_male')
+cadmg02 = CategoryAdmingender.create!(name: 'female', code_name: 'adm_gen_female')
+
+CategoryAdmindepartment.delete_all
+cadmdpt01 = CategoryAdmindepartment.create!(name: 'management team', code_name: 'adm_dpt_mgt_team')
+cadmdpt02 = CategoryAdmindepartment.create!(name: 'tech team', code_name: 'adm_dpt_tech_team')
+cadmdpt03 = CategoryAdmindepartment.create!(name: 'design team', code_name: 'adm_dpt_design_team')
+cadmdpt04 = CategoryAdmindepartment.create!(name: 'logistic team', code_name: 'adm_dpt_logistic_team')
+cadmdpt05 = CategoryAdmindepartment.create!(name: 'marketing team', code_name: 'adm_dpt_marketing_team')
+
+CategoryAdminjobtitle.delete_all
+cadmnjt01 = CategoryAdminjobtitle.create!(name: 'CEO', code_name: 'adm_job_ceo', category_admindepartment_id: cadmdpt01.id)
+cadmnjt02 = CategoryAdminjobtitle.create!(name: 'CTO', code_name: 'adm_job_cto', category_admindepartment_id: cadmdpt01.id)
+cadmnjt03 = CategoryAdminjobtitle.create!(name: 'COO', code_name: 'adm_job_coo', category_admindepartment_id: cadmdpt01.id)
+cadmnjt04 = CategoryAdminjobtitle.create!(name: 'back-end developer', code_name: 'adm_job_be_developer', category_admindepartment_id: cadmdpt02.id)
+cadmnjt05 = CategoryAdminjobtitle.create!(name: 'front-end developer', code_name: 'adm_job_fe_developer', category_admindepartment_id: cadmdpt02.id)
+cadmnjt06 = CategoryAdminjobtitle.create!(name: 'UX designer', code_name: 'adm_job_ux_designer', category_admindepartment_id: cadmdpt03.id)
+cadmnjt07 = CategoryAdminjobtitle.create!(name: 'UI designer', code_name: 'adm_job_ui_designer', category_admindepartment_id: cadmdpt03.id)
+cadmnjt08 = CategoryAdminjobtitle.create!(name: 'UX/UI designer', code_name: 'adm_job_ux_ui_designer', category_admindepartment_id: cadmdpt03.id)
+cadmnjt09 = CategoryAdminjobtitle.create!(name: 'graphic designer', code_name: 'adm_job_graphic_designer', category_admindepartment_id: cadmdpt03.id)
+
+CategoryAdminroleright.delete_all
+cadmrr01 = CategoryAdminroleright.create!(name: 'super admin', code_name: 'adm_rol_super_admin')
+cadmrr02 = CategoryAdminroleright.create!(name: 'primary admin', code_name: 'adm_rol_primary_admin')
+cadmrr03 = CategoryAdminroleright.create!(name: 'no-right', code_name: 'adm_rol_no_right')
+
+CategoryAdminjoblevel.delete_all
+cadmjl01 = CategoryAdminjoblevel.create!(name: 'senior manager', code_name: 'adm_jobl_senior_manager')
+cadmjl02 = CategoryAdminjoblevel.create!(name: 'mid manager', code_name: 'adm_jobl_mid_manager')
+cadmjl03 = CategoryAdminjoblevel.create!(name: 'senior level', code_name: 'adm_jobl_senior_level')
+cadmjl04 = CategoryAdminjoblevel.create!(name: 'mid level', code_name: 'adm_jobl_mid_level')
+cadmjl05 = CategoryAdminjoblevel.create!(name: 'junior level', code_name: 'adm_jobl_junior')
+
+Admin.delete_all
+adm01 = Admin.create!(
+  email: "aku@gmail.com",
+  password: "password",
+  first_name: 'aku',
+  last_name: 'artloe',
+  slug: "aku",
+  ref_number: "REF-6tijyPyR",
+  approve: true,
+  image: nil,
+  image_url: nil,
+  date_of_birth: "1934-09-13",
+  employment_start_date: "2023-09-13",
+  employment_end_date: "2023-09-13",
+  current_work: false,
+  category_adminidtype_id: cadmty01.id,           #driving license
+  category_admingender_id: cadmg02.id,            #female
+  category_admindepartment_id: cadmdpt01.id,      #management team
+  category_adminjobtitle_id: cadmnjt01.id,        #CEO
+  category_adminroleright_id: cadmrr01.id,        #super admin
+  id_number: "123456789",
+  tel_number: "",
+  category_adminjoblevel_id: cadmjl01.id          #senior manager
+)
+
+CategoryUsertitle.delete_all
+cusrtl01 = CategoryUsertitle.create!(name: 'Mr', code_name: 'user_title_mr', admin_id: adm01.id)
+cusrtl02 = CategoryUsertitle.create!(name: 'Miss', code_name: 'user_title_miss', admin_id: adm01.id)
+cusrtl03 = CategoryUsertitle.create!(name: 'Mrs', code_name: 'user_title_mrs', admin_id: adm01.id)
+
+CategoryUsergender.delete_all
+cusrg01 = CategoryUsergender.create!(name: 'male', code_name: 'user_gen_male', admin_id: adm01.id)
+cusrg02 = CategoryUsergender.create!(name: 'female', code_name: 'user_gen_female', admin_id: adm01.id)
+
+User.delete_all
+usr01 = User.create!(
+  email: "richill@gmail.com",
+  first_name: "richill",
+  last_name: "ackah",
+  slug: "richill",
+  ref_number: "REF-l9aICkaf",
+  category_usertitle_id: cusrtl02.id,
+  category_usergender_id: cusrg02.id,
+  date_of_birth: "1980-10-24",
+  mobile: "+233 24 877 7871",
+  close: false
+)
+
+CategoryAddresstitle.delete_all
+cadd01 = CategoryAddresstitle.create!(name: 'Mr', code_name: 'add_title_mr', admin_id: adm01.id)
+cadd02 = CategoryAddresstitle.create!(name: 'Miss', code_name: 'add_title_miss', admin_id: adm01.id)
+cadd03 = CategoryAddresstitle.create!(name: 'Mrs', code_name: 'add_title_mrs', admin_id: adm01.id)
+
+Address.delete_all
+addr01 = Address.create!(
+  first_name: 'richill',
+  last_name: 'ackah',
+  phone_number: "+233 24 877 7678",
+  house_number: "10",
+  house_address: "kofi cintra street",
+  town: "dzorwulu",
+  post_code: "P.O Box 6881",
+  address_name: "home address",
+  set_address: true,
+  user_id: usr01.id,
+  category_addresstitle_id: cadd02.id
+)
+
+
+#------------------------------
+
+
 
 User.delete_all
 us01 = User.create!(email: "aku@gmail.com", password: "password")
