@@ -17,4 +17,10 @@ class Order < ApplicationRecord
   def self.fulfilled_orders
     where(fulfilled: true)
   end
+
+  def total_order_value
+    ordered_products = order_products.map { |o| o.product }
+    total_price = ordered_products.map(&:price).sum.to_i
+    total_price*100
+  end
 end
