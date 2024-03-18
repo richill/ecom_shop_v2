@@ -31,7 +31,7 @@
   <!--section-->
 
   <!--share_btn-->
-  <div class="share_button_cover">
+  <div class="share_button_cover hide">
     <%= button_to "Share", "", data: { action: "click->share#share"} %>
     <%= content_tag(:p, "", class: "result", data: {
       share_target: "result"
