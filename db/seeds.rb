@@ -29,7 +29,7 @@ catpit02 = CategoryProductitemtype.create!(name: "accessories", code_name: nil, 
 catpit03 = CategoryProductitemtype.create!(name: "home furnishing", code_name: nil, admin: admin01)
 
 CategoryProductsubtype.delete_all
-catpst01 = CategoryProductsubtype.create!(name: "ear-rings", code_name: nil, category_productitemtype_id: catpit02.id,  admin: admin01)
+catpst01 = CategoryProductsubtype.create!(name: "earrings", code_name: nil, category_productitemtype_id: catpit02.id,  admin: admin01)
 catpst02 = CategoryProductsubtype.create!(name: "bodysuit", code_name: nil, category_productitemtype_id: catpit01.id,  admin: admin01)
 catpst03 = CategoryProductsubtype.create!(name: "furniture", code_name: nil, category_productitemtype_id: catpit03.id,  admin: admin01)
 
@@ -38,18 +38,18 @@ catps01 = CategoryProductstyle.create!(name: "studs", code_name: nil, category_p
 catps02 = CategoryProductstyle.create!(name: "clips", code_name: nil, category_productsubtype_id: catpst01.id,  admin: admin01)
 catps03 = CategoryProductstyle.create!(name: "smart bodysuit", code_name: nil, category_productsubtype_id: catpst02.id,  admin: admin01)
 catps04 = CategoryProductstyle.create!(name: "casual bodysuit", code_name: nil, category_productsubtype_id: catpst02.id,  admin: admin01)
-catps05 = CategoryProductstyle.create!(name: "arm-chair", code_name: nil, category_productsubtype_id: catpst03.id,  admin: admin01)
+catps05 = CategoryProductstyle.create!(name: "armchair", code_name: nil, category_productsubtype_id: catpst03.id,  admin: admin01)
 catps06 = CategoryProductstyle.create!(name: "shelf", code_name: nil, category_productsubtype_id: catpst03.id,  admin: admin01)
 catps07 = CategoryProductstyle.create!(name: "sofa", code_name: nil, category_productsubtype_id: catpst03.id,  admin: admin01)
 
 Product.delete_all
 prod01 = Product.create!(
-  name: "armchair",
+  name: "compact armchair",
   image_url: "https://asset1.cxnmarksandspencer.com/is/image/mands/HF_05_T39_9876P_NC_X_EC_0?wid=640&qlt=80",
-  category_producttype_id: catpt01.id, #product
+  category_producttype_id: catpt03.id, #product
   category_productitemtype_id: catpit03.id, #home furnishing
   category_productsubtype_id: catpst03.id, #furniture
-  category_productstyle_id: catps05.id, #arm-chair
+  category_productstyle_id: catps05.id, #armchair
   description: nil,
   admin_id: admin01,
   price: 18
@@ -57,7 +57,7 @@ prod01 = Product.create!(
 prod02 = Product.create!(
   name: "bodysuit",
   image_url: "https://asset1.cxnmarksandspencer.com/is/image/mands/SD_04_T92_4525S_J4_X_EC_0?wid=640&qlt=80",
-  category_producttype_id: catpt01.id, #product
+  category_producttype_id: catpt03.id, #product
   category_productitemtype_id: catpit01.id, #clothing
   category_productsubtype_id: catpst02.id, #bodysuit
   category_productstyle_id: catps04.id, #casual bodysuit
@@ -68,9 +68,9 @@ prod02 = Product.create!(
 prod03 = Product.create!(
   name: "earrings",
   image_url: "https://asset1.cxnmarksandspencer.com/is/image/mands/SD_01_T66_9397E_S0_X_EC_0?wid=640&qlt=80",
-  category_producttype_id: catpt01.id, #product
+  category_producttype_id: catpt03.id, #product
   category_productitemtype_id: catpit02.id, #accessories
-  category_productsubtype_id: catpst01.id, #ear-rings
+  category_productsubtype_id: catpst01.id, #earrings
   category_productstyle_id: catps01.id, #studs
   description: nil,
   admin_id: admin01,
@@ -154,7 +154,3 @@ var09 = Variant.create!(
   image_var: nil,
   stock: 10
 )
-
-
-
-
