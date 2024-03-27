@@ -645,4 +645,10 @@ input[type='radio']:checked:after {
     margin-bottom: 30px;
 }
 
+.list_group {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
 

@@ -36,7 +36,29 @@
 
       <div class="filter_search_section">
         <div class="search_title">price</div>
-        <div>price</div>
+        <ul class="list_group">
+          <li class="list_group_item">
+            <div class="form_check">
+              <%= f.check_box :price, { multiple: true, class: "form_check_input" }, "lt1000", nil %>
+              <%= f.label :price, "< £1000", class: "form_check label" %>
+            </div>
+          </li>
+
+          <li class="list_group_item">
+            <div class="form_check">
+              <%= f.check_box :price, { multiple: true, class: "form_check_input" }, "between1000and2500", nil %>
+              <%= f.label :price, "£1000 - £2500", class: "form_check label" %>
+            </div>
+          </li>
+
+          <li class="list_group_item">
+            <div class="form_check">
+              <%= f.check_box :price, { multiple: true, class: "form_check_input" }, "gt1000", nil %>
+              <%= f.label :price, "> £2500", class: "form_check label" %>
+            </div>
+          </li>
+
+        </ul>
       </div>
 
       <div class="filter_search_section">
