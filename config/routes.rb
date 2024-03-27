@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+
+  # ----- cart -----
+  namespace :carts do
+    resource :add, only: create
+  end
+  # ----- cart -----
+
   resources :variants
   resources :favorite_products, only: [:create, :destroy]
 
