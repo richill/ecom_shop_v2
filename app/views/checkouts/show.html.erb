@@ -15,7 +15,10 @@
       </li>
     <% end %>
   </ul>
-  <div class="checkout_total">total price: </div>
+  <div class="checkout_total">
+    <span>total price: </span>
+    <span><%= render "carts/total_price" %></span>
+  </div>
   <button class="">confirm order</button>
 </div>
 

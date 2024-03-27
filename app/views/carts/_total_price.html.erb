@@ -1,0 +1,3 @@
+<div id="total_price">
+  <%= "£#{current_cart.cart_items.sum(&:total_price)}" %>
+</div>

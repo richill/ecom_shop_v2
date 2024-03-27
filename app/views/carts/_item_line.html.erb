@@ -4,7 +4,7 @@
   <div class="ck_price_section width_200px"><%= "£#{cart_item.product.price}" %></div>
 
   <div class="ck_action_buttons">
-    <div class="ck_mini_button ck_minus_button">-</div>
+    <div class="ck_mini_button ck_minus_button"><%= button_to "-", carts_reduce_path, params: { product: cart_item.product} %></div>
     <div class="ck_amount"><%= render "carts/item_quantity", cart_item: cart_item  %></div>
     <div class="ck_mini_button ck_plus_button"><%= button_to "+", carts_add_path, params: { product: cart_item.product} %></div>
   </div>
