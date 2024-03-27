@@ -35,11 +35,11 @@ Rails.application.routes.draw do
   end
   # ----- user -----
 
-  # ----- cart -----
+  # ----- new-cart -----
   namespace :carts do
     resource :add, only: :create
   end
-  # ----- cart -----
+  # ----- new-cart -----
 
   # ----- cart -----
   get 'cart', to: 'carts#show'
