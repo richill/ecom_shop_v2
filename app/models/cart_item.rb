@@ -1,4 +1,6 @@
 class CartItem < ApplicationRecord
+  include ActionView::RecordIdentifier
+
   belongs_to :cart
   belongs_to :product
 
@@ -14,6 +16,11 @@ class CartItem < ApplicationRecord
                          target: "cart_count",
                          partial: "carts/item_count",
                          locals: { count: cart.quantity}
+
+    broadcast_replace_to cart,
+                         target: dom_id(self, "quantity"),
+                         partial: "carts/item_quantity",
+                         locals: { cart_item: self }
   end
 
   after_destroy_commit do
