@@ -1,8 +1,10 @@
-<%= turbo_stream_from current_cart %>
 <div>
   <div class="checkout_title_section">
     <h1>order summary</h1>
-    <div class="ck_quantity"><%= render "carts/item_count", count: "#{current_cart.quantity}" %></div>
+    <div class="ck_quantity">
+      <%= turbo_stream_from current_cart %>
+      <%= render "carts/item_count", count: "#{current_cart.quantity}" %>
+    </div>
   </div>
 
 
