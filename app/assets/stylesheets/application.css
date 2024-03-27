@@ -149,7 +149,6 @@ input[type='radio']:checked:after {
     align-items: center;
     margin: 0px;
     display: flex;
-
 }
 
 .variant_cover ul li {
@@ -589,13 +588,57 @@ input[type='radio']:checked:after {
 .ck_quantity {
     background-color: #2699FB;
     border-radius: 200px;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 6px;
 }
 
+.cart_item_list {
+    margin-bottom: 15px;
+}
+.ck_action_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ck_mini_button {
+    background-color: #2699FB;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 200px;
+}
+
+.ck_amount {
+    margin: 0px 10px;
+}
+
+.ck_line_item_section {
+    display: flex;
+    align-items: center;
+}
+
+.width_200px {
+    width: 200px;
+}
+
+.ck_remove_section {
+    margin-left: 100px;
+}
+
+.ck_img_section img {
+    width: 100px;
+}
+
+.cart_item_list_ul {
+    list-style-type: none;
+}
 
 

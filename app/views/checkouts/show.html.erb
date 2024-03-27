@@ -1,12 +1,19 @@
+<%= turbo_stream_from current_cart %>
 <div>
   <div class="checkout_title_section">
     <h1>order summary</h1>
-    <div class="ck_quantity">1</div>
+    <div class="ck_quantity"><%= render "carts/item_count", count: "#{current_cart.quantity}" %></div>
   </div>
 
-  <ul>
-    <li>item</li>
+
+  <ul class="cart_item_list_ul">
+    <% current_cart.cart_items.each do |cart_item| %>
+      <li class="cart_item_list">
+        <%= render "carts/item_line", cart_item: cart_item %>
+      </li>
+    <% end %>
   </ul>
   <div class="checkout_total">total price: </div>
   <button class="">confirm order</button>
 </div>
+
