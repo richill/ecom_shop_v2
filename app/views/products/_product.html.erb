@@ -85,7 +85,7 @@
   <!--add_cart-->
   <% if user_signed_in? %>
     <div class="new_add_to_cart_section">
-      <%= button_to "New add to cart", carts_add_path, class: "cart_button" %>
+      <%= button_to "New add to cart", carts_add_path, params: { product: product},  class: "cart_button" %>
     </div>
   <% end %>
   <!--add_cart-->

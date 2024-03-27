@@ -1,8 +1,5 @@
 module Carts
   class AddsController < ApplicationController
-    before_action :authenticate_user!
-
-    # ----create----
     def create
       if product_found?
         cart_item = current_cart.cart_items.find_or_initialize_by(product_id: params[:product])
@@ -10,15 +7,11 @@ module Carts
         cart_item.save
       end
     end
-    # ----create----
-
 
     private
 
-    # ----method----
     def product_found?
-      Product.exist?(params[:product])
+      Product.exists?(params[:product])
     end
-    # ----method----
   end
 end
