@@ -39,11 +39,8 @@ Rails.application.routes.draw do
   namespace :carts do
     resource :add, only: :create
   end
-  # ----- new-cart -----
-
-  # ----- cart -----
   get 'cart', to: 'carts#show'
-  # ----- cart -----
+  # ----- new-cart -----
 
   # ----- checkout -----
   post 'webhooks' => 'webhooks#stripe'
