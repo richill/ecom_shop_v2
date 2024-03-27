@@ -47,6 +47,10 @@ Rails.application.routes.draw do
   resource :checkout, only: :show
   # ----- checkout -----
 
+  # ----- search -----
+  post :search, to: "searches#create"
+  # ----- search -----
+
   resources :products
 
   root    'static_pages#homepage'
