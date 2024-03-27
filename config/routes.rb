@@ -39,8 +39,24 @@ Rails.application.routes.draw do
   namespace :carts do
     resource :add, only: :create
   end
-  get 'cart', to: 'carts#show'
   # ----- new-cart -----
+
+  # ----- checkout -----
+  resource :checkout, only: :show
+  # ----- checkout -----
+
+  resources :products
+
+  root    'static_pages#homepage'
+
+
+
+
+
+
+  # ----- cart -----
+  get 'cart', to: 'carts#show'
+  # ----- cart -----
 
   # ----- checkout -----
   post 'webhooks' => 'webhooks#stripe'
@@ -49,9 +65,6 @@ Rails.application.routes.draw do
   get 'cancel', to: 'checkouts#cancel'
   # ----- checkout -----
 
-  resources :products
-
-  root    'static_pages#homepage'
 
   # redirects all unknown routes to homepage
   get '*path' => redirect('/')

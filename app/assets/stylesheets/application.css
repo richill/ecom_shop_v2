@@ -567,9 +567,34 @@ input[type='radio']:checked:after {
 }
 
 #cart_count {
-    background-color: red;
+    background-color: #2699FB;
     padding: 5px;
     border-radius: 3px;
+}
+
+.checkout_total {
+    background-color: #CCCCCC;
+    padding: 15px;
+    margin: 30px 0px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.checkout_title_section {
+    display: flex;
+    align-items: center;
+}
+
+.ck_quantity {
+    background-color: #2699FB;
+    border-radius: 200px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6px;
 }
 
 

@@ -1,4 +1,9 @@
 class CheckoutsController < ApplicationController
+
+  def show
+  end
+
+
   def create
     stripe_secret_key = ENV["ST_ART_STRIPE_API_KEY_TEST"]
     Stripe.api_key = stripe_secret_key
