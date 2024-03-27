@@ -90,7 +90,9 @@
 
   <!--add_cart-->
   <% if user_signed_in? %>
-    <div class="new_add_to_cart_section">new add to cart button</div>
+    <div class="new_add_to_cart_section">
+      <%= button_to "New add to cart", carts_add_path, class: "cart_button" %>
+    </div>
   <% end %>
   <!--add_cart-->
 </div>
