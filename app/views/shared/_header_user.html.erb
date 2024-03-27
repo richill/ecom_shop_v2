@@ -24,6 +24,15 @@
             <div class="header_text">user</div>
           <% end %>
         </li>
+
+        <li>
+          <%= link_to "#", class: "icon_box_link" do %>
+            <div><span class="material-icons">shopping_cart</span></div>
+            <div class="header_text">new cart <span><%= current_cart.quantity %></span></div>
+          <% end %>
+        </li>
+
+
         <li>
           <%= link_to cart_path, class: "icon_box_link" do %>
             <div><span class="material-icons">shopping_cart</span></div>
