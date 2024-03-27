@@ -89,7 +89,9 @@
 
 
   <!--add_cart-->
-  <div class="new_add_to_cart_section">new add to cart button</div>
+  <% if user_signed_in? %>
+    <div class="new_add_to_cart_section">new add to cart button</div>
+  <% end %>
   <!--add_cart-->
 </div>
 <div class="border_content"></div>
