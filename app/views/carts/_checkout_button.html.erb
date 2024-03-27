@@ -1,8 +1,7 @@
 <%= link_to "#", class: "icon_box_link" do %>
   <div><span class="material-icons">shopping_cart</span></div>
-  <div class="header_text">
-    <span>new cart</span>
-    <span><%# render"carts/item_count", count: current_cart.quantity %></span>
-    <span><%= current_cart.quantity %></span>
+  <div class="header_text cart_content">
+    <div class="cart_text">new cart</div>
+    <div><%= render "carts/item_count", count: "#{current_cart.quantity}" %></div>
   </div>
 <% end %>

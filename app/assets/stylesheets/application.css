@@ -556,5 +556,21 @@ input[type='radio']:checked:after {
     margin-top: 15px;
 }
 
+.cart_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart_text {
+    margin-right: 3px;
+}
+
+#cart_count {
+    background-color: red;
+    padding: 5px;
+    border-radius: 3px;
+}
+
 
 
