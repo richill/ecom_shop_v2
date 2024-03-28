@@ -31,8 +31,8 @@ class ProductSearch
       return unless @params.dig(:search, :price)
       conditions = [].tap do |array|
         array << (..1000) if @params.dig(:search, :price).include?("lt1000")
-        array << (1000..2500) if @params.dig(:search, :price).include?("bewteen1000and2500")
-        array << (2500..) if @params.dig(:search, :price).include?("gt2500")
+        array << (1000..2500) if @params.dig(:search, :price).include?("between1000and2500")
+        array << (2500..) if @params.dig(:search, :price).include?("gt1000")
       end
       { price: conditions }
     end
