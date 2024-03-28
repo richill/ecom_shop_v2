@@ -48,7 +48,7 @@ Rails.application.routes.draw do
   # ----- checkout -----
 
   # ----- search -----
-  post :search, to: "searches#create"
+  post :search, to: "searches#show"
   # ----- search -----
 
   resources :products

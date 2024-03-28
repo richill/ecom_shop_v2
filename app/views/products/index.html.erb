@@ -4,20 +4,20 @@
     <div class="shop_title">ecom shop</div>
 
     <!--form-->
-    <div class="filter_search_section">
-      <div class="search_title">price filter</div>
-      <div>
-        <%= form_with url: products_path, method: :get, class: "search_section" do |f| %>
-          <%= f.number_field :min, placeholder: "min price", class: "search_input_initial" %>
-          <%= f.number_field :max, placeholder: "max price", class: "search_input_later" %>
+<!--    <div class="filter_search_section">-->
+<!--      <div class="search_title">price filter</div>-->
+<!--      <div>-->
+        <%#= form_with url: products_path, method: :get, class: "search_section" do |f| %>
+          <%#= f.number_field :min, placeholder: "min price", class: "search_input_initial" %>
+          <%#= f.number_field :max, placeholder: "max price", class: "search_input_later" %>
 
-          <div class="filter_buttons_cover">
-            <div><%= f.submit "Filter", class: "" %></div>
-            <div class="clear_btn_cover"><%= link_to "clear", products_path, class: "clear_btn" %></div>
-          </div>
-        <% end %>
-      </div>
-    </div>
+<!--          <div class="filter_buttons_cover">-->
+<!--            <div><%#= f.submit "Filter", class: "" %></div>-->
+<!--            <div class="clear_btn_cover"><%#= link_to "clear", products_path, class: "clear_btn" %></div>-->
+<!--          </div>-->
+        <%# end %>
+<!--      </div>-->
+<!--    </div>-->
     <!--form-->
 
     <!--form-->
@@ -42,19 +42,19 @@
             <li class="list_group_item">
               <div class="form_check">
                 <%= f.check_box :price, { multiple: true, class: "form_check_input" }, "lt1000", nil %>
-                <%= f.label :price, "< £1000", class: "form_check label" %>
+                <%= f.label :price, "< £1000", class: "form_check_label" %>
               </div>
             </li>
             <li class="list_group_item">
               <div class="form_check">
                 <%= f.check_box :price, { multiple: true, class: "form_check_input" }, "between1000and2500", nil %>
-                <%= f.label :price, "£1000 - £2500", class: "form_check label" %>
+                <%= f.label :price, "£1000 - £2500", class: "form_check_label" %>
               </div>
             </li>
             <li class="list_group_item">
               <div class="form_check">
                 <%= f.check_box :price, { multiple: true, class: "form_check_input" }, "gt1000", nil %>
-                <%= f.label :price, "> £2500", class: "form_check label" %>
+                <%= f.label :price, "> £2500", class: "form_check_label" %>
               </div>
             </li>
           </ul>
