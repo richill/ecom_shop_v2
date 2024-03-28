@@ -66,8 +66,8 @@
             <% CategoryProductitemtype.all.each do |category| %>
               <li class="list_group_item">
                 <div class="form_check">
-                  <%= f.check_box :category_id, { multiple: true, class: "form_check_input" }, "#{category.id}", nil %>
-                  <%= f.label :category_id, "#{category.name}", class: "form_check label" %>
+                  <%= f.check_box :category_id, { multiple: true, class: "form-check-input" }, category.id, nil %>
+                  <%= f.label :category_id, category.name, class: "form-check-label" %>
                 </div>
               </li>
             <% end %>
