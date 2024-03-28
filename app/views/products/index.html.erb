@@ -22,52 +22,58 @@
 
     <%= turbo_frame_tag "filtering" do %>
       <%= form_for :search, url: search_path, class: "search_section" do |f| %>
-      <div class="filter_search_section">
-        <div class="search_title">text search</div>
-        <%= f.text_field :query, placeholder: "loreum", class: "#" %>
-      </div>
-
-      <div class="filter_search_section">
-        <div class="search_title">sorting</div>
-        <%= f.select :sort, [
-          ["Price Low to High", :price_lth],
-          ["Price High to Low", :price_htl]], {include_blank: true}, placeholder: "loreum", class: "#" %>
-      </div>
-
-      <div class="filter_search_section">
-        <div class="search_title">price</div>
-        <ul class="list_group">
-          <li class="list_group_item">
-            <div class="form_check">
-              <%= f.check_box :price, { multiple: true, class: "form_check_input" }, "lt1000", nil %>
-              <%= f.label :price, "< £1000", class: "form_check label" %>
-            </div>
-          </li>
-
-          <li class="list_group_item">
-            <div class="form_check">
-              <%= f.check_box :price, { multiple: true, class: "form_check_input" }, "between1000and2500", nil %>
-              <%= f.label :price, "£1000 - £2500", class: "form_check label" %>
-            </div>
-          </li>
-
-          <li class="list_group_item">
-            <div class="form_check">
-              <%= f.check_box :price, { multiple: true, class: "form_check_input" }, "gt1000", nil %>
-              <%= f.label :price, "> £2500", class: "form_check label" %>
-            </div>
-          </li>
-
-        </ul>
-      </div>
-
-      <div class="filter_search_section">
-        <div class="search_title">category</div>
-        <div>category</div>
-      </div>
-
+        <!--search-->
+        <div class="filter_search_section">
+          <div class="search_title">text search</div>
+          <%= f.text_field :query, placeholder: "loreum", class: "#" %>
+        </div>
+        <!--search-->
+        <div class="filter_search_section">
+          <div class="search_title">sorting</div>
+          <%= f.select :sort, [
+            ["Price Low to High", :price_lth],
+            ["Price High to Low", :price_htl]], {include_blank: true}, placeholder: "loreum", class: "#" %>
+        </div>
+        <!--search-->
+        <div class="filter_search_section">
+          <div class="search_title">price</div>
+          <ul class="list_group">
+            <li class="list_group_item">
+              <div class="form_check">
+                <%= f.check_box :price, { multiple: true, class: "form_check_input" }, "lt1000", nil %>
+                <%= f.label :price, "< £1000", class: "form_check label" %>
+              </div>
+            </li>
+            <li class="list_group_item">
+              <div class="form_check">
+                <%= f.check_box :price, { multiple: true, class: "form_check_input" }, "between1000and2500", nil %>
+                <%= f.label :price, "£1000 - £2500", class: "form_check label" %>
+              </div>
+            </li>
+            <li class="list_group_item">
+              <div class="form_check">
+                <%= f.check_box :price, { multiple: true, class: "form_check_input" }, "gt1000", nil %>
+                <%= f.label :price, "> £2500", class: "form_check label" %>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--search-->
+        <div class="filter_search_section">
+          <div class="search_title">category</div>
+          <ul class="list_group">
+            <% CategoryProductitemtype.all.each do |category| %>
+              <li class="list_group_item">
+                <div class="form_check">
+                  <%= f.check_box :category_id, { multiple: true, class: "form_check_input" }, "#{category.id}", nil %>
+                  <%= f.label :category_id, "#{category.name}", class: "form_check label" %>
+                </div>
+              </li>
+            <% end %>
+          </ul>
+        </div>
         <div class="filter_buttons_cover">
-          <div><%= f.submit "Filter", class: "" %></div>
+          <div><%= f.submit "Search", class: "" %></div>
           <div class="clear_btn_cover"><%= link_to "clear", products_path, class: "clear_btn" %></div>
         </div>
       <% end %>
