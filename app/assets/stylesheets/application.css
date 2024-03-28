@@ -651,4 +651,8 @@ input[type='radio']:checked:after {
     margin: 0px;
 }
 
+#products_display {
+    width: 100%;
+}
+
 

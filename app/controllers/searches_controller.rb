@@ -4,7 +4,9 @@ class SearchesController < ApplicationController
     respond_to do |format|
       form.turbo_stream {
         render turbo_stream: turbo_stream.replace(
-
+          "products_display",
+          partial: "products/display",
+          locals: { products: @products }
         )
       }
     end
