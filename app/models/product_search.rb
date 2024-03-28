@@ -18,7 +18,7 @@ class ProductSearch
     private
 
     def products
-      @products ||= Product.includes(image_attachment: :blob).all
+      @products ||= Product.all
     end
 
     def search_condition
