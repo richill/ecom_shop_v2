@@ -83,71 +83,74 @@
   </div>
 
   <!--right_content_products-->
-  <div class="right_content_products">
-    <ul class="listed_products">
-      <% @products.each do |product| %>
-        <li class="product_item">
-          <!--section-->
-          <div class="product_name_cover">
-            <%= link_to product, class: "display_flex_style height_50px" do %>
-              <div class="product_title">product name:</div>
-              <div><%= product.name %></div>
-            <% end %>
-          </div>
-          <!--section-->
-
-          <!--section-->
-          <div class="margin_bottom_15px">
-            <div class="product_image"><%= link_to((image_tag "#{product.image_url}"), product) %></div>
-          </div>
-          <!--section-->
-
-          <!--section-->
-          <% if product.description.present? %>
-            <div class="margin_bottom_15px price_cover">
-              <div class="product_title">description</div>
-              <div><%= product.description %></div>
+  <%= turbo_frame_tag "products_display" do %>
+    <%# render "products/display", products: @products %>
+    <div class="right_content_products">
+      <ul class="listed_products">
+        <% @products.each do |product| %>
+          <li class="product_item">
+            <!--section-->
+            <div class="product_name_cover">
+              <%= link_to product, class: "display_flex_style height_50px" do %>
+                <div class="product_title">product name:</div>
+                <div><%= product.name %></div>
+              <% end %>
             </div>
-          <% end %>
-          <!--section-->
+            <!--section-->
 
-          <!--section-->
-          <div class="margin_bottom_15px price_cover">
-            <div class="product_title">price</div>
-            <div><%= "£#{product.price}" %></div>
-          </div>
-          <!--section-->
+            <!--section-->
+            <div class="margin_bottom_15px">
+              <div class="product_image"><%= link_to((image_tag "#{product.image_url}"), product) %></div>
+            </div>
+            <!--section-->
 
-          <!--action_buttons-->
-          <div class="products_user_actions_section">
-            <% if user_signed_in? && current_user %>
-              <ul>
-                <!--impression code-->
-                <li class="product_user_li">
-                  <div><div><%= "#{product.impressions_count} views" %></div></div>
-                </li>
-
-                <!--views-->
-                <li class="product_user_li">
-                  <% if product.reviews.present? %>
-                    <div><%= "#{product.average_rating}star (#{product.reviews.count}) reviews" %></div>
-                  <% else %>
-                    <div>no reviews</div>
-                  <% end %>
-                </li>
-
-                <!--favourite-->
-                <li class="product_user_li">
-                  <div id="product-<%= product.id %>">
-                    <%= render partial: 'shared/favourites', locals: { product: product} %>
-                  </div>
-                </li>
-              </ul>
+            <!--section-->
+            <% if product.description.present? %>
+              <div class="margin_bottom_15px price_cover">
+                <div class="product_title">description</div>
+                <div><%= product.description %></div>
+              </div>
             <% end %>
-          </div>
-          <!--action_buttons-->
-        </li>
-      <% end %>
-    </ul>
-  </div>
+            <!--section-->
+
+            <!--section-->
+            <div class="margin_bottom_15px price_cover">
+              <div class="product_title">price</div>
+              <div><%= "£#{product.price}" %></div>
+            </div>
+            <!--section-->
+
+            <!--action_buttons-->
+            <div class="products_user_actions_section">
+              <% if user_signed_in? && current_user %>
+                <ul>
+                  <!--impression code-->
+                  <li class="product_user_li">
+                    <div><div><%= "#{product.impressions_count} views" %></div></div>
+                  </li>
+
+                  <!--views-->
+                  <li class="product_user_li">
+                    <% if product.reviews.present? %>
+                      <div><%= "#{product.average_rating}star (#{product.reviews.count}) reviews" %></div>
+                    <% else %>
+                      <div>no reviews</div>
+                    <% end %>
+                  </li>
+
+                  <!--favourite-->
+                  <li class="product_user_li">
+                    <div id="product-<%= product.id %>">
+                      <%= render partial: 'shared/favourites', locals: { product: product} %>
+                    </div>
+                  </li>
+                </ul>
+              <% end %>
+            </div>
+            <!--action_buttons-->
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 </div>
