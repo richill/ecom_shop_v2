@@ -14,7 +14,7 @@
 
           <!--section-->
           <div class="margin_bottom_15px">
-            <div class="product_image"><%= link_to((image_tag "#{product.image_url}"), product) %></div>
+            <div class="product_image"><%= link_to((image_tag "#{product.image_url}"), product, data: { turbo: false }) %></div>
           </div>
           <!--section-->
 
