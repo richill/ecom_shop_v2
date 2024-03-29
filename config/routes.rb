@@ -44,7 +44,9 @@ Rails.application.routes.draw do
   # ----- new-cart -----
 
   # ----- checkout -----
-  resource :checkout, only: [:show, :create]
+  resource :checkout, only: [:show, :create] do
+    resource :payment, only: :show
+  end
   # ----- checkout -----
 
   # ----- search -----
@@ -52,7 +54,6 @@ Rails.application.routes.draw do
   # ----- search -----
 
   resources :products
-
   root    'static_pages#homepage'
 
 
