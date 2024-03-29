@@ -8,11 +8,11 @@ class Cart < ApplicationRecord
     payment_complete: 2,  #notification from stripe confirming successful payment
   }
 
-  def quantity
-    cart_items.sum(&:quantity)
-  end
-
   def readonly?
     payment_complete?
+  end
+
+  def quantity
+    cart_items.sum(&:quantity)
   end
 end
