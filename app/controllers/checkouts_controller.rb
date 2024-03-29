@@ -1,3 +1,4 @@
+# app/controllers/checkouts_controller.rb
 class CheckoutsController < ApplicationController
   def show
   end
@@ -5,7 +6,7 @@ class CheckoutsController < ApplicationController
   def create
     session = Stripe::Checkout::Session.create(
       billing_address_collection: :auto,
-      mode: "payment",
+      mode: :payment,
       payment_method_types: ['card'],
       line_items: cart_items,
       success_url: checkout_payment_url,
@@ -21,8 +22,10 @@ class CheckoutsController < ApplicationController
     current_cart.cart_items.map do |cart_item|
       {
         price_data: {
-          currency: "gbp",
-          product_data: { name: cart_item.product.name },
+          currency: "usd",
+          product_data: {
+            name: cart_item.product.name
+          },
           unit_amount: cart_item.product.price.to_i * 100
         },
         quantity: cart_item.quantity

@@ -4,4 +4,3 @@ class PaymentsController < ApplicationController
     cookies.delete(:cart_token)
   end
 end
-
