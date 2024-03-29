@@ -3,10 +3,13 @@ class CheckoutsController < ApplicationController
   end
 
   def create
+    stripe_secret_key = Rails.application.credentials.dig(:stripe, :secret_key)
+    Stripe.api_key = stripe_secret_key
+
     session = Stripe::Checkout::Session.create(
       billing_address_collection: :auto,
       mode: "payment",
-      payment_method_type: ['card'],
+      payment_method_types: ['card'],
       line_items: cart_items,
       success_url: checkout_payment_url,
       cancel_url: root_url
