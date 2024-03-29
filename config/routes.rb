@@ -35,13 +35,19 @@ Rails.application.routes.draw do
   end
   # ----- user -----
 
-  # ----- new-cart -----
+  # ----- cart -----
   namespace :carts do
     resource :add, only: :create
     resource :reduce, only: :create
     resource :remove, only: :destroy
   end
-  # ----- new-cart -----
+  # ----- cart -----
+
+  # ----- webhook -----
+  scope module: :stripe_event do
+    post "/stripe/webhook", to: "webhook#event"
+  end
+  # ----- webhook -----
 
   # ----- checkout -----
   resource :checkout, only: [:show, :create] do
