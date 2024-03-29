@@ -38,9 +38,9 @@ class ProductSearch
     end
 
     def category_condition
-      return unless @params.dig(:search, :category_id)
+      return unless @params.dig(:search, :category_productitemtype_id)
 
-      { category_id: @params.dig(:search, :category_id) }
+      { category_productitemtype_id: @params.dig(:search, :category_productitemtype_id) }
     end
 
     def sort_condition
