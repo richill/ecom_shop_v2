@@ -22,7 +22,7 @@ class CheckoutsController < ApplicationController
     current_cart.cart_items.map do |cart_item|
       {
         price_data: {
-          currency: "usd",
+          currency: "gbp",
           product_data: {
             name: cart_item.product.name
           },
