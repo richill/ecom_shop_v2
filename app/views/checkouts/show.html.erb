@@ -19,6 +19,7 @@
     <span>total price: </span>
     <span><%= render "carts/total_price" %></span>
   </div>
-  <button class="">confirm order</button>
+
+  <div><%= button_to "Confirm order new", checkout_path, data: { turbo: false }, class: "#" %></div>
 </div>
 

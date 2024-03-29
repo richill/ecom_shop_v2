@@ -1,57 +1,33 @@
 class CheckoutsController < ApplicationController
-
   def show
   end
 
-
   def create
-    stripe_secret_key = ENV["ST_ART_STRIPE_API_KEY_TEST"]
-    Stripe.api_key = stripe_secret_key
-    cart = params[:cart]
-    line_items = cart.map do |item|
-      product = Product.find(item["id"])
-      product_stock = product.variants.find{ |ps| ps.colour == item["colour"] }
+    session = Stripe::Checkout::Session.create(
+      billing_address_collection: :auto,
+      mode: "payment",
+      payment_method_type: ['card'],
+      line_items: cart_items,
+      success_url: checkout_payment_url,
+      cancel_url: root_url
+    )
+    current_cart.update!(stripe_session_id: session.id)
+    redirect_to session.url, allow_other_host: true
+  end
 
-      # if customer is trying to order more than what we have in stock (product_stock.stock ) we will return an error message
-      if product_stock.stock < item["quantity"].to_i
-        render json: { error: "Not enough stock for #{product.name} in colour #{item["colour"]}. Only #{product_stock.stock} left." }, status: 400
-        return
-      end
+  private
 
-      # if customer orders and we have the items in stock we will fulfill the order
+  def cart_items
+    current_cart.cart_items.map do |cart_item|
       {
-        quantity: item["quantity"].to_i,
         price_data: {
-          product_data: {
-            name: item["name"],
-            metadata: { product_id: product.id, colour: item["colour"], product_stock_id: product_stock.id }
-          },
           currency: "gbp",
-          unit_amount: (item["price"]*100)
-        }
+          product_data: { name: cart_item.product.name },
+          unit_amount: cart_item.product.price.to_i * 100
+        },
+        quantity: cart_item.quantity
       }
     end
-
-    puts "line_items: #{line_items}"
-
-    session = Stripe::Checkout::Session.create(
-      mode: "payment",
-      line_items: line_items,
-      success_url: "http://localhost:3102/success",
-      cancel_url: "http://localhost:3102/cancel",
-      shipping_address_collection: {
-        allowed_countries: ['US', 'CA', 'GH']
-      }
-    )
-
-    render json: { url: session.url }
   end
 
-  def success
-    render :success
-  end
-
-  def cancel
-    render :cancel
-  end
 end

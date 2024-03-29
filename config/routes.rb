@@ -44,7 +44,7 @@ Rails.application.routes.draw do
   # ----- new-cart -----
 
   # ----- checkout -----
-  resource :checkout, only: :show
+  resource :checkout, only: [:show, :create]
   # ----- checkout -----
 
   # ----- search -----
@@ -60,16 +60,12 @@ Rails.application.routes.draw do
 
 
 
-  # ----- cart -----
-  get 'cart', to: 'carts#show'
-  # ----- cart -----
-
-  # ----- checkout -----
-  post 'webhooks' => 'webhooks#stripe'
-  post 'checkout', to: 'checkouts#create'
+  # ----- old-checkout -----
+  # post 'webhooks' => 'webhooks#stripe'
+  # post 'checkout', to: 'checkouts#create'
   get 'success', to: 'checkouts#success'
   get 'cancel', to: 'checkouts#cancel'
-  # ----- checkout -----
+  # ----- old-checkout -----
 
 
   # redirects all unknown routes to homepage
