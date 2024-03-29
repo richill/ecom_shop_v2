@@ -63,18 +63,6 @@ Rails.application.routes.draw do
   root    'static_pages#homepage'
 
 
-
-
-
-
-  # ----- old-checkout -----
-  # post 'webhooks' => 'webhooks#stripe'
-  # post 'checkout', to: 'checkouts#create'
-  get 'success', to: 'checkouts#success'
-  get 'cancel', to: 'checkouts#cancel'
-  # ----- old-checkout -----
-
-
   # redirects all unknown routes to homepage
   get '*path' => redirect('/')
 end

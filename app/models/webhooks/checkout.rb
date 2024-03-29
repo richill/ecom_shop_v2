@@ -7,6 +7,7 @@ module Webhooks
     def call
       cart = Cart.find_by!(stripe_session_id: object.id)
       cart.payment_complete!
+      # Notifications
     end
 
     private

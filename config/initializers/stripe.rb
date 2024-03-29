@@ -9,7 +9,7 @@ module StripeEvent
       raise ArgumentError, "must provide a block" unless block_given?
       block.arity.zero? ? instance_eval(&block) : yield(self)
     end
-    alias :setup :configure
+    alias setup configure
 
     def instrument(event)
       event = event_filter.call(event)
@@ -37,7 +37,7 @@ module StripeEvent
     alias signing_secrets= signing_secret=
 
     def signing_secret
-      self.signing_secrets && self.signing_secrets.first
+      signing_secrets && signing_secrets.first
     end
   end
 
@@ -47,7 +47,7 @@ module StripeEvent
     end
 
     def to_regexp(name = nil)
-      %r{^#{Regexp.escape call(name)}}
+      /^#{Regexp.escape call(name)}/
     end
   end
 
@@ -74,8 +74,11 @@ end
 
 StripeEvent.signing_secret = Rails.application.credentials.dig(:stripe, :webhook_secret)
 
-StripeEvent.configure do | config |
-  config.subscribe "checkout.session.completed" do | event |
+StripeEvent.configure do |config|
+  config.subscribe "checkout.session.completed" do |event|
     Webhooks::Checkout.new(event).call
   end
 end
+
+
+
